@@ -20,7 +20,7 @@ npm install pelement-react
 
 
 ```typescript
-import { Button } from "pelement-react";
+import { Button } from 'pelement-react'
 import 'pelement-react/style'
 
 const App = () => {

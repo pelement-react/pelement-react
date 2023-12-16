@@ -17,6 +17,7 @@ function resolve(str: string) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/pelement-react/',
   plugins: [
     react(),
     typescript({

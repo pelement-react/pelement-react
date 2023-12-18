@@ -1,0 +1,22 @@
+.code-block {
+  position: relative;
+  border: 1px solid #dcdfe6;
+}
+
+pre {
+  margin: 0;
+}
+
+[class*=language-]:before {
+  position: absolute;
+  top: 0.4em;
+  right: 0.8em;
+  z-index: 2;
+  opacity: .6;
+  font-size: .8em;
+  color: #303133;
+}
+
+[class~=language-react]:before {
+  content: "react";
+}

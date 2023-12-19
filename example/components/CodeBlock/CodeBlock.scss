@@ -1,6 +1,19 @@
 .code-block {
-  position: relative;
   border: 1px solid #dcdfe6;
+}
+
+.code-block-component {
+  padding: 1em;
+}
+
+.code-block-pre {
+  position: relative;
+
+  &>code {
+    display: block;
+    padding: 1em !important;
+    background-color: #f6f6f6;
+  }
 }
 
 pre {

@@ -42,11 +42,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdx-js/rollup": "^3.0.0",
     "element-plus": "^2.4.4",
     "highlight.js": "^11.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.0"
+    "react-router-dom": "^6.21.0",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.5",

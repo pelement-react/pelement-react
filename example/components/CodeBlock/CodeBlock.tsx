@@ -7,12 +7,12 @@ hljs.registerLanguage('javascript', javascript)
 import 'highlight.js/styles/stackoverflow-light.css'
 
 
-function CodeBlock({ language = 'javascript', name }) {
+function CodeBlock({ language = 'javascript', name, children }) {
   const preRef = useRef(null)
   const [code, setCode] = useState('')
 
   // 获取所有example的源码文件
-  const demoFiles = import.meta.glob(`../../pages/component/*/_example/*.tsx`, { as: 'raw', eager: true })
+  const demoFiles = import.meta.glob(`../../../packages/*/_example/*.tsx`, { as: 'raw', eager: true })
 
   useEffect(() => {
     if (preRef.current) {
@@ -28,8 +28,11 @@ function CodeBlock({ language = 'javascript', name }) {
 
   return (
     <>
-      <div className="code-block language-react">
-        <pre>
+      <div className="code-block">
+        <div className="code-block-component">
+          {children}
+        </div>
+        <pre className="code-block-pre language-react">
           <code id={language} ref={preRef} className={language}>
             {code}
           </code>

@@ -1,0 +1,30 @@
+// markdown样式
+.markdown-body {
+  table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    tr {
+      background-color: #ffffff;
+      border-top: #d0d7de;
+    }
+
+    th,
+    td {
+      padding: 6px 13px;
+      border: 1px solid #d0d7de;
+    }
+  }
+
+  code {
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}

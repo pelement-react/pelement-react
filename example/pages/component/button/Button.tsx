@@ -1,11 +1,9 @@
-import CodeBlock from '../../../components/CodeBlock/CodeBlock'
-import ButtonBasic from './_example/ButtonBasic'
+import Markdown from '../../../components/Markdown/Markdown'
 
 function ButtonPage() {
   return (
     <>
-      <ButtonBasic />
-      <CodeBlock name="ButtonBasic" />
+      <Markdown name="button" />
     </>
   )
 }

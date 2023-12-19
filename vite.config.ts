@@ -3,6 +3,9 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import typescript from '@rollup/plugin-typescript'
+// 引入mdx
+import mdx from '@mdx-js/rollup'
+import remarkGfm from 'remark-gfm'
 
 const packageJson = JSON.parse(
   readFileSync('./package.json', { encoding: 'utf-8' })
@@ -19,6 +22,9 @@ function resolve(str: string) {
 export default defineConfig({
   base: '/pelement-react/',
   plugins: [
+    mdx({
+      remarkPlugins: [remarkGfm]
+    }),
     react(),
     typescript({
       target: 'es5',

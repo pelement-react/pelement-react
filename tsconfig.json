@@ -22,6 +22,6 @@
     "noImplicitAny": false,
     "allowJs": true
   },
-  "include": ["example", "packages"],
+  "include": ["example", "packages", "env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

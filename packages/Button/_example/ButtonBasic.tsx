@@ -1,9 +1,8 @@
-import { Button } from '../../../../../packages'
+import { Button } from '../../index'
 
 function ButtonBasic() {
   return (
     <>
-      <h3>使用 type、plain、round 和 circle 来定义按钮的样式。</h3>
       <div className="mb-4">
         <Button>Default</Button>
         <Button type="primary">Primary</Button>

@@ -1,0 +1,29 @@
+import cannotFindModule001 from '../../assets/cannot-find-module-001.jpg'
+import cannotFindModule002 from '../../assets/cannot-find-module-002.jpg'
+import cannotFindModule003 from '../../assets/cannot-find-module-003.jpg'
+
+# build 构建打包时报错： Cannot find module '../../../packages/Button/index.zh-CN.mdx' or its corresponding type declarations.
+
+引入mdx，构建生产包的时候，报错如下
+
+<img src={cannotFindModule001} alt="cannot-find-module-001" />
+
+解决方法：
+
+在根目录添加env.d.ts文件
+```shell
+declare module '*.mdx' {
+  const mdx: string;
+  export default mdx;
+}
+```
+
+<img src={cannotFindModule002} alt="cannot-find-module-002" />
+
+修改tsconfig.json文件，追加以下内容
+
+```shell
+"include": ["example", "packages", "env.d.ts"],
+```
+
+<img src={cannotFindModule003} alt="cannot-find-module-003" />

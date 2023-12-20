@@ -16,6 +16,16 @@
   }
 }
 
+.op-btns {
+  padding: 0.5rem;
+  border-top: 1px solid #dcdfe6;
+  text-align: right;
+
+  span {
+    cursor: pointer;
+  }
+}
+
 pre {
   margin: 0;
 }

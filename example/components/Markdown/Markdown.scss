@@ -1,10 +1,18 @@
 // markdown样式
 .markdown-body {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #60626B;
+  }
+
   table {
-    display: block;
     width: 100%;
     max-width: 100%;
-    overflow: auto;
     border-spacing: 0;
     border-collapse: collapse;
     margin-top: 0;
@@ -13,18 +21,29 @@
     tr {
       background-color: #ffffff;
       border-top: #d0d7de;
+
+      &:first-child th {
+        border-top: none;
+      }
     }
 
     th,
     td {
-      padding: 6px 13px;
-      border: 1px solid #d0d7de;
+      border-top: 1px solid #dcdfe6;
+      border-bottom: 1px solid #dcdfe6;
+      padding: 0.6em 1em;
+      text-align: left;
+      max-width: 250px;
+      white-space: pre-wrap;
     }
   }
 
-  code {
-    padding: 4px;
-    border-radius: 8px;
-    font-size: 14px;
+  p>code {
+    margin: 0;
+    border-radius: 4px;
+    padding: 0.15rem 0.5rem;
+    font-family: var(--code-font-family);
+    color: var(--code-text-color);
+    background-color: var(--code-bg-color);
   }
 }

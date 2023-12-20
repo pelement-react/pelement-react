@@ -1,4 +1,4 @@
-import { Button } from '../../index'
+import { Button } from 'pelement-react'
 
 function ButtonBasic() {
   return (
@@ -27,7 +27,7 @@ function ButtonBasic() {
         <Button type="warning" round>Warning</Button>
         <Button type="danger" round>Danger</Button>
       </div>
-      <div className="mb-4">
+      <div>
         <Button circle>1</Button>
         <Button type="primary" circle>2</Button>
         <Button type="success" circle>3</Button>

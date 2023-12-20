@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import path from 'path'
 // 引入mdx
 import mdx from '@mdx-js/rollup'
 import remarkGfm from 'remark-gfm'
@@ -13,4 +14,9 @@ export default defineConfig({
     }),
     react()
   ],
+  resolve: {
+    alias: {
+      'pelement-react': path.resolve(__dirname, '../packages')
+    }
+  },
 })

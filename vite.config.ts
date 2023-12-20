@@ -35,6 +35,11 @@ export default defineConfig({
       allowSyntheticDefaultImports: true,
     }),
   ],
+  resolve: {
+    alias: {
+      'pelement-react': path.resolve(__dirname, 'packages')
+    }
+  },
   build: {
     // 输出文件夹
     outDir: 'dist',

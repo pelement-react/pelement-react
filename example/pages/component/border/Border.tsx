@@ -1,7 +1,11 @@
+import BorderMdx from './border.zh-CN.mdx'
+
 function BorderPage() {
   return (
     <>
-      border
+      <div className="markdown-body">
+        <BorderMdx />
+      </div>
     </>
   )
 }

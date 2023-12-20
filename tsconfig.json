@@ -20,8 +20,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
-    "allowJs": true
+    "allowJs": true,
+    "paths": {
+      "pelement-react": ["./packages"]
+    }
   },
-  "include": ["example", "packages", "env.d.ts"],
+  "include": ["example", "packages"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

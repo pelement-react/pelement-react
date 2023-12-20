@@ -2,6 +2,8 @@
 
 import CodeBlock from '../../example/components/CodeBlock/CodeBlock'
 import ButtonBasic from './_example/ButtonBasic'
+import ButtonDisabled from './_example/ButtonDisabled'
+import ButtonLink from './_example/ButtonLink'
 
 常用的操作按钮。
 
@@ -12,13 +14,31 @@ import ButtonBasic from './_example/ButtonBasic'
   <ButtonBasic />
 </CodeBlock>
 
+## 禁用状态
+
+你可以使用 `disabled` 属性来定义按钮是否被禁用。
+
+使用 `disabled` 属性来控制按钮是否为禁用状态。 该属性接受一个 `Boolean` 类型的值。
+
+<CodeBlock name="ButtonDisabled">
+  <ButtonDisabled />
+</CodeBlock>
+
+## 链接按钮
+
+<CodeBlock name="ButtonLink">
+  <ButtonLink />
+</CodeBlock>
+
 ## Button API
 
 ### Button Attributes
 
-| 属性名 | 说明           | 类型                                                         | 默认值 |
-| ------ | -------------- | ------------------------------------------------------------ | ------ |
-| type   | 类型           | 'primary' 'success' 'warning' 'danger' 'info' 'text'(delete) | —      |
-| plain  | 是否为朴素按钮 | boolean                                                      | false  |
-| round  | 是否为圆角按钮 | boolean                                                      | false  |
-| circle | 是否为圆形按钮 | boolean                                                      | false  |
+| 属性名   | 说明               | 类型                                                         | 默认值 |
+| -------- | ------------------ | ------------------------------------------------------------ | ------ |
+| type     | 类型               | 'primary' 'success' 'warning' 'danger' 'info' 'text'(delete) | —      |
+| plain    | 是否为朴素按钮     | boolean                                                      | false  |
+| link     | 是否为链接按钮     | boolean                                                      | false  |
+| round    | 是否为圆角按钮     | boolean                                                      | false  |
+| circle   | 是否为圆形按钮     | boolean                                                      | false  |
+| disabled | 按钮是否为禁用状态 | boolean                                                      | false  |

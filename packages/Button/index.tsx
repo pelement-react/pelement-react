@@ -1,9 +1,9 @@
-import clsx from 'clsx'
 import { forwardRef } from 'react'
-import './style'
+import clsx from 'clsx'
 import { ButtonProps } from './interface'
+import './style'
 
-const Button: React.ForwardRefRenderFunction<HTMLDivElement, ButtonProps> = (
+const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
   props,
   ref,
 ) => {
@@ -15,13 +15,16 @@ const Button: React.ForwardRefRenderFunction<HTMLDivElement, ButtonProps> = (
     plain = false,
     round = false,
     circle = false,
+    disabled = false,
+    link = false,
     ...rest
   } = props
 
   return (
-    <div
+    <button
       ref={ref}
       style={style}
+      disabled={disabled}
       {...rest}
       className={
         clsx(
@@ -30,16 +33,18 @@ const Button: React.ForwardRefRenderFunction<HTMLDivElement, ButtonProps> = (
           (type ? `el-button--${type}` : ''),
           (plain ? 'is-plain' : ''),
           (round ? 'is-round' : ''),
-          (circle ? 'is-circle' : '')
+          (circle ? 'is-circle' : ''),
+          (disabled ? 'is-disabled' : ''),
+          (link ? 'is-link' : ''),
         )
       }
     >
       {children}
-    </div>
+    </button>
   )
 }
 
-const ButtonComponent = forwardRef<HTMLDivElement, ButtonProps>(Button)
+const ButtonComponent = forwardRef<HTMLButtonElement, ButtonProps>(Button)
 
 ButtonComponent.displayName = 'Button'
 

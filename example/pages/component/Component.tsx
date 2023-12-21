@@ -12,11 +12,15 @@ function ComponentPage() {
         <NavLink
           to="border"
         >Border 边框</NavLink>
+        <NavLink
+          to="icon"
+        >Icon 图标</NavLink>
       </aside>
       <main className="page-content">
         <Routes>
           <Route path="button" element={<Markdown name="button" />}></Route>
           <Route path="border" element={<BorderPage />}></Route>
+          <Route path="icon" element={<Markdown name="icon" />}></Route>
         </Routes>
       </main>
     </>

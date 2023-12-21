@@ -6,6 +6,8 @@ import typescript from '@rollup/plugin-typescript'
 // 引入mdx
 import mdx from '@mdx-js/rollup'
 import remarkGfm from 'remark-gfm'
+// 引入svg
+import svgr from 'vite-plugin-svgr'
 
 const packageJson = JSON.parse(
   readFileSync('./package.json', { encoding: 'utf-8' })
@@ -25,6 +27,7 @@ export default defineConfig({
     mdx({
       remarkPlugins: [remarkGfm]
     }),
+    svgr(),
     react(),
     typescript({
       target: 'es5',

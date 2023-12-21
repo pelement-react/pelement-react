@@ -23,7 +23,8 @@
     "allowJs": true,
     "paths": {
       "pelement-react": ["./packages"]
-    }
+    },
+    "types": ["vite-plugin-svgr/client"]
   },
   "include": ["example", "packages"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -1,29 +1,8 @@
-import { forwardRef } from 'react'
-import { IconProps } from './interface'
-import AddLocation from './icons/add-location.svg?react'
 import './style'
 
-const Icon: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
-  props,
-  ref,
-) => {
-  const {
-    style
-  } = props
-
-  return (
-    <i
-      ref={ref}
-      style={style}
-      className="el-icon"
-    >
-      <AddLocation />
-    </i>
-  )
-}
-
-const IconComponent = forwardRef<HTMLDivElement, IconProps>(Icon)
-
-IconComponent.displayName = 'Icon'
-
-export default IconComponent
+export { default as Edit } from './icons/Edit'
+export { default as Search } from './icons/Search'
+export { default as Check } from './icons/Check'
+export { default as Message } from './icons/Message'
+export { default as Star } from './icons/Star'
+export { default as Delete } from './icons/Delete'

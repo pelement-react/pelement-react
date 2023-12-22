@@ -37,9 +37,16 @@
 
   a {
     display: block;
+    text-decoration: none;
+    color: var(--text-color-light);
+    padding: 10px 16px;
+    line-height: 1.5;
+    font-size: .9rem;
+    border-radius: 8px;
 
     &.active {
-      color: #409eff;
+      color: var(--el-color-primary-dark-2);
+      background-color: var(--link-active-bg-color);
     }
   }
 }

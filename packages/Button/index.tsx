@@ -17,8 +17,12 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
     circle = false,
     disabled = false,
     link = false,
+    icon,
     ...rest
   } = props
+
+  // 图标
+  const IconNode = icon ? <>{icon}</> : <></>
 
   return (
     <button
@@ -39,6 +43,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
         )
       }
     >
+      {IconNode}
       {children}
     </button>
   )

@@ -6,15 +6,14 @@ function ComponentPage() {
   return (
     <>
       <aside className="sidebar">
-        <NavLink
-          to="button"
-        >Button 按钮</NavLink>
-        <NavLink
-          to="border"
-        >Border 边框</NavLink>
-        <NavLink
-          to="icon"
-        >Icon 图标</NavLink>
+        <div className="sidebar-groups">
+          <section className="sidebar-group">
+            <p className="sidebar-group__title">Basic 基础组件</p>
+            <NavLink to="button">Button 按钮</NavLink>
+            <NavLink to="border">Border 边框</NavLink>
+            <NavLink to="icon">Icon 图标</NavLink>
+          </section>
+        </div>
       </aside>
       <main className="page-content">
         <Routes>

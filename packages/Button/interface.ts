@@ -16,6 +16,8 @@ export interface ButtonProps
   disabled?: boolean
   // 是否为链接按钮
   link?: boolean
+  // 图标组件	
+  icon?: React.ReactNode
 }
 
 type Types = 'primary' | 'success' | 'info' | 'warning' | 'danger'

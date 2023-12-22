@@ -1,4 +1,4 @@
-import { Button } from 'pelement-react'
+import { Button, Check, Delete, Edit, Message, Search, Star } from 'pelement-react'
 
 function ButtonBasic() {
   return (
@@ -28,12 +28,12 @@ function ButtonBasic() {
         <Button type="danger" round>Danger</Button>
       </div>
       <div>
-        <Button circle>1</Button>
-        <Button type="primary" circle>2</Button>
-        <Button type="success" circle>3</Button>
-        <Button type="info" circle>4</Button>
-        <Button type="warning" circle>5</Button>
-        <Button type="danger" circle>6</Button>
+        <Button icon={<Search />} circle></Button>
+        <Button type="primary" icon={<Edit />} circle></Button>
+        <Button type="success" icon={<Check />} circle></Button>
+        <Button type="info" icon={<Message />} circle></Button>
+        <Button type="warning" icon={<Star />} circle></Button>
+        <Button type="danger" icon={<Delete />} circle></Button>
       </div>
     </>
   )

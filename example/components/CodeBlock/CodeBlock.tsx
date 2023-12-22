@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import './CodeBlock.scss'
 import hljs from 'highlight.js/lib/core'
 // 导入需要的语言高亮
+import xml from 'highlight.js/lib/languages/xml'
 import javascript from 'highlight.js/lib/languages/javascript'
+hljs.registerLanguage('xml', xml)
 hljs.registerLanguage('javascript', javascript)
 import 'highlight.js/styles/stackoverflow-light.css'
 
@@ -28,7 +30,9 @@ function CodeBlock({ language = 'javascript', name, children }) {
           setCode(demoFiles[key])
         }
       })
-      hljs.highlightElement(preRef.current)
+      setTimeout(() => {
+        hljs.highlightElement(preRef.current!)
+      }, 0)
     }
   }, [name])
 

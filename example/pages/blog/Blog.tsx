@@ -6,12 +6,12 @@ function BlogPage() {
   return (
     <>
       <aside className="sidebar">
-        <NavLink
-          to="build-error"
-        >buile error</NavLink>
-        <NavLink
-          to="cannot-find-module"
-        >cannot-find-module</NavLink>
+        <div className="sidebar-groups">
+          <section className="sidebar-group">
+            <NavLink to="build-error">buile error</NavLink>
+            <NavLink to="cannot-find-module">cannot-find-module</NavLink>
+          </section>
+        </div>
       </aside>
       <main className="page-content">
         <div className="blog-content">

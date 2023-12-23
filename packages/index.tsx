@@ -1,5 +1,11 @@
-export type { ButtonProps } from './Button/interface'
 export type { IconProps } from './Icon/interface'
+export type { ButtonProps } from './Button/interface'
+export type { ContainerProps } from './Container/interface'
 
-export { default as Button } from './Button'
 export { Edit, Search, Check, Message, Star, Delete } from './Icon'
+export { default as Button } from './Button'
+export { default as Container } from './Container/Container'
+export { default as Header } from './Container/Header'
+export { default as Main } from './Container/Main'
+export { default as Footer } from './Container/Footer'
+export { default as Aside } from './Container/Aside'

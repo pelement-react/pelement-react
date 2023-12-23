@@ -46,4 +46,10 @@
     color: var(--code-text-color);
     background-color: var(--code-bg-color);
   }
+
+  .text-sm,
+  [text~="sm"] {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }

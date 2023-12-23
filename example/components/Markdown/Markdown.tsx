@@ -1,4 +1,5 @@
 import ButtonMdx from '../../../packages/Button/index.zh-CN.mdx'
+import ContainerMdx from '../../../packages/Container/index.zh-CN.mdx'
 import IconMdx from '../../../packages/Icon/index.zh-CN.mdx'
 import './Markdown.scss'
 
@@ -7,6 +8,9 @@ function DemoMdx({ name }) {
   switch (name) {
     case 'button':
       demo = <ButtonMdx></ButtonMdx>
+      break
+    case 'container':
+      demo = <ContainerMdx></ContainerMdx>
       break
     case 'icon':
       demo = <IconMdx></IconMdx>

@@ -3,6 +3,7 @@ import ContainerMdx from '../../../packages/Container/index.zh-CN.mdx'
 import IconMdx from '../../../packages/Icon/index.zh-CN.mdx'
 import LayoutMdx from '../../../packages/Layout/index.zh-CN.mdx'
 import LinkMdx from '../../../packages/Link/index.zh-CN.mdx'
+import TextMdx from '../../../packages/Text/index.zh-CN.mdx'
 import './Markdown.scss'
 
 function DemoMdx({ name }) {
@@ -22,6 +23,9 @@ function DemoMdx({ name }) {
       break
     case 'link':
       demo = <LinkMdx></LinkMdx>
+      break
+    case 'text':
+      demo = <TextMdx></TextMdx>
       break
   }
   return demo

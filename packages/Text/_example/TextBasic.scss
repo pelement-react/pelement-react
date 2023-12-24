@@ -1,0 +1,16 @@
+.common-text {
+  .mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .w-150px {
+    width: 150px;
+  }
+
+  .mb-2,
+  [m~="b-2"],
+  [mb-2=""] {
+    margin-bottom: 0.5rem;
+  }
+}

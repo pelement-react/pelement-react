@@ -1,6 +1,7 @@
 export type { IconProps } from './Icon/interface'
 export type { ButtonProps } from './Button/interface'
 export type { ContainerProps } from './Container/interface'
+export type { LayoutProps } from './Layout/interface'
 
 export { Edit, Search, Check, Message, Star, Delete } from './Icon'
 export { default as Button } from './Button'
@@ -9,3 +10,5 @@ export { default as Header } from './Container/Header'
 export { default as Main } from './Container/Main'
 export { default as Footer } from './Container/Footer'
 export { default as Aside } from './Container/Aside'
+export { default as Row } from './Layout/Row'
+export { default as Col } from './Layout/Col'

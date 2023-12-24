@@ -2,10 +2,19 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-family-mono: "JetBrains Mono", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   --text-color: var(--el-text-color-primary);
+  --brand-color: var(--el-color-primary);
+  --nav-height: 55px;
   --code-bg-color: var(--el-fill-color-light);
   --code-text-color: var(--text-color);
   --code-font-family: var(--font-family-mono);
   --link-active-bg-color: rgba(var(--el-color-primary-rgb), .1);
+}
+
+:root {
+  --ep-c-bg-row: #f9fafc;
+  --ep-c-bg-purple: #d3dce6;
+  --ep-c-bg-purple-dark: #99a9bf;
+  --ep-c-bg-purple-light: #e5e9f2;
 }
 
 body {

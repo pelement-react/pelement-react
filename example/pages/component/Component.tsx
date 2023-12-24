@@ -13,6 +13,7 @@ function ComponentPage() {
             <NavLink to="border">Border 边框</NavLink>
             <NavLink to="container">Container 布局容器</NavLink>
             <NavLink to="icon">Icon 图标</NavLink>
+            <NavLink to="layout">Layout 布局</NavLink>
           </section>
         </div>
       </aside>
@@ -22,6 +23,7 @@ function ComponentPage() {
           <Route path="border" element={<BorderPage />}></Route>
           <Route path="container" element={<Markdown name="container" />}></Route>
           <Route path="icon" element={<Markdown name="icon" />}></Route>
+          <Route path="layout" element={<Markdown name="layout" />}></Route>
         </Routes>
       </main>
     </>

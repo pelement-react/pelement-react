@@ -14,6 +14,7 @@ function ComponentPage() {
             <NavLink to="container">Container 布局容器</NavLink>
             <NavLink to="icon">Icon 图标</NavLink>
             <NavLink to="layout">Layout 布局</NavLink>
+            <NavLink to="link">Link 链接</NavLink>
           </section>
         </div>
       </aside>
@@ -24,6 +25,7 @@ function ComponentPage() {
           <Route path="container" element={<Markdown name="container" />}></Route>
           <Route path="icon" element={<Markdown name="icon" />}></Route>
           <Route path="layout" element={<Markdown name="layout" />}></Route>
+          <Route path="link" element={<Markdown name="link" />}></Route>
         </Routes>
       </main>
     </>

@@ -1,4 +1,5 @@
 import { forwardRef } from 'react'
+import clsx from 'clsx'
 import { IconProps } from '../interface'
 import EditSvg from '@element-plus/icons-svg/edit.svg?react'
 
@@ -7,14 +8,20 @@ const Edit: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
   ref,
 ) => {
   const {
-    style
+    style,
+    className,
   } = props
 
   return (
     <i
       ref={ref}
       style={style}
-      className="el-icon"
+      className={
+        clsx(
+          className,
+          'el-icon'
+        )
+      }
     >
       <EditSvg />
     </i>

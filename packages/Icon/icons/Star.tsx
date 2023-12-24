@@ -1,4 +1,5 @@
 import { forwardRef } from 'react'
+import clsx from 'clsx'
 import { IconProps } from '../interface'
 import StarSvg from '@element-plus/icons-svg/star.svg?react'
 
@@ -7,14 +8,20 @@ const Star: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
   ref,
 ) => {
   const {
-    style
+    style,
+    className,
   } = props
 
   return (
     <i
       ref={ref}
       style={style}
-      className="el-icon"
+      className={
+        clsx(
+          className,
+          'el-icon'
+        )
+      }
     >
       <StarSvg />
     </i>

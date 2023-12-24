@@ -1,9 +1,9 @@
 import { forwardRef } from 'react'
 import clsx from 'clsx'
 import { IconProps } from '../interface'
-import CheckSvg from '@element-plus/icons-svg/check.svg?react'
+import ViewSvg from '@element-plus/icons-svg/view.svg?react'
 
-const Check: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
+const View: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
   props,
   ref,
 ) => {
@@ -23,13 +23,13 @@ const Check: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
         )
       }
     >
-      <CheckSvg />
+      <ViewSvg />
     </i>
   )
 }
 
-const CheckComponent = forwardRef<HTMLDivElement, IconProps>(Check)
+const ViewComponent = forwardRef<HTMLDivElement, IconProps>(View)
 
-CheckComponent.displayName = 'Check'
+ViewComponent.displayName = 'View'
 
-export default CheckComponent
+export default ViewComponent

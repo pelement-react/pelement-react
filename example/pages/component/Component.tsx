@@ -16,6 +16,8 @@ function ComponentPage() {
             <NavLink to="layout">Layout 布局</NavLink>
             <NavLink to="link">Link 链接</NavLink>
             <NavLink to="text">Text 文本</NavLink>
+            <p className="sidebar-group__title">Others 其他</p>
+            <NavLink to="divider">Divider 分割线</NavLink>
           </section>
         </div>
       </aside>
@@ -28,6 +30,7 @@ function ComponentPage() {
           <Route path="layout" element={<Markdown name="layout" />}></Route>
           <Route path="link" element={<Markdown name="link" />}></Route>
           <Route path="text" element={<Markdown name="text" />}></Route>
+          <Route path="divider" element={<Markdown name="divider" />}></Route>
         </Routes>
       </main>
     </>

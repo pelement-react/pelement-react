@@ -1,4 +1,4 @@
-import { Edit, Search, Check, Message, Star, Delete, View } from 'pelement-react'
+import { Edit, Search, Check, Message, Star, Delete, View, StarFilled } from 'pelement-react'
 
 function ButtonBasic() {
   return (
@@ -10,6 +10,7 @@ function ButtonBasic() {
       <Star style={{ fontSize: '20px' }} />
       <Delete style={{ fontSize: '20px' }} />
       <View style={{ fontSize: '20px' }} />
+      <StarFilled style={{ fontSize: '20px' }} />
     </>
   )
 }

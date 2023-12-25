@@ -26,7 +26,7 @@ const Col: React.ForwardRefRenderFunction<HTMLDivElement, LayoutProps> = (
     paddingLeft: `${gutter! / 2}px`,
     paddingRight: `${gutter! / 2}px`,
     ...style,
-  };
+  }
 
   return (
     <div

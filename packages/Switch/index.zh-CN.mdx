@@ -1,0 +1,41 @@
+# Switch 开关
+
+import CodeBlock from '../../example/components/CodeBlock/CodeBlock'
+import SwitchBasic from './_example/SwitchBasic'
+import SwitchSize from './_example/SwitchSize'
+import SwitchText from './_example/SwitchText'
+import SwitchIcon from './_example/SwitchIcon'
+
+表示两种相互对立的状态间的切换，多用于触发「开/关」。
+
+## 基础用法
+
+可以使用 --el-switch-on-color 属性与 --el-switch-off-color 属性来设置开关的背景色。
+
+<CodeBlock name="SwitchBasic">
+  <SwitchBasic />
+</CodeBlock>
+
+## 尺寸
+
+<CodeBlock name="SwitchSize">
+  <SwitchSize />
+</CodeBlock>
+
+## 文字描述
+
+使用`active-text`属性与`inactive-text`属性来设置开关的文字描述。 使用 `inline-prompt` 属性来控制文本是否显示在点内。
+
+使用`active-text`属性与`inactive-text`属性来设置开关的文字描述。
+
+<CodeBlock name="SwitchText">
+  <SwitchText />
+</CodeBlock>
+
+## 显示自定义图标
+
+使用 `inactive-icon` 和 `active-icon` 属性来添加图标。 使用 `inline-prompt` 属性来控制图标显示在点内。
+
+<CodeBlock name="SwitchIcon">
+  <SwitchIcon />
+</CodeBlock>

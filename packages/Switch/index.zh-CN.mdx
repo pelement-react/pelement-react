@@ -5,6 +5,10 @@ import SwitchBasic from './_example/SwitchBasic'
 import SwitchSize from './_example/SwitchSize'
 import SwitchText from './_example/SwitchText'
 import SwitchIcon from './_example/SwitchIcon'
+import SwitchDisabled from './_example/SwitchDisabled'
+import SwitchLoading from './_example/SwitchLoading'
+import SwitchBeforeChange from './_example/SwitchBeforeChange'
+import SwitchActionIcon from './_example/SwitchActionIcon'
 
 表示两种相互对立的状态间的切换，多用于触发「开/关」。
 
@@ -39,3 +43,54 @@ import SwitchIcon from './_example/SwitchIcon'
 <CodeBlock name="SwitchIcon">
   <SwitchIcon />
 </CodeBlock>
+
+## 禁用状态
+
+设置`disabled`属性，接受一个`Boolean`，设置`true`即可禁用。
+
+<CodeBlock name="SwitchDisabled">
+  <SwitchDisabled />
+</CodeBlock>
+
+## 加载状态
+
+设置`loading`属性，接受一个`Boolean`，设置`true`即加载中状态。
+
+<CodeBlock name="SwitchLoading">
+  <SwitchLoading />
+</CodeBlock>
+
+## 阻止切换
+
+设置`beforeChange`属性，若返回 false 或者返回 Promise 且被 reject，则停止切换。
+
+<CodeBlock name="SwitchBeforeChange">
+  <SwitchBeforeChange />
+</CodeBlock>
+
+## 自定义动作图标
+
+使用 `inactive-action-icon` 和 `active-action-icon` 属性来添加图标。
+
+<CodeBlock name="SwitchActionIcon">
+  <SwitchActionIcon />
+</CodeBlock>
+
+## API
+
+### Attributes
+
+| 属性名             | 说明                                                                         | 类型               | 默认值 |
+| ------------------ | ---------------------------------------------------------------------------- | ------------------ | ------ |
+| defaultChecked     | 初始是否选中                                                                 | boolean            | false  |
+| disabled           | 是否禁用                                                                     | boolean            | false  |
+| size               | switch 的大小                                                                | 'large' / 'small'  | —      |
+| width              | switch 的宽度                                                                | string             | —      |
+| inlinePrompt       | 无论图标或文本是否显示在点内，只会呈现文本的第一个字符                       | boolean            | false  |
+| activeIcon         | switch 状态为 on 时所显示图标，设置此项会忽略 activeText                     | Component          | —      |
+| inactiveIcon       | switch 状态为 off 时所显示图标，设置此项会忽略 inactiveText                  | Component          | —      |
+| activeActionIcon   | on状态下显示的图标组件                                                       | Component          | —      |
+| inactiveActionIcon | off状态下显示的图标组件                                                      | Component          | —      |
+| activeText         | switch 打开时的文字描述                                                      | string             | —      |
+| inactiveText       | switch 的状态为 off 时的文字描述                                             | string             | —      |
+| beforeChange       | switch 状态改变前的钩子， 返回 false 或者返回 Promise 且被 reject 则停止切换 | boolean / Function | —      |

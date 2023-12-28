@@ -20,7 +20,7 @@ const Row: React.ForwardRefRenderFunction<HTMLDivElement, LayoutProps> = (
     marginLeft: `-${gutter! / 2}px`,
     marginRight: `-${gutter! / 2}px`,
     ...style,
-  };
+  }
 
   const rowContext = useMemo<RowContextState>(
     () => ({ gutter: gutter }),

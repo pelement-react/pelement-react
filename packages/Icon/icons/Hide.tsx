@@ -9,7 +9,8 @@ const Hide: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
 ) => {
   const {
     style,
-    className
+    className,
+    onClick,
   } = props
 
   return (
@@ -22,6 +23,7 @@ const Hide: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
           'el-icon'
         )
       }
+      onClick={onClick}
     >
       <HideSvg />
     </i>

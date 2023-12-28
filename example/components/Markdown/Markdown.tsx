@@ -5,6 +5,7 @@ import LayoutMdx from '../../../packages/Layout/index.zh-CN.mdx'
 import LinkMdx from '../../../packages/Link/index.zh-CN.mdx'
 import TextMdx from '../../../packages/Text/index.zh-CN.mdx'
 import SwitchMdx from '../../../packages/Switch/index.zh-CN.mdx'
+import AlertMdx from '../../../packages/Alert/index.zh-CN.mdx'
 import DividerMsx from '../../../packages/Divider/index.zh-CN.mdx'
 import './Markdown.scss'
 
@@ -31,6 +32,9 @@ function DemoMdx({ name }) {
       break
     case 'switch':
       demo = <SwitchMdx></SwitchMdx>
+      break
+    case 'alert':
+      demo = <AlertMdx></AlertMdx>
       break
     case 'divider':
       demo = <DividerMsx></DividerMsx>

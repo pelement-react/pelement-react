@@ -10,6 +10,7 @@ const Close: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
   const {
     style,
     className,
+    onClick,
   } = props
 
   return (
@@ -22,6 +23,7 @@ const Close: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
           'el-icon'
         )
       }
+      onClick={onClick}
     >
       <CloseSvg />
     </i>

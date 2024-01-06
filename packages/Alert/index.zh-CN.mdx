@@ -3,6 +3,11 @@
 import CodeBlock from '../../example/components/CodeBlock/CodeBlock'
 import AlertBasic from './_example/AlertBasic'
 import AlertEffect from './_example/AlertEffect'
+import AlertClose from './_example/AlertClose'
+import AlertShowIcon from './_example/AlertShowIcon'
+import AlertCenter from './_example/AlertCenter'
+import AlertDescription from './_example/AlertDescription'
+import AlertIconDescription from './_example/AlertIconDescription'
 
 用于页面中展示重要的提示信息。
 
@@ -26,12 +31,70 @@ Alert 组件提供了两个不同的主题：`light` 和 `dark`。
   <AlertEffect />
 </CodeBlock>
 
+## 自定义关闭按钮
+
+你可以自定义关闭按钮为文字或其他符号。
+
+你可以设置 Alert 组件是否为可关闭状态， 关闭按钮的内容以及关闭时的回调函数同样可以定制。 `closable` 属性决定 Alert 组件是否可关闭， 该属性接受一个 `Boolean`，默认为 `false`。 你可以设置 `closeText` 属性来代替右侧的关闭图标， 需要注意的是 `closeText` 必须是一个字符串。 当 Alert 组件被关闭时会触发 `close` 事件。
+
+<CodeBlock name="AlertClose">
+  <AlertClose />
+</CodeBlock>
+
+## 使用图标
+
+你可以通过为 Alert 组件添加图标来提高可读性。
+
+通过设置 `showIcon` 属性来显示 Alert 的 icon，这能更有效地向用户展示你的显示意图。
+
+<CodeBlock name="AlertShowIcon">
+  <AlertShowIcon />
+</CodeBlock>
+
+## 文字居中
+
+使用 `center` 属性来让文字水平居中。
+
+<CodeBlock name="AlertCenter">
+  <AlertCenter />
+</CodeBlock>
+
+## 文字描述
+
+为 Alert 组件添加一个更加详细的描述来使用户了解更多信息。
+
+除了必填的 `title` 属性外，你可以设置 `description` 属性来帮助你更好地介绍，我们称之为辅助性文字。 辅助性文字只能存放文本内容，当内容超出长度限制时会自动换行显示。
+
+<CodeBlock name="AlertDescription">
+  <AlertDescription />
+</CodeBlock>
+
+## 带图标和描述
+
+在最后, 这是一个带有图标和描述的例子。
+
+<CodeBlock name="AlertIconDescription">
+  <AlertIconDescription />
+</CodeBlock>
+
 ## Alert API
 
 ### Attributes
 
-| 属性名 | 说明         | 类型                                     | 默认值 |
-| ------ | ------------ | ---------------------------------------- | ------ |
-| title  | Alert 标题。 | string                                   | —      |
-| type   | Alert 类型。 | 'success' / 'warning' / 'info' / 'error' | info   |
-| effect | 主题样式     | 'light' / 'dark'                         | light  |
+| 属性名      | 说明               | 类型                                     | 默认值 |
+| ----------- | ------------------ | ---------------------------------------- | ------ |
+| title       | Alert 标题。       | string                                   | —      |
+| type        | Alert 类型。       | 'success' / 'warning' / 'info' / 'error' | info   |
+| description | 描述性文本         | `string`                                 | —      |
+| closable    | 是否可以关闭       | `boolean`                                | true   |
+| center      | 文字是否居中       | `boolean`                                | false  |
+| closeText   | 自定义关闭按钮文本 | `string`                                 | —      |
+| showIcon    | 是否显示类型图标   | `boolean`                                | false  |
+| effect      | 主题样式           | 'light' / 'dark'                         | light  |
+
+
+### Events
+
+| 名称  | 描述                    | 类型                        |
+| ----- | ----------------------- | --------------------------- |
+| close | 关闭 Alert 时触发的事件 | (event: MouseEvent) => void |

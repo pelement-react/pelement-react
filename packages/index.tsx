@@ -8,7 +8,23 @@ export type { DividerProps } from './Divider/interface'
 export type { SwitchProps } from './Switch/interface'
 export type { AlertProps } from './Alert/interface'
 
-export { Edit, Search, Check, Message, Star, Delete, View, StarFilled, Close, Loading, Hide } from './Icon'
+export {
+    Edit,
+    Search,
+    Check,
+    Message,
+    Star,
+    Delete,
+    View,
+    StarFilled,
+    Close,
+    Loading,
+    Hide,
+    InfoFilled,
+    WarningFilled,
+    CircleCloseFilled,
+    CircleCheckFilled,
+} from './Icon'
 export { default as Button } from './Button'
 export { default as Container } from './Container/Container'
 export { default as Header } from './Container/Header'

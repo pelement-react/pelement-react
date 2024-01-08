@@ -24,6 +24,7 @@ export {
     WarningFilled,
     CircleCloseFilled,
     CircleCheckFilled,
+    ArrowRight,
 } from './Icon'
 export { default as Button } from './Button'
 export { default as Container } from './Container/Container'
@@ -38,3 +39,5 @@ export { default as Text } from './Text'
 export { default as Divider } from './Divider'
 export { default as Switch } from './Switch'
 export { default as Alert } from './Alert'
+export { default as Collapse } from './Collapse'
+export { default as CollapseItem } from './Collapse/CollapseItem'

@@ -1,12 +1,14 @@
 
 import { Link } from 'react-router-dom'
 import './Home.scss'
+import pelementReact from '../../assets/pelement-react.svg'
 
 function HomePage() {
   return (
     <>
       <div className="home-content">
         <div className="description">
+          <img src={pelementReact} alt="pelement-react" />
           <h1>pelement react</h1>
           <p>基于Element Plus 和 react，面向设计师和开发者的组件库</p>
           <Link to="/component/button">快速开始</Link>

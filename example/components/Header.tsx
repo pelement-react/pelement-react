@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import pelementReact from '../assets/pelement-react.svg'
 
 function Header() {
   return (
@@ -7,9 +8,10 @@ function Header() {
         <div className="navbar-wrapper">
           <div className="header-container">
             <div className="logo-container">
-              <div className="logo-container">
-                <NavLink to="/home">pelement-react</NavLink>
-              </div>
+              <NavLink to="/home">
+                <img src={pelementReact} alt="pelement-react" />
+                pelement-react
+              </NavLink>
             </div>
             <div className="content">
               <nav className="navbar-menu menu">

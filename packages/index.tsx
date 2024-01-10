@@ -25,6 +25,7 @@ export {
     CircleCloseFilled,
     CircleCheckFilled,
     ArrowRight,
+    UserFilled,
 } from './Icon'
 export { default as Button } from './Button'
 export { default as Container } from './Container/Container'
@@ -41,3 +42,4 @@ export { default as Switch } from './Switch'
 export { default as Alert } from './Alert'
 export { default as Collapse } from './Collapse'
 export { default as CollapseItem } from './Collapse/CollapseItem'
+export { default as Avatar } from './Avatar'

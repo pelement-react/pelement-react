@@ -7,6 +7,7 @@ import TextMdx from '../../../packages/Text/index.zh-CN.mdx'
 import SwitchMdx from '../../../packages/Switch/index.zh-CN.mdx'
 import AvatarMdx from '../../../packages/Avatar/index.zh-CN.mdx'
 import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
+import ResultMdx from '../../../packages/Result/index.zh-CN.mdx'
 import AlertMdx from '../../../packages/Alert/index.zh-CN.mdx'
 import DividerMsx from '../../../packages/Divider/index.zh-CN.mdx'
 import './Markdown.scss'
@@ -40,6 +41,9 @@ function DemoMdx({ name }) {
       break
     case 'collapse':
       demo = <CollapseMdx></CollapseMdx>
+      break
+    case 'result':
+      demo = <ResultMdx></ResultMdx>
       break
     case 'alert':
       demo = <AlertMdx></AlertMdx>

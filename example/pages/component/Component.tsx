@@ -21,6 +21,7 @@ function ComponentPage() {
             <p className="sidebar-group__title">Data 数据展示</p>
             <NavLink to="avatar">Avatar 头像</NavLink>
             <NavLink to="collapse">Collapse 折叠面板</NavLink>
+            <NavLink to="result">Result 结果</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>
             <NavLink to="alert">Alert 提示</NavLink>
             <p className="sidebar-group__title">Others 其他</p>
@@ -40,6 +41,7 @@ function ComponentPage() {
           <Route path="switch" element={<Markdown name="switch" />}></Route>
           <Route path="avatar" element={<Markdown name="avatar" />}></Route>
           <Route path="collapse" element={<Markdown name="collapse" />}></Route>
+          <Route path="result" element={<Markdown name="result" />}></Route>
           <Route path="alert" element={<Markdown name="alert" />}></Route>
           <Route path="divider" element={<Markdown name="divider" />}></Route>
         </Routes>

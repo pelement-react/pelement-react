@@ -1,8 +1,8 @@
 {
   "name": "pelement-react",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.4",
   "description": "An enterprise-class UI components based on Element Plus and React.",
-  "homepage": "https://pelement-react.github.io/",
+  "homepage": "https://pelement-react.github.io/pelement-react/",
   "bugs": {
     "url": "https://github.com/pelement-react/pelement-react/issues"
   },
@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@element-plus/icons-svg": "^2.3.1",
+    "@floating-ui/react": "^0.26.5",
     "@mdx-js/rollup": "^3.0.0",
     "element-plus": "^2.4.4",
     "highlight.js": "^11.9.0",

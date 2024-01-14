@@ -9,6 +9,7 @@ import AvatarMdx from '../../../packages/Avatar/index.zh-CN.mdx'
 import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
 import ResultMdx from '../../../packages/Result/index.zh-CN.mdx'
 import AlertMdx from '../../../packages/Alert/index.zh-CN.mdx'
+import TooltipMdx from '../../../packages/Tooltip/index.zh-CN.mdx'
 import DividerMsx from '../../../packages/Divider/index.zh-CN.mdx'
 import './Markdown.scss'
 
@@ -47,6 +48,9 @@ function DemoMdx({ name }) {
       break
     case 'alert':
       demo = <AlertMdx></AlertMdx>
+      break
+    case 'tooltip':
+      demo = <TooltipMdx></TooltipMdx>
       break
     case 'divider':
       demo = <DividerMsx></DividerMsx>

@@ -1,24 +1,23 @@
 import { Children, cloneElement, forwardRef, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import clsx from 'clsx'
-import { useFloating, offset, useHover, useInteractions, arrow, autoUpdate, ElementProps, useClick, useFocus } from '@floating-ui/react'
-import { TooltipProp } from './interface'
+import { arrow, autoUpdate, ElementProps, offset, useClick, useFloating, useFocus, useHover, useInteractions } from '@floating-ui/react'
+import { PopoverProp } from './interface'
 import './style'
-import TooltipPopperComponent from './TooltipPopper'
+import PopoverPopperComponent from './PopoverPopper'
 
-const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProp> = (
+const Popover: React.ForwardRefRenderFunction<HTMLDivElement, PopoverProp> = (
   props,
 ) => {
   const {
     style,
     className,
-    effect = 'dark',
     placement = 'bottom',
     trigger = 'hover',
+    title,
     content,
     showAfter = 0,
     hideAfter = 200,
-    disabled = true,
     children,
   } = props
 
@@ -33,7 +32,7 @@ const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProp> = (
         element: arrowRef
       })
     ],
-    open: isOpen && disabled,
+    open: isOpen,
     whileElementsMounted: autoUpdate,
     onOpenChange: setIsOpen
   })
@@ -76,14 +75,14 @@ const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProp> = (
   const divStyle: React.CSSProperties = {
     ...style,
     ...floatingStyles
-  };
+  }
 
   return (
     <>
       {
         isOpen &&
         createPortal(
-          <TooltipPopperComponent
+          <PopoverPopperComponent
             ref={refs.setFloating}
             style={divStyle}
             className={
@@ -91,8 +90,8 @@ const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProp> = (
                 className
               )
             }
-            effect={effect}
             placement={placement}
+            title={title}
             content={content}
             getFloatingProps={getFloatingProps}
           >
@@ -104,18 +103,17 @@ const Tooltip: React.ForwardRefRenderFunction<HTMLDivElement, TooltipProp> = (
                 left: middlewareData.arrow?.x,
                 top: middlewareData.arrow?.y,
               }}></span>
-          </TooltipPopperComponent>,
+          </PopoverPopperComponent>,
           document.body
         )
       }
       {newChildren}
     </>
-
   )
 }
 
-const TooltipComponent = forwardRef<HTMLDivElement, TooltipProp>(Tooltip)
+const PopoverComponent = forwardRef<HTMLDivElement, PopoverProp>(Popover)
 
-TooltipComponent.displayName = 'Tooltip'
+PopoverComponent.displayName = 'Popover'
 
-export default TooltipComponent
+export default PopoverComponent

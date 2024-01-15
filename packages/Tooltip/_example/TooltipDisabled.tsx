@@ -12,7 +12,7 @@ function TooltipDisabled() {
     <>
       <Tooltip
         disabled={disabled}
-        tooltipContent="click to close tooltip function"
+        content="click to close tooltip function"
         placement="bottom"
         effect="light"
       >

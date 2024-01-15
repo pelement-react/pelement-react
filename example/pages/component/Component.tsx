@@ -24,6 +24,7 @@ function ComponentPage() {
             <NavLink to="result">Result 结果</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>
             <NavLink to="alert">Alert 提示</NavLink>
+            <NavLink to="popover">Popover 气泡卡片</NavLink>
             <NavLink to="tooltip">Tooltip 文字提示</NavLink>
             <p className="sidebar-group__title">Others 其他</p>
             <NavLink to="divider">Divider 分割线</NavLink>
@@ -44,6 +45,7 @@ function ComponentPage() {
           <Route path="collapse" element={<Markdown name="collapse" />}></Route>
           <Route path="result" element={<Markdown name="result" />}></Route>
           <Route path="alert" element={<Markdown name="alert" />}></Route>
+          <Route path="popover" element={<Markdown name="popover" />}></Route>
           <Route path="tooltip" element={<Markdown name="tooltip" />}></Route>
           <Route path="divider" element={<Markdown name="divider" />}></Route>
         </Routes>

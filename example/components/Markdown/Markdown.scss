@@ -47,9 +47,28 @@
     background-color: var(--code-bg-color);
   }
 
+  pre code.hljs {
+    line-height: 1.4;
+  }
+
   .text-sm,
   [text~="sm"] {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  &>pre {
+    background-color: var(--code-bg-color);
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+
+    code[class*=language-] {
+      position: relative;
+      overflow-x: auto;
+    }
+  }
+
+  [class*=language-] {
+    font-family: var(--prism-font-family);
   }
 }

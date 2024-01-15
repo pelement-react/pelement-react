@@ -2,12 +2,14 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-family-mono: "JetBrains Mono", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   --text-color: var(--el-text-color-primary);
+  --text-color-lighter: var(--el-text-color-secondary);
   --brand-color: var(--el-color-primary);
   --nav-height: 55px;
   --code-bg-color: var(--el-fill-color-light);
   --code-text-color: var(--text-color);
   --code-font-family: var(--font-family-mono);
   --link-active-bg-color: rgba(var(--el-color-primary-rgb), .1);
+  --prism-font-family: monospace;
 }
 
 :root {

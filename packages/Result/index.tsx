@@ -11,7 +11,7 @@ const Result: React.ForwardRefRenderFunction<HTMLDivElement, ResultProps> = (
     style,
     className,
     icon = 'info',
-    mainTitle,
+    title,
     subTitle,
     extra,
   } = props
@@ -64,7 +64,7 @@ const Result: React.ForwardRefRenderFunction<HTMLDivElement, ResultProps> = (
       </div>
       <div className="el-result__title">
         <p>
-          {mainTitle}
+          {title}
         </p>
       </div>
       <div className="el-result__subtitle">

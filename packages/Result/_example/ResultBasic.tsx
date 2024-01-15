@@ -7,7 +7,7 @@ function ResultBasic() {
         <Col sm={12} lg={6}>
           <Result
             icon="success"
-            mainTitle="Success Tip"
+            title="Success Tip"
             subTitle="Please follow the instructions"
             extra={<Button type="primary">Back</Button>}
           ></Result>
@@ -15,7 +15,7 @@ function ResultBasic() {
         <Col sm={12} lg={6}>
           <Result
             icon="warning"
-            mainTitle="Warning Tip"
+            title="Warning Tip"
             subTitle="Please follow the instructions"
             extra={<Button type="primary">Back</Button>}
           ></Result>
@@ -23,7 +23,7 @@ function ResultBasic() {
         <Col sm={12} lg={6}>
           <Result
             icon="error"
-            mainTitle="Error Tip"
+            title="Error Tip"
             subTitle="Please follow the instructions"
             extra={<Button type="primary">Back</Button>}
           ></Result>
@@ -31,7 +31,7 @@ function ResultBasic() {
         <Col sm={12} lg={6}>
           <Result
             icon="info"
-            mainTitle="Info Tip"
+            title="Info Tip"
             subTitle={<p>Using slot as subtitle</p>}
             extra={<Button type="primary">Back</Button>}
           ></Result>

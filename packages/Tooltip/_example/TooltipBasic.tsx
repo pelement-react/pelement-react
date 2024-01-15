@@ -9,7 +9,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Top Left prompts info"
+            content="Top Left prompts info"
             placement="top-start"
           >
             <Button>top-start</Button>
@@ -17,7 +17,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Top Center prompts info"
+            content="Top Center prompts info"
             placement="top"
           >
             <Button>top</Button>
@@ -25,7 +25,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Top Right prompts info"
+            content="Top Right prompts info"
             placement="top-end"
           >
             <Button>top-end</Button>
@@ -35,7 +35,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Left Top prompts info"
+            content="Left Top prompts info"
             placement="left-start"
           >
             <Button>left-start</Button>
@@ -43,7 +43,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Right Top prompts info"
+            content="Right Top prompts info"
             placement="right-start"
           >
             <Button>right-start</Button>
@@ -53,7 +53,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Left Center prompts info"
+            content="Left Center prompts info"
             placement="left"
           >
             <Button className="mt-3 mb-3">left</Button>
@@ -61,7 +61,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Right Center prompts info"
+            content="Right Center prompts info"
             placement="right"
           >
             <Button>right</Button>
@@ -71,7 +71,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Left Bottom prompts info"
+            content="Left Bottom prompts info"
             placement="left-end"
           >
             <Button>left-end</Button>
@@ -79,7 +79,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Right Bottom prompts info"
+            content="Right Bottom prompts info"
             placement="right-end"
           >
             <Button>right-end</Button>
@@ -89,7 +89,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Bottom Left prompts info"
+            content="Bottom Left prompts info"
             placement="bottom-start"
           >
             <Button>bottom-start</Button>
@@ -97,7 +97,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Bottom Center prompts info"
+            content="Bottom Center prompts info"
             placement="bottom"
           >
             <Button>bottom</Button>
@@ -105,7 +105,7 @@ function TooltipBasic() {
           <Tooltip
             className="box-item"
             effect="dark"
-            tooltipContent="Bottom Right prompts info"
+            content="Bottom Right prompts info"
             placement="bottom-end"
           >
             <Button>bottom-end</Button>

@@ -1,6 +1,6 @@
+import { forwardRef } from 'react'
 import clsx from 'clsx'
 import { TooltipPopperProp } from './interface'
-import { forwardRef } from 'react'
 
 const TooltipPopper: React.ForwardRefRenderFunction<HTMLDivElement, TooltipPopperProp> = (
   props,
@@ -10,19 +10,19 @@ const TooltipPopper: React.ForwardRefRenderFunction<HTMLDivElement, TooltipPoppe
     style,
     className,
     placement,
-    tooltipContent,
+    content,
     effect,
     getFloatingProps,
     children,
   } = props
 
   function TooltipContent() {
-    if (typeof tooltipContent === 'string') {
+    if (typeof content === 'string') {
       return <>
-        <span>{tooltipContent}</span>
+        <span>{content}</span>
       </>
     } else {
-      return <>{tooltipContent}</>
+      return <>{content}</>
     }
   }
 

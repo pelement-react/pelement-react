@@ -48,7 +48,13 @@ function CodeBlock({ language = 'javascript', name, children }) {
           {children}
         </div>
         <div className="op-btns">
-          <span onClick={triggerExpand}>{expand ? '收起' : '展开'}</span>
+          <button onClick={triggerExpand} className="reset-btn el-icon op-btn el-tooltip__trigger el-tooltip__trigger">
+            <i className="el-icon" style={{ fontSize: "16px" }}>
+              <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="1.2em" height="1.2em" data-v-5d9e4641="">
+                <path fill="currentColor" d="m23 12l-7.071 7.071l-1.414-1.414L20.172 12l-5.657-5.657l1.414-1.414L23 12zM3.828 12l5.657 5.657l-1.414 1.414L1 12l7.071-7.071l1.414 1.414L3.828 12z"></path>
+              </svg>
+            </i>
+          </button>
         </div>
         <div className="code-block-wrapper" style={fullStyle}>
           <div className="code-block-pre language-react">

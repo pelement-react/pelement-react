@@ -26,6 +26,7 @@ export {
     CircleCheckFilled,
     ArrowRight,
     UserFilled,
+    CircleCheck,
 } from './Icon'
 export { default as Button } from './Button'
 export { default as Container } from './Container/Container'
@@ -46,3 +47,4 @@ export { default as Avatar } from './Avatar'
 export { default as Result } from './Result'
 export { default as Tooltip } from './Tooltip'
 export { default as Popover } from './Popover'
+export { default as Progress } from './Progress'

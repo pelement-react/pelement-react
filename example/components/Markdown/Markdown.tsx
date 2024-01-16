@@ -7,6 +7,7 @@ import TextMdx from '../../../packages/Text/index.zh-CN.mdx'
 import SwitchMdx from '../../../packages/Switch/index.zh-CN.mdx'
 import AvatarMdx from '../../../packages/Avatar/index.zh-CN.mdx'
 import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
+import ProgressMdx from '../../../packages/Progress/index.zh-CN.mdx'
 import ResultMdx from '../../../packages/Result/index.zh-CN.mdx'
 import AlertMdx from '../../../packages/Alert/index.zh-CN.mdx'
 import PopoverMdx from '../../../packages/Popover/index.zh-CN.mdx'
@@ -43,6 +44,9 @@ function DemoMdx({ name }) {
       break
     case 'collapse':
       demo = <CollapseMdx></CollapseMdx>
+      break
+    case 'progress':
+      demo = <ProgressMdx></ProgressMdx>
       break
     case 'result':
       demo = <ResultMdx></ResultMdx>

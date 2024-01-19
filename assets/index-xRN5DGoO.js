@@ -82,13 +82,13 @@ $ yarn add pelement-react\r
 $ pnpm install pelement-react
 `})})]})}function g0(e={}){const{wrapper:t}=e.components||{};return t?n.jsx(t,{...e,children:n.jsx(Ru,{...e})}):Ru(e)}function Lu(e){const t={h1:"h1",h3:"h3",h4:"h4",hr:"hr",li:"li",p:"p",ul:"ul",...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(t.h1,{children:"更新日志"}),`
 `,n.jsx(t.h3,{children:"0.0.1-alpha.5"}),`
-`,n.jsx(t.p,{children:"be pending"}),`
+`,n.jsx(t.p,{children:"2024-01-19"}),`
 `,n.jsx(t.h4,{children:"Features"}),`
 `,n.jsxs(t.ul,{children:[`
 `,n.jsx(t.li,{children:"Components add Tooltip"}),`
 `,n.jsx(t.li,{children:"Components add Popover"}),`
 `,n.jsx(t.li,{children:"Components [Icon] add CircleCheck"}),`
-`,n.jsx(t.li,{children:"Components Progress"}),`
+`,n.jsx(t.li,{children:"Components add Progress"}),`
 `]}),`
 `,n.jsx(t.hr,{}),`
 `,n.jsx(t.h3,{children:"0.0.1-alpha.4"}),`

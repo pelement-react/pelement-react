@@ -1,0 +1,53 @@
+# Popconfirm 气泡确认框
+
+import CodeBlock from '../../example/components/CodeBlock/CodeBlock'
+import PopconfirmBasic from './_example/PopconfirmBasic'
+import PopconfirmIcon from './_example/PopconfirmIcon'
+import PopconfirmEvent from './_example/PopconfirmEvent'
+
+点击某个元素弹出一个简单的气泡确认框
+
+## 基础用法
+
+在 Popconfirm 中，只有 title 属性可用，content 属性会被忽略。
+
+<CodeBlock name="PopconfirmBasic">
+  <PopconfirmBasic />
+</CodeBlock>
+
+## 自定义弹出框的内容
+
+可以在 Popconfirm 中自定义内容。
+
+<CodeBlock name="PopconfirmIcon">
+  <PopconfirmIcon />
+</CodeBlock>
+
+## 多种让 Popconfirm 出现的方法
+
+点击按钮触发事件
+
+<CodeBlock name="PopconfirmEvent">
+  <PopconfirmEvent />
+</CodeBlock>
+
+## API
+
+### Attributes
+
+| 属性名            | 说明                     | 类型                | 默认值         |
+| ----------------- | ------------------------ | ------------------- | -------------- |
+| title             | 标题                     | `string`            | —              |
+| confirmButtonText | 确认按钮文字             | `string`            | —              |
+| cancelButtonText  | 取消按钮文字             | `string`            | —              |
+| icon              | 自定义图标               | ReactNode           | QuestionFilled |
+| iconColor         | Icon 颜色                | `string`            | #f90           |
+| hideIcon          | 是否隐藏 Icon            | `boolean`           | false          |
+| width             | 弹层宽度，最小宽度 150px | `string` / `number` | 150            |
+
+### Events
+
+| 事件名    | 说明               | 类型                                                |
+| --------- | ------------------ | --------------------------------------------------- |
+| onConfirm | 点击确认按钮时触发 | (e: React.MouseEvent&lt;{}, MouseEvent&gt;) => void |
+| onCancel  | 点击取消按钮时触发 | (e: React.MouseEvent&lt;{}, MouseEvent&gt;) => void |

@@ -10,6 +10,7 @@ import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
 import ProgressMdx from '../../../packages/Progress/index.zh-CN.mdx'
 import ResultMdx from '../../../packages/Result/index.zh-CN.mdx'
 import AlertMdx from '../../../packages/Alert/index.zh-CN.mdx'
+import PopconfirmMdx from '../../../packages/Popconfirm/index.zh-CN.mdx'
 import PopoverMdx from '../../../packages/Popover/index.zh-CN.mdx'
 import TooltipMdx from '../../../packages/Tooltip/index.zh-CN.mdx'
 import DividerMsx from '../../../packages/Divider/index.zh-CN.mdx'
@@ -53,6 +54,9 @@ function DemoMdx({ name }) {
       break
     case 'alert':
       demo = <AlertMdx></AlertMdx>
+      break
+    case 'popconfirm':
+      demo = <PopconfirmMdx></PopconfirmMdx>
       break
     case 'popover':
       demo = <PopoverMdx></PopoverMdx>

@@ -25,6 +25,7 @@ function ComponentPage() {
             <NavLink to="result">Result 结果</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>
             <NavLink to="alert">Alert 提示</NavLink>
+            <NavLink to="popconfirm">Popconfirm 气泡确认框</NavLink>
             <NavLink to="popover">Popover 气泡卡片</NavLink>
             <NavLink to="tooltip">Tooltip 文字提示</NavLink>
             <p className="sidebar-group__title">Others 其他</p>
@@ -47,6 +48,7 @@ function ComponentPage() {
           <Route path="progress" element={<Markdown name="progress" />}></Route>
           <Route path="result" element={<Markdown name="result" />}></Route>
           <Route path="alert" element={<Markdown name="alert" />}></Route>
+          <Route path="popconfirm" element={<Markdown name="popconfirm" />}></Route>
           <Route path="popover" element={<Markdown name="popover" />}></Route>
           <Route path="tooltip" element={<Markdown name="tooltip" />}></Route>
           <Route path="divider" element={<Markdown name="divider" />}></Route>

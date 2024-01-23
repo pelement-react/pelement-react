@@ -7,6 +7,7 @@ export type { TextProps } from './Text/interface'
 export type { DividerProps } from './Divider/interface'
 export type { SwitchProps } from './Switch/interface'
 export type { AlertProps } from './Alert/interface'
+export type { PopconfirmProps } from './Popconfirm/interface'
 
 export {
     Edit,
@@ -27,6 +28,7 @@ export {
     ArrowRight,
     UserFilled,
     CircleCheck,
+    QuestionFilled,
 } from './Icon'
 export { default as Button } from './Button'
 export { default as Container } from './Container/Container'
@@ -48,3 +50,4 @@ export { default as Result } from './Result'
 export { default as Tooltip } from './Tooltip'
 export { default as Popover } from './Popover'
 export { default as Progress } from './Progress'
+export { default as Popconfirm } from './Popconfirm'

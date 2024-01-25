@@ -23,6 +23,7 @@ function ComponentPage() {
             <NavLink to="collapse">Collapse 折叠面板</NavLink>
             <NavLink to="progress">Progress 进度条</NavLink>
             <NavLink to="result">Result 结果</NavLink>
+            <NavLink to="tag">Tag 标签</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>
             <NavLink to="alert">Alert 提示</NavLink>
             <NavLink to="popconfirm">Popconfirm 气泡确认框</NavLink>
@@ -47,6 +48,7 @@ function ComponentPage() {
           <Route path="collapse" element={<Markdown name="collapse" />}></Route>
           <Route path="progress" element={<Markdown name="progress" />}></Route>
           <Route path="result" element={<Markdown name="result" />}></Route>
+          <Route path="tag" element={<Markdown name="tag" />}></Route>
           <Route path="alert" element={<Markdown name="alert" />}></Route>
           <Route path="popconfirm" element={<Markdown name="popconfirm" />}></Route>
           <Route path="popover" element={<Markdown name="popover" />}></Route>

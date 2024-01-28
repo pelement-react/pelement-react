@@ -26,6 +26,7 @@ function ComponentPage() {
             <NavLink to="tag">Tag 标签</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>
             <NavLink to="alert">Alert 提示</NavLink>
+            <NavLink to="dialog">Dialog 对话框</NavLink>
             <NavLink to="popconfirm">Popconfirm 气泡确认框</NavLink>
             <NavLink to="popover">Popover 气泡卡片</NavLink>
             <NavLink to="tooltip">Tooltip 文字提示</NavLink>
@@ -50,6 +51,7 @@ function ComponentPage() {
           <Route path="result" element={<Markdown name="result" />}></Route>
           <Route path="tag" element={<Markdown name="tag" />}></Route>
           <Route path="alert" element={<Markdown name="alert" />}></Route>
+          <Route path="dialog" element={<Markdown name="dialog" />}></Route>
           <Route path="popconfirm" element={<Markdown name="popconfirm" />}></Route>
           <Route path="popover" element={<Markdown name="popover" />}></Route>
           <Route path="tooltip" element={<Markdown name="tooltip" />}></Route>

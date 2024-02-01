@@ -18,6 +18,10 @@ export interface ButtonProps
   link?: boolean
   // 图标组件	
   icon?: React.ReactNode
+  // 是否为文字按钮
+  text?: boolean
+  // 是否显示文字按钮背景颜色
+  bg?: boolean
 }
 
 type Types = 'primary' | 'success' | 'info' | 'warning' | 'danger'

@@ -1,1 +1,46 @@
 # Dialog 对话框
+
+import CodeBlock from '../../example/components/CodeBlock/CodeBlock'
+import DialogBasic from './_example/DialogBasic'
+import DialogContent from './_example/DialogContent'
+import DialogHeader from './_example/DialogHeader'
+
+在保留当前页面状态的情况下，告知用户并承载相关操作。
+
+## 基础用法
+
+Dialog 弹出一个对话框，适合需要定制性更大的场景。
+
+<CodeBlock name="DialogBasic">
+  <DialogBasic />
+</CodeBlock>
+
+## 自定义内容
+
+对话框的内容可以是任何东西，甚至是一个表格或表单。 此示例显示如何在 Dialog 中使用 Element Plus 的表格和表单。
+
+<CodeBlock name="DialogContent">
+  <DialogContent />
+</CodeBlock>
+
+## 自定义头部
+
+header 可用于自定义显示标题的区域。
+
+<CodeBlock name="DialogHeader">
+  <DialogHeader />
+</CodeBlock>
+
+## API
+
+### Attributes
+
+| 属性名    | 说明                                                   | 类型                    | 默认值 |
+| --------- | ------------------------------------------------------ | ----------------------- | ------ |
+| open      | 是否显示 Dialog                                        | boolean                 | false  |
+| title     | Dialog 对话框 Dialog 的标题                            | string &#124; ReactNode | ''     |
+| width     | 对话框的宽度，默认值为 50%                             | string &#124; number    | ''     |
+| showClose | 是否显示关闭按钮                                       | boolean                 | true   |
+| footer    | footer                                                 | ReactNode               | —      |
+| onClose   | 点击遮罩层或右上角叉的回调                             | () => void              | —      |
+| header    | 对话框标题的内容；会替换标题部分，但不会移除关闭按钮。 | ReactNode               | —      |

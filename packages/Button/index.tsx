@@ -17,6 +17,8 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
     circle = false,
     disabled = false,
     link = false,
+    text = false,
+    bg = false,
     icon,
     ...rest
   } = props
@@ -40,6 +42,8 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
           (circle ? 'is-circle' : ''),
           (disabled ? 'is-disabled' : ''),
           (link ? 'is-link' : ''),
+          (text ? 'is-text' : ''),
+          (bg ? 'is-has-bg' : ''),
         )
       }
     >

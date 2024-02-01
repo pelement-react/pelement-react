@@ -9,6 +9,7 @@ export type { SwitchProps } from './Switch/interface'
 export type { AlertProps } from './Alert/interface'
 export type { PopconfirmProps } from './Popconfirm/interface'
 export type { TagProps } from './Tag/interface'
+export type { DialogProps } from './Dialog/interface'
 
 export {
     Edit,
@@ -53,3 +54,4 @@ export { default as Popover } from './Popover'
 export { default as Progress } from './Progress'
 export { default as Popconfirm } from './Popconfirm'
 export { default as Tag } from './Tag'
+export { default as Dialog } from './Dialog'

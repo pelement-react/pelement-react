@@ -1,0 +1,43 @@
+# Table 表格
+
+import CodeBlock from '../../example/components/CodeBlock/CodeBlock'
+import TableBasic from './_example/TableBasic'
+import TableStripe from './_example/TableStripe'
+import TableBorder from './_example/TableBorder'
+
+用于展示多条结构类似的数据， 可对数据进行排序、筛选、对比或其他自定义操作。
+
+## 基础表格
+
+基础的表格展示用法。
+
+<CodeBlock name="TableBasic">
+  <TableBasic />
+</CodeBlock>
+
+## 带斑马纹表格
+
+使用带斑马纹的表格，可以更容易区分出不同行的数据。
+
+`stripe` 可以创建带斑马纹的表格。 如果 `true`, 表格将会带有斑马纹。
+
+<CodeBlock name="TableStripe">
+  <TableStripe />
+</CodeBlock>
+
+## 带边框表格
+
+默认情况下，Table 组件是不具有竖直方向的边框的， 如果需要，可以使用 `border` 属性，把该属性设置为 `true` 即可启用。
+
+<CodeBlock name="TableBorder">
+  <TableBorder />
+</CodeBlock>
+
+## Table 属性
+
+| 属性名  | 说明               | 类型    | 默认值 |
+| ------- | ------------------ | ------- | ------ |
+| columns | 表格列的配置描述   | any[]   | —      |
+| data    | 显示的数据         | any[]   | —      |
+| stripe  | 是否为斑马纹 table | boolean | false  |
+| border  | 是否带有纵向边框   | boolean | false  |

@@ -9,6 +9,7 @@ import AvatarMdx from '../../../packages/Avatar/index.zh-CN.mdx'
 import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
 import ProgressMdx from '../../../packages/Progress/index.zh-CN.mdx'
 import ResultMdx from '../../../packages/Result/index.zh-CN.mdx'
+import TableMdx from '../../../packages/Table/index.zh-CN.mdx'
 import TagMdx from '../../../packages/Tag/index.zh-CN.mdx'
 import AlertMdx from '../../../packages/Alert/index.zh-CN.mdx'
 import DialogMdx from '../../../packages/Dialog/index.zh-CN.mdx'
@@ -54,6 +55,9 @@ function DemoMdx({ name }) {
       break
     case 'result':
       demo = <ResultMdx></ResultMdx>
+      break
+    case 'table':
+      demo = <TableMdx></TableMdx>
       break
     case 'tag':
       demo = <TagMdx></TagMdx>

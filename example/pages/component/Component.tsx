@@ -23,6 +23,7 @@ function ComponentPage() {
             <NavLink to="collapse">Collapse 折叠面板</NavLink>
             <NavLink to="progress">Progress 进度条</NavLink>
             <NavLink to="result">Result 结果</NavLink>
+            <NavLink to="table">Table 表格</NavLink>
             <NavLink to="tag">Tag 标签</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>
             <NavLink to="alert">Alert 提示</NavLink>
@@ -50,6 +51,7 @@ function ComponentPage() {
           <Route path="collapse" element={<Markdown name="collapse" />}></Route>
           <Route path="progress" element={<Markdown name="progress" />}></Route>
           <Route path="result" element={<Markdown name="result" />}></Route>
+          <Route path="table" element={<Markdown name="table" />}></Route>
           <Route path="tag" element={<Markdown name="tag" />}></Route>
           <Route path="alert" element={<Markdown name="alert" />}></Route>
           <Route path="dialog" element={<Markdown name="dialog" />}></Route>

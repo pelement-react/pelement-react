@@ -16,6 +16,7 @@ function ComponentPage() {
             <NavLink to="layout">Layout 布局</NavLink>
             <NavLink to="link">Link 链接</NavLink>
             <NavLink to="text">Text 文本</NavLink>
+            <NavLink to="scrollbar">Scrollbar 滚动条</NavLink>
             <p className="sidebar-group__title">Form 表单组件</p>
             <NavLink to="switch">Switch 开关</NavLink>
             <p className="sidebar-group__title">Data 数据展示</p>
@@ -46,6 +47,7 @@ function ComponentPage() {
           <Route path="layout" element={<Markdown name="layout" />}></Route>
           <Route path="link" element={<Markdown name="link" />}></Route>
           <Route path="text" element={<Markdown name="text" />}></Route>
+          <Route path="scrollbar" element={<Markdown name="scrollbar" />}></Route>
           <Route path="switch" element={<Markdown name="switch" />}></Route>
           <Route path="avatar" element={<Markdown name="avatar" />}></Route>
           <Route path="collapse" element={<Markdown name="collapse" />}></Route>

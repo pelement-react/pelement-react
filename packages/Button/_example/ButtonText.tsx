@@ -10,8 +10,9 @@ function ButtonText() {
     { type: 'danger', text: 'danger' },
   ]
 
-  const textList = buttons.map(button =>
+  const textList = buttons.map((button, index) =>
     <Button
+      key={index}
       type={button.type as any}
       text
     >
@@ -19,8 +20,9 @@ function ButtonText() {
     </Button>
   )
 
-  const bgList = buttons.map(button =>
+  const bgList = buttons.map((button, index) =>
     <Button
+      key={index}
       type={button.type as any}
       text
       bg
@@ -29,8 +31,9 @@ function ButtonText() {
     </Button>
   )
 
-  const disabledList = buttons.map(button =>
+  const disabledList = buttons.map((button, index) =>
     <Button
+      key={index}
       type={button.type as any}
       text
       disabled

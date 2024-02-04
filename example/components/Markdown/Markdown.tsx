@@ -4,6 +4,7 @@ import IconMdx from '../../../packages/Icon/index.zh-CN.mdx'
 import LayoutMdx from '../../../packages/Layout/index.zh-CN.mdx'
 import LinkMdx from '../../../packages/Link/index.zh-CN.mdx'
 import TextMdx from '../../../packages/Text/index.zh-CN.mdx'
+import ScrollbarMdx from '../../../packages/Scrollbar/index.zh-CN.mdx'
 import SwitchMdx from '../../../packages/Switch/index.zh-CN.mdx'
 import AvatarMdx from '../../../packages/Avatar/index.zh-CN.mdx'
 import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
@@ -40,6 +41,9 @@ function DemoMdx({ name }) {
       break
     case 'text':
       demo = <TextMdx></TextMdx>
+      break
+    case 'scrollbar':
+      demo = <ScrollbarMdx></ScrollbarMdx>
       break
     case 'switch':
       demo = <SwitchMdx></SwitchMdx>

@@ -1,8 +1,9 @@
-import { CSSProperties, forwardRef } from 'react'
+import { CSSProperties, forwardRef, useRef } from 'react'
 import clsx from 'clsx'
 import { DrawerProps } from './interface'
 import './style'
 import { Close } from 'pelement-react'
+import { useOnClickOutside } from '../_util/hooks/useOnClickOutside'
 
 const Drawer: React.ForwardRefRenderFunction<HTMLDivElement, DrawerProps> = (
   props,
@@ -23,10 +24,18 @@ const Drawer: React.ForwardRefRenderFunction<HTMLDivElement, DrawerProps> = (
     children,
   } = props
 
+  const domRef = useRef<HTMLDivElement>(null)
+
   const divStyle: CSSProperties = {
     ...style,
     display: open ? '' : 'none'
   }
+
+  useOnClickOutside(domRef, () => {
+    if (open && onClose) {
+      onClose()
+    }
+  })
 
   function Header() {
     if (header) {
@@ -52,6 +61,7 @@ const Drawer: React.ForwardRefRenderFunction<HTMLDivElement, DrawerProps> = (
       }
     >
       <div
+        ref={domRef}
         className={
           clsx(
             'el-drawer open',

@@ -12,6 +12,7 @@ export type { TagProps } from './Tag/interface'
 export type { DialogProps } from './Dialog/interface'
 export type { DrawerProps } from './Drawer/interface'
 export type { TableProps } from './Table/interface'
+export type { ScrollbarProps } from './Scrollbar/interface'
 
 export {
     Edit,
@@ -59,3 +60,4 @@ export { default as Tag } from './Tag'
 export { default as Dialog } from './Dialog'
 export { default as Drawer } from './Drawer'
 export { default as Table } from './Table'
+export { default as Scrollbar } from './Scrollbar'

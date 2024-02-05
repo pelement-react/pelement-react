@@ -4,4 +4,6 @@ export interface ScrollbarProps
   extends Omit<HTMLAttributes<HTMLDivElement>, 'className' | 'ref'> {
   style?: CSSProperties
   className?: string | string[]
+  // 滚动条高度	
+  height?: string | number
 }

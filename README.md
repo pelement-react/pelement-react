@@ -6,9 +6,12 @@ pelement react
 
 [![npm package](https://img.shields.io/npm/v/pelement-react.svg?style=flat-square)](https://www.npmjs.com/package/pelement-react) [![npm downloads](http://img.shields.io/npm/dm/pelement-react.svg)](https://npmcharts.com/compare/pelement-react?minimal=true)
 
-An enterprise-class UI components based on Element Plus and React.
+pelement-react - A React UI library
 
 </div>
+
+- 💪 React Composition API
+- 🔥 Written in TypeScript
 
 ## Installation
 

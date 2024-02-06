@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useRef, useState } from 'react'
+import { forwardRef, MouseEvent, useEffect, useRef, useState } from 'react'
 import clsx from 'clsx'
 import { ScrollbarProps } from './interface'
 import './style'
@@ -10,18 +10,20 @@ const Scrollbar: React.ForwardRefRenderFunction<HTMLDivElement, ScrollbarProps> 
   const {
     style,
     className,
+    minSize = 20,
     children,
   } = props
 
   const containerRef = useRef(null)
   const wrapRef = useRef(null)
   const viewRef = useRef(null)
+  const barRef = useRef(null)
   // 鼠标移入移出
   const [isEnter, setIsEnter] = useState(false)
   // 是否展示滚动条
   const [showBar, setShowBar] = useState(false)
   // 滚动条高度
-  const [thumbHeight, setThumbHeight] = useState('')
+  const [thumbHeight, setThumbHeight] = useState(0)
   const [thumbTransform, setThumbTransform] = useState('translateY(0%)')
 
   useOnMouseEvent(containerRef, (_e, type) => {
@@ -38,20 +40,34 @@ const Scrollbar: React.ForwardRefRenderFunction<HTMLDivElement, ScrollbarProps> 
       setShowBar(showBarResult)
 
       // 获取滚动条的高度
-      setThumbHeight(wrapHeight / viewHeight * wrapHeight + 'px')
+      setThumbHeight(Math.max(wrapHeight / viewHeight * wrapHeight, minSize))
     }
   }, [children])
 
   // 滚动事件
   function handlerScroll() {
-    if (wrapRef.current && viewRef.current) {
+    if (wrapRef.current && viewRef.current && barRef.current) {
       // 窗口高度
       const wrapHeight = (wrapRef.current as HTMLElement).offsetHeight
       // 滚动高度
-      const viewHeight = (viewRef.current as HTMLElement).scrollHeight
+      const wrapScrollHeight = (wrapRef.current as HTMLElement).scrollHeight
       const scrollTop = (wrapRef.current as HTMLElement).scrollTop
-      setThumbTransform(`translateY(${scrollTop / (viewHeight - wrapHeight) * 100}%)`)
+      // 滚动条高度
+      const barHeight = (barRef.current as HTMLElement).offsetHeight
+
+      // 滚动位置
+      setThumbTransform(`translateY(${(scrollTop) / (wrapScrollHeight - wrapHeight) * ((barHeight - thumbHeight) / thumbHeight) * 100}%)`)
     }
+  }
+
+  // 点击滚动条
+  function handlerBar(e: MouseEvent<HTMLDivElement>) {
+    console.log(e)
+  }
+
+  // 阻止点击事件冒泡
+  function handlerThumb(e: MouseEvent<HTMLDivElement>) {
+    e.stopPropagation()
   }
 
   return (
@@ -82,8 +98,13 @@ const Scrollbar: React.ForwardRefRenderFunction<HTMLDivElement, ScrollbarProps> 
         <div className="el-scrollbar__bar is-horizontal" style={{ display: 'none' }}>
           <div className="el-scrollbar__thumb" style={{ transform: 'translateX(0%)' }}></div>
         </div>
-        <div className="el-scrollbar__bar is-vertical" style={{ display: showBar && isEnter ? '' : 'none' }}>
-          <div className="el-scrollbar__thumb" style={{ height: thumbHeight, transform: thumbTransform }}></div>
+        <div
+          ref={barRef}
+          className="el-scrollbar__bar is-vertical"
+          style={{ display: showBar && isEnter ? '' : 'none' }}
+          onClick={handlerBar}
+        >
+          <div onClick={handlerThumb} className="el-scrollbar__thumb" style={{ height: `${thumbHeight}px`, transform: thumbTransform }}></div>
         </div>
       </div>
     </>

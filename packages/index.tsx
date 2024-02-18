@@ -13,6 +13,7 @@ export type { DialogProps } from './Dialog/interface'
 export type { DrawerProps } from './Drawer/interface'
 export type { TableProps } from './Table/interface'
 export type { ScrollbarProps } from './Scrollbar/interface'
+export type { BadgeProps } from './Badge/interface'
 
 export {
     Edit,
@@ -34,6 +35,7 @@ export {
     UserFilled,
     CircleCheck,
     QuestionFilled,
+    Share,
 } from './Icon'
 export { default as Button } from './Button'
 export { default as Container } from './Container/Container'
@@ -61,3 +63,4 @@ export { default as Dialog } from './Dialog'
 export { default as Drawer } from './Drawer'
 export { default as Table } from './Table'
 export { default as Scrollbar } from './Scrollbar'
+export { default as Badge } from './Badge'

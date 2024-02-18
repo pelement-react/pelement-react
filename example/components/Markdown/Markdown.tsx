@@ -7,6 +7,7 @@ import TextMdx from '../../../packages/Text/index.zh-CN.mdx'
 import ScrollbarMdx from '../../../packages/Scrollbar/index.zh-CN.mdx'
 import SwitchMdx from '../../../packages/Switch/index.zh-CN.mdx'
 import AvatarMdx from '../../../packages/Avatar/index.zh-CN.mdx'
+import BadgeMdx from '../../../packages/Badge/index.zh-CN.mdx'
 import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
 import ProgressMdx from '../../../packages/Progress/index.zh-CN.mdx'
 import ResultMdx from '../../../packages/Result/index.zh-CN.mdx'
@@ -50,6 +51,9 @@ function DemoMdx({ name }) {
       break
     case 'avatar':
       demo = <AvatarMdx></AvatarMdx>
+      break
+    case 'badge':
+      demo = <BadgeMdx></BadgeMdx>
       break
     case 'collapse':
       demo = <CollapseMdx></CollapseMdx>

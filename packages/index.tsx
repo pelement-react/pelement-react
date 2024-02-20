@@ -14,6 +14,7 @@ export type { DrawerProps } from './Drawer/interface'
 export type { TableProps } from './Table/interface'
 export type { ScrollbarProps } from './Scrollbar/interface'
 export type { BadgeProps } from './Badge/interface'
+export type { RateProps } from './Rate/interface'
 
 export {
     Edit,
@@ -64,3 +65,4 @@ export { default as Drawer } from './Drawer'
 export { default as Table } from './Table'
 export { default as Scrollbar } from './Scrollbar'
 export { default as Badge } from './Badge'
+export { default as Rate } from './Rate'

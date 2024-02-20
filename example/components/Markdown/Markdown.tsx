@@ -6,6 +6,7 @@ import LinkMdx from '../../../packages/Link/index.zh-CN.mdx'
 import TextMdx from '../../../packages/Text/index.zh-CN.mdx'
 import ScrollbarMdx from '../../../packages/Scrollbar/index.zh-CN.mdx'
 import SwitchMdx from '../../../packages/Switch/index.zh-CN.mdx'
+import RateMdx from '../../../packages/Rate/index.zh-CN.mdx'
 import AvatarMdx from '../../../packages/Avatar/index.zh-CN.mdx'
 import BadgeMdx from '../../../packages/Badge/index.zh-CN.mdx'
 import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
@@ -48,6 +49,9 @@ function DemoMdx({ name }) {
       break
     case 'switch':
       demo = <SwitchMdx></SwitchMdx>
+      break
+    case 'rate':
+      demo = <RateMdx></RateMdx>
       break
     case 'avatar':
       demo = <AvatarMdx></AvatarMdx>

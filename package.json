@@ -20,14 +20,7 @@
   "type": "module",
   "main": "./dist/pelement-react.umd.cjs",
   "module": "./dist/pelement-react.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/pelement-react.umd.cjs",
-      "import": "./dist/pelement-react.js"
-    },
-    "./style": "./dist/style.css"
-  },
+  "typings": "./dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },

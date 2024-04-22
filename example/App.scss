@@ -14,7 +14,6 @@
     .header-container {
       display: flex;
       justify-content: space-between;
-      max-width: 1362px;
       margin: 0 auto;
 
       .logo-container {
@@ -90,7 +89,7 @@
   top: 55px;
   bottom: 0;
   left: 0;
-  padding: 48px 32px 96px 100px;
+  padding: 48px 32px;
   width: 190px;
   overflow: auto;
 
@@ -120,7 +119,7 @@
 }
 
 .page-content {
-  padding: 48px 100px 0 380px;
+  padding: 48px 64px 48px 318px;
 
   .blog-content {
     img {

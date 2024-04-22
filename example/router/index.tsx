@@ -12,7 +12,7 @@ function RootRoute(): JSX.Element {
         <Route path="home" element={<HomePage />} />
         <Route path="guide" element={<Navigate to="changelog" />} />
         <Route path="guide/*" element={<GuidePage />} />
-        <Route path="component" element={<Navigate to="button" />} />
+        <Route path="component" element={<Navigate to="overview" />} />
         <Route path="component/*" element={<ComponentPage />} />
         <Route path="blog" element={<Navigate to="build-error" />} />
         <Route path="blog/*" element={<BlogPage />} />

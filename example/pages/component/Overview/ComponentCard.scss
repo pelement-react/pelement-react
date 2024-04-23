@@ -18,6 +18,10 @@
     padding: 8px 12px;
   }
 
+  .el-card__body {
+    display: flex;
+  }
+
   svg {
     width: 100%;
     height: auto;

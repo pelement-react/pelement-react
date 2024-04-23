@@ -1,7 +1,4 @@
-import { Routes, Route, NavLink } from 'react-router-dom'
-import Markdown from '../../components/Markdown/Markdown'
-import Overview from './Overview/Overview'
-import BorderPage from './border/Border'
+import { NavLink, Outlet } from 'react-router-dom'
 
 function ComponentPage() {
   return (
@@ -44,33 +41,7 @@ function ComponentPage() {
         </div>
       </aside>
       <main className="page-content">
-        <Routes>
-          <Route path="overview" element={<Overview />}></Route>
-          <Route path="button" element={<Markdown name="button" />}></Route>
-          <Route path="border" element={<BorderPage />}></Route>
-          <Route path="container" element={<Markdown name="container" />}></Route>
-          <Route path="icon" element={<Markdown name="icon" />}></Route>
-          <Route path="layout" element={<Markdown name="layout" />}></Route>
-          <Route path="link" element={<Markdown name="link" />}></Route>
-          <Route path="text" element={<Markdown name="text" />}></Route>
-          <Route path="scrollbar" element={<Markdown name="scrollbar" />}></Route>
-          <Route path="switch" element={<Markdown name="switch" />}></Route>
-          <Route path="rate" element={<Markdown name="rate" />}></Route>
-          <Route path="avatar" element={<Markdown name="avatar" />}></Route>
-          <Route path="badge" element={<Markdown name="badge" />}></Route>
-          <Route path="collapse" element={<Markdown name="collapse" />}></Route>
-          <Route path="progress" element={<Markdown name="progress" />}></Route>
-          <Route path="result" element={<Markdown name="result" />}></Route>
-          <Route path="table" element={<Markdown name="table" />}></Route>
-          <Route path="tag" element={<Markdown name="tag" />}></Route>
-          <Route path="alert" element={<Markdown name="alert" />}></Route>
-          <Route path="dialog" element={<Markdown name="dialog" />}></Route>
-          <Route path="drawer" element={<Markdown name="drawer" />}></Route>
-          <Route path="popconfirm" element={<Markdown name="popconfirm" />}></Route>
-          <Route path="popover" element={<Markdown name="popover" />}></Route>
-          <Route path="tooltip" element={<Markdown name="tooltip" />}></Route>
-          <Route path="divider" element={<Markdown name="divider" />}></Route>
-        </Routes>
+        <Outlet></Outlet>
       </main>
     </>
   )

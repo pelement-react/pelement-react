@@ -1,6 +1,4 @@
-import { Routes, Route, NavLink } from 'react-router-dom'
-import BuildError from './build-error.zh-CN.mdx'
-import CannotFindModule from './cannot-find-module.zh-CN.mdx'
+import { NavLink, Outlet } from 'react-router-dom'
 
 function BlogPage() {
   return (
@@ -15,10 +13,7 @@ function BlogPage() {
       </aside>
       <main className="page-content">
         <div className="blog-content">
-          <Routes>
-            <Route path="build-error" element={<BuildError />}></Route>
-            <Route path="cannot-find-module" element={<CannotFindModule />}></Route>
-          </Routes>
+          <Outlet></Outlet>
         </div>
       </main>
     </>

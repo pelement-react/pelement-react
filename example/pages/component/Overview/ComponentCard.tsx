@@ -1,11 +1,19 @@
+import { useNavigate } from 'react-router-dom'
 import './ComponentCard.scss'
 
 function ComponentCard(props) {
-  const { title, svg } = props
+  const { title, path, svg } = props
+  const navigate = useNavigate()
+
+  function goPage() {
+    if (path) {
+      navigate(path)
+    }
+  }
 
   return (
     <>
-      <div className="el-card is-hover-shadow">
+      <div className="el-card is-hover-shadow" onClick={goPage}>
         <div className="el-card__header">
           <span className="el-text is-truncated">{title}</span>
         </div>

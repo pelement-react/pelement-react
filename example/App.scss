@@ -1,5 +1,5 @@
 .navbar {
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -119,7 +119,7 @@
 }
 
 .page-content {
-  padding: 48px 64px 48px 318px;
+  padding: 140px 64px 48px 318px;
 
   .blog-content {
     img {

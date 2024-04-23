@@ -1,4 +1,4 @@
-import RootRoute from './router'
+import { Outlet } from 'react-router-dom'
 import './App.scss'
 import Header from './components/Header'
 
@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="App">
         <Header />
-        <RootRoute />
+        <Outlet></Outlet>
       </div>
     </>
   )

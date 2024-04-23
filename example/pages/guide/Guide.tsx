@@ -1,7 +1,4 @@
-import { Routes, Route, NavLink } from 'react-router-dom'
-import InstallationMdx from './installation.zh-CN.mdx'
-import ChangelogMdx from './changelog.zh-CN.mdx'
-import RecommendationMdx from './recommendation.zh-CN.mdx'
+import { NavLink, Outlet } from 'react-router-dom'
 
 function GuidePage() {
   return (
@@ -21,11 +18,7 @@ function GuidePage() {
       <main className="page-content">
         <div className="blog-content">
           <div className="markdown-body">
-            <Routes>
-              <Route path="installation" element={<InstallationMdx />}></Route>
-              <Route path="changelog" element={<ChangelogMdx />}></Route>
-              <Route path="recommendation" element={<RecommendationMdx />}></Route>
-            </Routes>
+            <Outlet></Outlet>
           </div>
         </div>
       </main>

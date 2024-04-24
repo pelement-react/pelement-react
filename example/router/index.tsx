@@ -12,6 +12,7 @@ const BorderPage = lazy(() => import('../pages/component/border/Border'))
 const BlogPage = lazy(() => import('../pages/blog/Blog'))
 const BuildError = lazy(() => import('../pages/blog/build-error.zh-CN.mdx'))
 const CannotFindModule = lazy(() => import('../pages/blog/cannot-find-module.zh-CN.mdx'))
+const NotFound = lazy(() => import('../pages/home/NotFound'))
 
 function SuspensePage(props) {
   const { children } = props;
@@ -29,10 +30,10 @@ const DefineRoute = () => {
   return useRoutes(
     [
       { path: '/', element: <Navigate to="/component/button" /> },
-      { path: '/home', element: <HomePage /> },
-      { path: '/guide', element: <Navigate to="changelog" /> },
+      { path: 'home', element: <HomePage /> },
+      { path: 'guide', element: <Navigate to="changelog" /> },
       {
-        path: '/guide/*',
+        path: 'guide',
         element: <SuspensePage><GuidePage /></SuspensePage>,
         children: [
           { path: 'installation', element: <SuspensePage><InstallationMdx /></SuspensePage> },
@@ -40,9 +41,9 @@ const DefineRoute = () => {
           { path: 'recommendation', element: <SuspensePage><RecommendationMdx /></SuspensePage> },
         ]
       },
-      { path: '/component', element: <Navigate to="overview" /> },
+      { path: 'component', element: <Navigate to="overview" /> },
       {
-        path: '/component/*',
+        path: 'component',
         element: <SuspensePage><ComponentPage /></SuspensePage>,
         children: [
           { path: 'overview', element: <SuspensePage><Overview /></SuspensePage> },
@@ -54,6 +55,7 @@ const DefineRoute = () => {
           { path: 'link', element: <Markdown name="link" /> },
           { path: 'text', element: <Markdown name="text" /> },
           { path: 'scrollbar', element: <Markdown name="scrollbar" /> },
+          { path: 'space', element: <Markdown name="space" /> },
           { path: 'switch', element: <Markdown name="switch" /> },
           { path: 'rate', element: <Markdown name="rate" /> },
           { path: 'avatar', element: <Markdown name="avatar" /> },
@@ -72,15 +74,16 @@ const DefineRoute = () => {
           { path: 'divider', element: <Markdown name="divider" /> },
         ]
       },
-      { path: '/blog', element: <Navigate to="build-error" /> },
+      { path: 'blog', element: <Navigate to="build-error" /> },
       {
-        path: '/blog',
+        path: 'blog',
         element: <SuspensePage><BlogPage /></SuspensePage>,
         children: [
           { path: 'build-error', element: <SuspensePage><BuildError /></SuspensePage> },
           { path: 'cannot-find-module', element: <SuspensePage><CannotFindModule /></SuspensePage> },
         ]
-      }
+      },
+      { path: '*', element: <SuspensePage><NotFound /></SuspensePage> }
     ]
   )
 }

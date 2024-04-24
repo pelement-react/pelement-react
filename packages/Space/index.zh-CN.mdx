@@ -1,0 +1,89 @@
+# Space 间距
+
+import CodeBlock from '../../example/components/CodeBlock/CodeBlock'
+import SpaceBasic from './_example/SpaceBasic'
+import SpaceDirection from './_example/SpaceDirection'
+import SpaceSize from './_example/SpaceSize'
+import SpaceSize2 from './_example/SpaceSize2'
+import SpaceWrap from './_example/SpaceWrap'
+import SpaceSpacer from './_example/SpaceSpacer'
+import SpaceSpacer2 from './_example/SpaceSpacer2'
+import SpaceAlignment from './_example/SpaceAlignment'
+
+虽然我们拥有 Divider 组件，但很多时候我们需要不是一个被 Divider 组件 分割开的页面结构，因此我们会重复的使用很多的 Divider 组件，这在我们的开发效率上造成了一定的困扰。 间距组件就是为了解决这种困扰应运而生的。
+
+## 基础用法
+
+最基础的用法，通过这个组件来给组件之间提供统一的间距。
+
+通过间距组件来给多个组件之间提供间距
+
+<CodeBlock name="SpaceBasic">
+  <SpaceBasic />
+</CodeBlock>
+
+## 垂直布局
+
+使用 direction 来控制布局的方式, 背后实际上是利用了 flex-direction 来控制.
+
+我们也提供垂直布局方式。
+
+<CodeBlock name="SpaceDirection">
+  <SpaceDirection />
+</CodeBlock>
+
+## 控制间距的大小
+
+通过调整 size 的值来控制间距的大小
+
+使用内置的 small、default、large 来设置间距大小，分别对应 8px、12px 和 16px 的间距。 默认的间距大小为 small，也就是 8px。
+
+您也可以通过自定义的 size 来控制大小， 参见下一个部分。
+
+<CodeBlock name="SpaceSize">
+  <SpaceSize />
+</CodeBlock>
+
+## 自定义 Size
+
+很多时候，内建的大小不满足设计师的要求，我们可以通过传入自己定义的大小 (数值类型) 来设置。
+
+<CodeBlock name="SpaceSize2">
+  <SpaceSize2 />
+</CodeBlock>
+
+## 自动换行
+
+在 **水平 (horizontal) ** 模式下，通过使用 wrap（布尔类型）来控制自动换行行为。
+
+利用 wrap 属性控制换行
+
+<CodeBlock name="SpaceWrap">
+  <SpaceWrap />
+</CodeBlock>
+
+## 行间分隔符
+
+有时候，仅仅在行间加空白并不能满足我们的日常需求，此时分隔符 (spacer) 就可以发挥非常好的作用了。
+
+## 字母数字类型分隔符
+
+<CodeBlock name="SpaceSpacer">
+  <SpaceSpacer />
+</CodeBlock>
+
+## 分隔符还可以是 ReactNode 类型
+
+<CodeBlock name="SpaceSpacer2">
+  <SpaceSpacer2 />
+</CodeBlock>
+
+## 对齐方式
+
+设置该值可以调整所有子节点在容器内的对齐方式，可设置的值与 align-items 一致。
+
+使用 alignment 属性来对齐
+
+<CodeBlock name="SpaceAlignment">
+  <SpaceAlignment />
+</CodeBlock>

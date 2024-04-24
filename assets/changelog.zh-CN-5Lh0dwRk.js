@@ -1,4 +1,4 @@
-import{j as n}from"./index-3Vf0_yvU.js";function s(l){const e={h1:"h1",h3:"h3",h4:"h4",hr:"hr",li:"li",p:"p",ul:"ul",...l.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"更新日志"}),`
+import{j as n}from"./index-9Kg1bPa6.js";function s(l){const e={h1:"h1",h3:"h3",h4:"h4",hr:"hr",li:"li",p:"p",ul:"ul",...l.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"更新日志"}),`
 `,n.jsx(e.h3,{children:"0.0.1-alpha.10"}),`
 `,n.jsx(e.p,{children:"be pending"}),`
 `,n.jsx(e.h4,{children:"Features"}),`

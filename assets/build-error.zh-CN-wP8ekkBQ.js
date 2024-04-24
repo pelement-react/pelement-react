@@ -1,4 +1,4 @@
-import{j as e}from"./index-9Kg1bPa6.js";const l="/pelement-react/assets/build-error-001-HBI716zv.jpg",o="/pelement-react/assets/build-error-002-fg75_WyZ.jpg";function r(t){const n={code:"code",h1:"h1",p:"p",pre:"pre",...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.h1,{children:"build 构建打包时报错：Could not find a declaration file for module 'pelement-react'."}),`
+import{j as e}from"./index-AxARp8ue.js";const l="/pelement-react/assets/build-error-001-HBI716zv.jpg",o="/pelement-react/assets/build-error-002-fg75_WyZ.jpg";function r(t){const n={code:"code",h1:"h1",p:"p",pre:"pre",...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.h1,{children:"build 构建打包时报错：Could not find a declaration file for module 'pelement-react'."}),`
 `,e.jsx(n.p,{children:"引入pelement-react，构建生产包的时候，报错如下"}),`
 `,e.jsx("img",{src:l,alt:"build-error-001"}),`
 `,e.jsx(n.p,{children:"错误代码"}),`

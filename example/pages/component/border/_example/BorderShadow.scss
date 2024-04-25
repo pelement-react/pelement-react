@@ -1,0 +1,44 @@
+.border-shadow {
+  .flex {
+    display: flex;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .inline-flex {
+    display: inline-flex;
+    height: 7.5rem;
+    width: 7.5rem;
+    margin: 0.5rem;
+  }
+
+  .demo-shadow-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}

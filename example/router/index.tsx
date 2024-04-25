@@ -8,7 +8,6 @@ const ChangelogMdx = lazy(() => import('../pages/guide/changelog.zh-CN.mdx'))
 const RecommendationMdx = lazy(() => import('../pages/guide/recommendation.zh-CN.mdx'))
 const ComponentPage = lazy(() => import('../pages/component/Component'))
 const Overview = lazy(() => import('../pages/component/Overview/Overview'))
-const BorderPage = lazy(() => import('../pages/component/border/Border'))
 const BlogPage = lazy(() => import('../pages/blog/Blog'))
 const BuildError = lazy(() => import('../pages/blog/build-error.zh-CN.mdx'))
 const CannotFindModule = lazy(() => import('../pages/blog/cannot-find-module.zh-CN.mdx'))
@@ -48,7 +47,7 @@ const DefineRoute = () => {
         children: [
           { path: 'overview', element: <SuspensePage><Overview /></SuspensePage> },
           { path: 'button', element: <Markdown name="button" /> },
-          { path: 'border', element: <SuspensePage><BorderPage /></SuspensePage> },
+          { path: 'border', element: <Markdown name="border" /> },
           { path: 'container', element: <Markdown name="container" /> },
           { path: 'icon', element: <Markdown name="icon" /> },
           { path: 'layout', element: <Markdown name="layout" /> },

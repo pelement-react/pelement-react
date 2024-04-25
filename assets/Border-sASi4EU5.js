@@ -1,1 +1,0 @@
-import{j as n}from"./index-AxARp8ue.js";function r(e){const t={h1:"h1",...e.components};return n.jsx(t.h1,{children:"Border 边框"})}function o(e={}){const{wrapper:t}=e.components||{};return t?n.jsx(t,{...e,children:n.jsx(r,{...e})}):r(e)}function s(){return n.jsx(n.Fragment,{children:n.jsx("div",{className:"markdown-body",children:n.jsx(o,{})})})}export{s as default};

@@ -18,6 +18,7 @@ function ComponentPage() {
             <NavLink to="text">Text 文本</NavLink>
             <NavLink to="scrollbar">Scrollbar 滚动条</NavLink>
             <NavLink to="space">Space 间距</NavLink>
+            <NavLink to="typography">Typography 排版</NavLink>
             <p className="sidebar-group__title">Form 表单组件</p>
             <NavLink to="switch">Switch 开关</NavLink>
             <NavLink to="rate">Rate 评分</NavLink>

@@ -9,6 +9,7 @@ const LinkMdx = lazy(() => import('../../../packages/Link/index.zh-CN.mdx'))
 const TextMdx = lazy(() => import('../../../packages/Text/index.zh-CN.mdx'))
 const ScrollbarMdx = lazy(() => import('../../../packages/Scrollbar/index.zh-CN.mdx'))
 const SpaceMdx = lazy(() => import('../../../packages/Space/index.zh-CN.mdx'))
+const TypographyMdx = lazy(() => import('../../pages/component/typography/typography.zh-CN.mdx'))
 const SwitchMdx = lazy(() => import('../../../packages/Switch/index.zh-CN.mdx'))
 const RateMdx = lazy(() => import('../../../packages/Rate/index.zh-CN.mdx'))
 const AvatarMdx = lazy(() => import('../../../packages/Avatar/index.zh-CN.mdx'))
@@ -57,6 +58,9 @@ function DemoMdx({ name }) {
       break
     case 'space':
       demo = <SuspenseContent><SpaceMdx /></SuspenseContent>
+      break
+    case 'typography':
+      demo = <TypographyMdx></TypographyMdx>
       break
     case 'switch':
       demo = <SuspenseContent><SwitchMdx /></SuspenseContent>

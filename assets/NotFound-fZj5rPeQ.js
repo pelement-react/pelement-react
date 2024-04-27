@@ -1,0 +1,1 @@
+import{j as n}from"./index-YfsbNJ80.js";function t(){return n.jsx(n.Fragment,{children:n.jsx("div",{className:"notfound-page",children:n.jsx("div",{children:"404, not found"})})})}export{t as default};

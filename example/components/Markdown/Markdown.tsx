@@ -1,107 +1,113 @@
-import ButtonMdx from '../../../packages/Button/index.zh-CN.mdx'
-import BorderMdx from '../../pages/component/border/border.zh-CN.mdx'
-import ContainerMdx from '../../../packages/Container/index.zh-CN.mdx'
-import IconMdx from '../../../packages/Icon/index.zh-CN.mdx'
-import LayoutMdx from '../../../packages/Layout/index.zh-CN.mdx'
-import LinkMdx from '../../../packages/Link/index.zh-CN.mdx'
-import TextMdx from '../../../packages/Text/index.zh-CN.mdx'
-import ScrollbarMdx from '../../../packages/Scrollbar/index.zh-CN.mdx'
-import SpaceMdx from '../../../packages/Space/index.zh-CN.mdx'
-import SwitchMdx from '../../../packages/Switch/index.zh-CN.mdx'
-import RateMdx from '../../../packages/Rate/index.zh-CN.mdx'
-import AvatarMdx from '../../../packages/Avatar/index.zh-CN.mdx'
-import BadgeMdx from '../../../packages/Badge/index.zh-CN.mdx'
-import CollapseMdx from '../../../packages/Collapse/index.zh-CN.mdx'
-import ProgressMdx from '../../../packages/Progress/index.zh-CN.mdx'
-import ResultMdx from '../../../packages/Result/index.zh-CN.mdx'
-import TableMdx from '../../../packages/Table/index.zh-CN.mdx'
-import TagMdx from '../../../packages/Tag/index.zh-CN.mdx'
-import AlertMdx from '../../../packages/Alert/index.zh-CN.mdx'
-import DialogMdx from '../../../packages/Dialog/index.zh-CN.mdx'
-import DrawerMdx from '../../../packages/Drawer/index.zh-CN.mdx'
-import PopconfirmMdx from '../../../packages/Popconfirm/index.zh-CN.mdx'
-import PopoverMdx from '../../../packages/Popover/index.zh-CN.mdx'
-import TooltipMdx from '../../../packages/Tooltip/index.zh-CN.mdx'
-import DividerMsx from '../../../packages/Divider/index.zh-CN.mdx'
+import { lazy } from 'react'
+const SuspenseContent = lazy(() => import('../SuspenseContent/SuspenseContent'))
+const ButtonMdx = lazy(() => import('../../../packages/Button/index.zh-CN.mdx'))
+const BorderMdx = lazy(() => import('../../pages/component/border/border.zh-CN.mdx'))
+const ContainerMdx = lazy(() => import('../../../packages/Container/index.zh-CN.mdx'))
+const IconMdx = lazy(() => import('../../../packages/Icon/index.zh-CN.mdx'))
+const LayoutMdx = lazy(() => import('../../../packages/Layout/index.zh-CN.mdx'))
+const LinkMdx = lazy(() => import('../../../packages/Link/index.zh-CN.mdx'))
+const TextMdx = lazy(() => import('../../../packages/Text/index.zh-CN.mdx'))
+const ScrollbarMdx = lazy(() => import('../../../packages/Scrollbar/index.zh-CN.mdx'))
+const SpaceMdx = lazy(() => import('../../../packages/Space/index.zh-CN.mdx'))
+const SwitchMdx = lazy(() => import('../../../packages/Switch/index.zh-CN.mdx'))
+const RateMdx = lazy(() => import('../../../packages/Rate/index.zh-CN.mdx'))
+const AvatarMdx = lazy(() => import('../../../packages/Avatar/index.zh-CN.mdx'))
+const BadgeMdx = lazy(() => import('../../../packages/Badge/index.zh-CN.mdx'))
+const CollapseMdx = lazy(() => import('../../../packages/Collapse/index.zh-CN.mdx'))
+const ProgressMdx = lazy(() => import('../../../packages/Progress/index.zh-CN.mdx'))
+const ResultMdx = lazy(() => import('../../../packages/Result/index.zh-CN.mdx'))
+const TableMdx = lazy(() => import('../../../packages/Table/index.zh-CN.mdx'))
+const TagMdx = lazy(() => import('../../../packages/Tag/index.zh-CN.mdx'))
+const AlertMdx = lazy(() => import('../../../packages/Alert/index.zh-CN.mdx'))
+const DialogMdx = lazy(() => import('../../../packages/Dialog/index.zh-CN.mdx'))
+const DrawerMdx = lazy(() => import('../../../packages/Drawer/index.zh-CN.mdx'))
+const MessageBox = lazy(() => import('../../../packages/MessageBox/index.zh-CN.mdx'))
+const PopconfirmMdx = lazy(() => import('../../../packages/Popconfirm/index.zh-CN.mdx'))
+const PopoverMdx = lazy(() => import('../../../packages/Popover/index.zh-CN.mdx'))
+const TooltipMdx = lazy(() => import('../../../packages/Tooltip/index.zh-CN.mdx'))
+const DividerMsx = lazy(() => import('../../../packages/Divider/index.zh-CN.mdx'))
 import './Markdown.scss'
 
 function DemoMdx({ name }) {
   let demo
   switch (name) {
     case 'button':
-      demo = <ButtonMdx></ButtonMdx>
+      demo = <SuspenseContent><ButtonMdx /></SuspenseContent>
       break
     case 'border':
-      demo = <BorderMdx></BorderMdx>
+      demo = <SuspenseContent><BorderMdx /></SuspenseContent>
       break
     case 'container':
-      demo = <ContainerMdx></ContainerMdx>
+      demo = <SuspenseContent><ContainerMdx /></SuspenseContent>
       break
     case 'icon':
-      demo = <IconMdx></IconMdx>
+      demo = <SuspenseContent><IconMdx /></SuspenseContent>
       break
     case 'layout':
-      demo = <LayoutMdx></LayoutMdx>
+      demo = <SuspenseContent><LayoutMdx /></SuspenseContent>
       break
     case 'link':
-      demo = <LinkMdx></LinkMdx>
+      demo = <SuspenseContent><LinkMdx /></SuspenseContent>
       break
     case 'text':
-      demo = <TextMdx></TextMdx>
+      demo = <SuspenseContent><TextMdx /></SuspenseContent>
       break
     case 'scrollbar':
-      demo = <ScrollbarMdx></ScrollbarMdx>
+      demo = <SuspenseContent><ScrollbarMdx /></SuspenseContent>
       break
     case 'space':
-      demo = <SpaceMdx></SpaceMdx>
+      demo = <SuspenseContent><SpaceMdx /></SuspenseContent>
       break
     case 'switch':
-      demo = <SwitchMdx></SwitchMdx>
+      demo = <SuspenseContent><SwitchMdx /></SuspenseContent>
       break
     case 'rate':
-      demo = <RateMdx></RateMdx>
+      demo = <SuspenseContent><RateMdx /></SuspenseContent>
       break
     case 'avatar':
-      demo = <AvatarMdx></AvatarMdx>
+      demo = <SuspenseContent><AvatarMdx /></SuspenseContent>
       break
     case 'badge':
-      demo = <BadgeMdx></BadgeMdx>
+      demo = <SuspenseContent><BadgeMdx /></SuspenseContent>
       break
     case 'collapse':
-      demo = <CollapseMdx></CollapseMdx>
+      demo = <SuspenseContent><CollapseMdx /></SuspenseContent>
       break
     case 'progress':
-      demo = <ProgressMdx></ProgressMdx>
+      demo = <SuspenseContent><ProgressMdx /></SuspenseContent>
       break
     case 'result':
-      demo = <ResultMdx></ResultMdx>
+      demo = <SuspenseContent><ResultMdx /></SuspenseContent>
       break
     case 'table':
-      demo = <TableMdx></TableMdx>
+      demo = <SuspenseContent><TableMdx /></SuspenseContent>
       break
     case 'tag':
-      demo = <TagMdx></TagMdx>
+      demo = <SuspenseContent><TagMdx /></SuspenseContent>
       break
     case 'alert':
-      demo = <AlertMdx></AlertMdx>
+      demo = <SuspenseContent><AlertMdx /></SuspenseContent>
       break
     case 'dialog':
-      demo = <DialogMdx></DialogMdx>
+      demo = <SuspenseContent><DialogMdx /></SuspenseContent>
       break
     case 'drawer':
-      demo = <DrawerMdx></DrawerMdx>
+      demo = <SuspenseContent><DrawerMdx /></SuspenseContent>
+      break
+    case 'message-box':
+      demo = <SuspenseContent><MessageBox /></SuspenseContent>
       break
     case 'popconfirm':
-      demo = <PopconfirmMdx></PopconfirmMdx>
+      demo = <SuspenseContent><PopconfirmMdx /></SuspenseContent>
       break
     case 'popover':
-      demo = <PopoverMdx></PopoverMdx>
+      demo = <SuspenseContent><PopoverMdx /></SuspenseContent>
       break
     case 'tooltip':
-      demo = <TooltipMdx></TooltipMdx>
+      demo = <SuspenseContent><TooltipMdx /></SuspenseContent>
       break
     case 'divider':
-      demo = <DividerMsx></DividerMsx>
+      demo = <SuspenseContent><DividerMsx /></SuspenseContent>
       break;
   }
   return demo

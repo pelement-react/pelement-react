@@ -1,7 +1,8 @@
-import { Suspense, lazy } from 'react'
+import { lazy } from 'react'
 import { Navigate, useRoutes } from 'react-router-dom'
 import Markdown from '../components/Markdown/Markdown'
 import HomePage from '../pages/home/Home'
+import SuspenseContent from '../components/SuspenseContent/SuspenseContent'
 const GuidePage = lazy(() => import('../pages/guide/Guide'))
 const InstallationMdx = lazy(() => import('../pages/guide/installation.zh-CN.mdx'))
 const ChangelogMdx = lazy(() => import('../pages/guide/changelog.zh-CN.mdx'))
@@ -13,18 +14,6 @@ const BuildError = lazy(() => import('../pages/blog/build-error.zh-CN.mdx'))
 const CannotFindModule = lazy(() => import('../pages/blog/cannot-find-module.zh-CN.mdx'))
 const NotFound = lazy(() => import('../pages/home/NotFound'))
 
-function SuspensePage(props) {
-  const { children } = props;
-
-  return (
-    <>
-      <Suspense fallback={<div>Loading...</div>}>
-        {children}
-      </Suspense>
-    </>
-  )
-}
-
 const DefineRoute = () => {
   return useRoutes(
     [
@@ -33,19 +22,19 @@ const DefineRoute = () => {
       { path: 'guide', element: <Navigate to="changelog" /> },
       {
         path: 'guide',
-        element: <SuspensePage><GuidePage /></SuspensePage>,
+        element: <SuspenseContent><GuidePage /></SuspenseContent>,
         children: [
-          { path: 'installation', element: <SuspensePage><InstallationMdx /></SuspensePage> },
-          { path: 'changelog', element: <SuspensePage><ChangelogMdx /></SuspensePage> },
-          { path: 'recommendation', element: <SuspensePage><RecommendationMdx /></SuspensePage> },
+          { path: 'installation', element: <SuspenseContent><InstallationMdx /></SuspenseContent> },
+          { path: 'changelog', element: <SuspenseContent><ChangelogMdx /></SuspenseContent> },
+          { path: 'recommendation', element: <SuspenseContent><RecommendationMdx /></SuspenseContent> },
         ]
       },
       { path: 'component', element: <Navigate to="overview" /> },
       {
         path: 'component',
-        element: <SuspensePage><ComponentPage /></SuspensePage>,
+        element: <SuspenseContent><ComponentPage /></SuspenseContent>,
         children: [
-          { path: 'overview', element: <SuspensePage><Overview /></SuspensePage> },
+          { path: 'overview', element: <SuspenseContent><Overview /></SuspenseContent> },
           { path: 'button', element: <Markdown name="button" /> },
           { path: 'border', element: <Markdown name="border" /> },
           { path: 'container', element: <Markdown name="container" /> },
@@ -67,6 +56,7 @@ const DefineRoute = () => {
           { path: 'alert', element: <Markdown name="alert" /> },
           { path: 'dialog', element: <Markdown name="dialog" /> },
           { path: 'drawer', element: <Markdown name="drawer" /> },
+          { path: 'message-box', element: <Markdown name="message-box" /> },
           { path: 'popconfirm', element: <Markdown name="popconfirm" /> },
           { path: 'popover', element: <Markdown name="popover" /> },
           { path: 'tooltip', element: <Markdown name="tooltip" /> },
@@ -76,13 +66,13 @@ const DefineRoute = () => {
       { path: 'blog', element: <Navigate to="build-error" /> },
       {
         path: 'blog',
-        element: <SuspensePage><BlogPage /></SuspensePage>,
+        element: <SuspenseContent><BlogPage /></SuspenseContent>,
         children: [
-          { path: 'build-error', element: <SuspensePage><BuildError /></SuspensePage> },
-          { path: 'cannot-find-module', element: <SuspensePage><CannotFindModule /></SuspensePage> },
+          { path: 'build-error', element: <SuspenseContent><BuildError /></SuspenseContent> },
+          { path: 'cannot-find-module', element: <SuspenseContent><CannotFindModule /></SuspenseContent> },
         ]
       },
-      { path: '*', element: <SuspensePage><NotFound /></SuspensePage> }
+      { path: '*', element: <SuspenseContent><NotFound /></SuspenseContent> }
     ]
   )
 }

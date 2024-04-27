@@ -15,6 +15,7 @@ export type { TableProps } from './Table/interface'
 export type { ScrollbarProps } from './Scrollbar/interface'
 export type { BadgeProps } from './Badge/interface'
 export type { RateProps } from './Rate/interface'
+export type { MessageBoxProps } from './MessageBox/interface'
 
 export {
     Edit,
@@ -67,3 +68,4 @@ export { default as Scrollbar } from './Scrollbar'
 export { default as Badge } from './Badge'
 export { default as Rate } from './Rate'
 export { default as Space } from './Space'
+export { default as MessageBox } from './MessageBox'

@@ -60,7 +60,7 @@ function DemoMdx({ name }) {
       demo = <SuspenseContent><SpaceMdx /></SuspenseContent>
       break
     case 'typography':
-      demo = <TypographyMdx></TypographyMdx>
+      demo = <SuspenseContent><TypographyMdx /></SuspenseContent>
       break
     case 'switch':
       demo = <SuspenseContent><SwitchMdx /></SuspenseContent>

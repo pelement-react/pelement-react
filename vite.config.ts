@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs'
 import path from 'path'
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import react from '@vitejs/plugin-react'
 import typescript from '@rollup/plugin-typescript'
 // 引入mdx
 import mdx from '@mdx-js/rollup'

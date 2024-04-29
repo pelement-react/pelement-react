@@ -1,8 +1,8 @@
-import { Button, MessageBox } from 'pelement-react'
+import { Button, messageBox } from 'pelement-react'
 
 function MessageBoxConfirm() {
   function open() {
-    MessageBox.confirm(
+    messageBox.confirm(
       'proxy will permanently delete the file. Continue?',
       'Warning',
       {

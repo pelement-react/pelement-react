@@ -1,15 +1,15 @@
-import { Button, MessageBox, Switch } from 'pelement-react'
+import { Button, messageBox, Switch } from 'pelement-react'
 
 function MessageBoxMessage() {
   function open() {
-    MessageBox.alert(
+    messageBox.alert(
       <><span>Message can be </span><i style={{ color: 'teal' }}>VNode</i></>,
       'Message',
     )
   }
 
   function open1() {
-    MessageBox.alert(
+    messageBox.alert(
       <><Switch defaultChecked /></>,
       'Message',
     )

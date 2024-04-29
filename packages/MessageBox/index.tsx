@@ -2,10 +2,10 @@ import { forwardRef, MouseEvent } from 'react'
 import { createRoot, Root } from 'react-dom/client'
 import clsx from 'clsx'
 import { CircleCheckFilled, CircleCloseFilled, Close, InfoFilled, WarningFilled } from 'pelement-react'
-import { MessageBoxCmpProps, MessageBoxProps } from './interface'
+import { MessageBoxProps, MessageBoxContainerProps } from './interface'
 import './style'
 
-const MessageBoxCmp: React.ForwardRefRenderFunction<HTMLDivElement, MessageBoxCmpProps> = (
+const MessageBoxContainer: React.ForwardRefRenderFunction<HTMLDivElement, MessageBoxProps> = (
   props,
   ref,
 ) => {
@@ -137,10 +137,10 @@ const MessageBoxCmp: React.ForwardRefRenderFunction<HTMLDivElement, MessageBoxCm
   )
 }
 
-const MessageBoxComponent = forwardRef<HTMLDivElement, MessageBoxCmpProps>(MessageBoxCmp)
+const MessageBoxContainerComponent = forwardRef<HTMLDivElement, MessageBoxProps>(MessageBoxContainer)
 
-let root: Root;
-let el: HTMLElement;
+let root: Root
+let el: HTMLElement
 
 const MessageBox = {
   onClose: (event: MouseEvent<HTMLButtonElement>) => {
@@ -158,14 +158,14 @@ const MessageBox = {
     root.unmount()
     document.body.removeChild(el)
   },
-  alert: (message: string | React.ReactNode, title: string, context?: MessageBoxProps) => {
+  alert: (message: string | React.ReactNode, title: string, context?: MessageBoxContainerProps) => {
     el = document.createElement('div')
     el.className = 'el-overlay is-message-box'
     el.style.zIndex = '2008'
     document.body.append(el)
     root = createRoot(el)
     root.render(
-      <MessageBoxComponent
+      <MessageBoxContainerComponent
         trigger="alert"
         title={title}
         message={message}
@@ -177,14 +177,14 @@ const MessageBox = {
       />
     )
   },
-  confirm: (message: string | React.ReactNode, title: string, context: MessageBoxProps = {}) => {
+  confirm: (message: string | React.ReactNode, title: string, context: MessageBoxContainerProps = {}) => {
     el = document.createElement('div')
     el.className = 'el-overlay is-message-box'
     el.style.zIndex = '2008'
     document.body.append(el)
     root = createRoot(el)
     root.render(
-      <MessageBoxComponent
+      <MessageBoxContainerComponent
         trigger="confirm"
         title={title}
         message={message}

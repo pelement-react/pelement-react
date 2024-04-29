@@ -22,7 +22,8 @@ const TagMdx = lazy(() => import('../../../packages/Tag/index.zh-CN.mdx'))
 const AlertMdx = lazy(() => import('../../../packages/Alert/index.zh-CN.mdx'))
 const DialogMdx = lazy(() => import('../../../packages/Dialog/index.zh-CN.mdx'))
 const DrawerMdx = lazy(() => import('../../../packages/Drawer/index.zh-CN.mdx'))
-const MessageBox = lazy(() => import('../../../packages/MessageBox/index.zh-CN.mdx'))
+const MessageMdx = lazy(() => import('../../../packages/Message/index.zh-CN.mdx'))
+const MessageBoxMdx = lazy(() => import('../../../packages/MessageBox/index.zh-CN.mdx'))
 const PopconfirmMdx = lazy(() => import('../../../packages/Popconfirm/index.zh-CN.mdx'))
 const PopoverMdx = lazy(() => import('../../../packages/Popover/index.zh-CN.mdx'))
 const TooltipMdx = lazy(() => import('../../../packages/Tooltip/index.zh-CN.mdx'))
@@ -98,8 +99,11 @@ function DemoMdx({ name }) {
     case 'drawer':
       demo = <SuspenseContent><DrawerMdx /></SuspenseContent>
       break
+    case 'message':
+      demo = <SuspenseContent><MessageMdx /></SuspenseContent>
+      break
     case 'message-box':
-      demo = <SuspenseContent><MessageBox /></SuspenseContent>
+      demo = <SuspenseContent><MessageBoxMdx /></SuspenseContent>
       break
     case 'popconfirm':
       demo = <SuspenseContent><PopconfirmMdx /></SuspenseContent>

@@ -1,8 +1,8 @@
-import { Button, MessageBox } from 'pelement-react'
+import { Button, messageBox } from 'pelement-react'
 
 function MessageBoxBasic() {
   function open() {
-    MessageBox.alert('This is a message', 'Title', {
+    messageBox.alert('This is a message', 'Title', {
       confirmButtonText: 'OK',
       callback: (action: string) => {
         alert(`action: ${action}`)

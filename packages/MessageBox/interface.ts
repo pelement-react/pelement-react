@@ -1,6 +1,6 @@
 import { CSSProperties, HTMLAttributes, MouseEvent } from 'react'
 
-export interface MessageBoxCmpProps
+export interface MessageBoxProps
   extends Omit<HTMLAttributes<HTMLDivElement>, 'className' | 'ref' | 'title'> {
   style?: CSSProperties
   className?: string | string[]
@@ -16,7 +16,7 @@ export interface MessageBoxCmpProps
   onConfirm?: (event: MouseEvent<HTMLButtonElement>) => void
 }
 
-export interface MessageBoxProps {
+export interface MessageBoxContainerProps {
   type?: 'success' | 'error' | 'info' | 'warning'
   confirmButtonText?: string
   cancelButtonText?: string

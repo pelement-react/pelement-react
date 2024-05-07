@@ -2,6 +2,10 @@
 
 import CodeBlock from '../../example/components/CodeBlock/CodeBlock'
 import MessageBasic from './_example/MessageBasic'
+import MessageType from './_example/MessageType'
+import MessagePlain from './_example/MessagePlain'
+import MessageShowClose from './_example/MessageShowClose'
+import MessageCenter from './_example/MessageCenter'
 
 常用于主动操作后的反馈提示。 与 Notification 的区别是后者更多用于系统级通知的被动提醒。
 
@@ -13,4 +17,40 @@ Message 在配置上与 Notification 非常类似，所以部分 options 在此�
 
 <CodeBlock name="MessageBasic">
   <MessageBasic />
+</CodeBlock>
+
+## 不同状态
+
+用来显示「成功、警告、消息、错误」类的操作反馈。
+
+当需要自定义更多属性时，message 也可以接收一个对象为参数。 比如，设置 type 字段可以定义不同的状态，默认为info。 此时正文内容以 message 的值传入。 同时，我们也为 message 的各种 type 注册了方法，可以在不传入 type 字段的情况下像 open4 那样直接调用。
+
+<CodeBlock name="MessageType">
+  <MessageType />
+</CodeBlock>
+
+## Plain
+
+设置 plain 为 plain 背景。
+
+<CodeBlock name="MessagePlain">
+  <MessagePlain />
+</CodeBlock>
+
+## 可关闭的消息提示
+
+可以添加关闭按钮。
+
+默认的 message 是不可以被人工关闭的。 如果你需要手动关闭功能，你可以把 showClose 设置为 true 此外，和 Notification 一样，Message 拥有可控的 duration， 默认的关闭时间为 3000 毫秒，当把这个属性的值设置为0便表示该消息不会被自动关闭。
+
+<CodeBlock name="MessageShowClose">
+  <MessageShowClose />
+</CodeBlock>
+
+## 文字居中
+
+使用 center 属性让文字水平居中。
+
+<CodeBlock name="MessageCenter">
+  <MessageCenter />
 </CodeBlock>

@@ -1,13 +1,22 @@
 import { Button, message } from 'pelement-react'
 
 function MessageBasic() {
+  let current = 0
+
   function open() {
-    message.success('123')
+    current++
+    message.success(`This is a message.${current}`)
+  }
+
+  function openReactNode() {
+    current++
+    message.success(<>This is a <span style={{ color: 'teal' }}>message</span>.{current}</>)
   }
 
   return (
     <>
       <Button plain onClick={open}>Show message</Button>
+      <Button plain onClick={openReactNode}>ReactNode</Button>
     </>
   )
 }

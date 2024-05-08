@@ -67,7 +67,7 @@ function MessageContainer() {
           plain={item.plain}
           center={item.center}
           showClose={item.showClose}
-          handlerClose={remove}
+          handleClose={remove}
         />
       )}
     </>

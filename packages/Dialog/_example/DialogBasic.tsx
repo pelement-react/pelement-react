@@ -5,7 +5,7 @@ import './DialogBasic.scss'
 function DialogBasic() {
   const [dialogVisible, setDialogVisible] = useState(false)
 
-  function handlerClick() {
+  function handleClick() {
     setDialogVisible(true)
   }
 
@@ -39,7 +39,7 @@ function DialogBasic() {
 
   return (
     <>
-      <Button text onClick={handlerClick}>
+      <Button text onClick={handleClick}>
         click to open the Dialog
       </Button>
 

@@ -48,7 +48,7 @@ const PopconfirmPopper: React.ForwardRefRenderFunction<HTMLDivElement, Popconfir
   }
 
   // 点击取消
-  function handlerCancel(event: React.MouseEvent<{}, MouseEvent>) {
+  function handleCancel(event: React.MouseEvent<{}, MouseEvent>) {
     if (onCancel) {
       console.log(event)
       onCancel(event)
@@ -56,7 +56,7 @@ const PopconfirmPopper: React.ForwardRefRenderFunction<HTMLDivElement, Popconfir
   }
 
   // 点击确认
-  function handlerConfirm(event: React.MouseEvent<{}, MouseEvent>) {
+  function handleConfirm(event: React.MouseEvent<{}, MouseEvent>) {
     if (onConfirm) {
       onConfirm(event)
     }
@@ -82,8 +82,8 @@ const PopconfirmPopper: React.ForwardRefRenderFunction<HTMLDivElement, Popconfir
             {title}
           </div>
           <div className="el-popconfirm__action">
-            <Button onClick={handlerCancel}>{cancelButtonText}</Button>
-            <Button type="primary" onClick={handlerConfirm}>{confirmButtonText}</Button>
+            <Button onClick={handleCancel}>{cancelButtonText}</Button>
+            <Button type="primary" onClick={handleConfirm}>{confirmButtonText}</Button>
           </div>
         </div>
         {children}

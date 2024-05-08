@@ -6,51 +6,51 @@ function DrawerBasic() {
   const [drawer, setDrawer] = useState(false)
   const [drawer2, setDrawer2] = useState(false)
 
-  function handlerLeftToRight() {
+  function handleLeftToRight() {
     setDirection('ltr')
     setDrawer(true)
   }
 
-  function handlerRightToLeft() {
+  function handleRightToLeft() {
     setDirection('rtl')
     setDrawer(true)
   }
 
-  function handlerTopToBottom() {
+  function handleTopToBottom() {
     setDirection('ttb')
     setDrawer(true)
   }
 
-  function handlerBottomToTop() {
+  function handleBottomToTop() {
     setDirection('btt')
     setDrawer(true)
   }
 
-  function handlerLeftToRightFooter() {
+  function handleLeftToRightFooter() {
     setDirection('ltr')
     setDrawer2(true)
   }
 
-  function handlerRightToLeftFooter() {
+  function handleRightToLeftFooter() {
     setDirection('rtl')
     setDrawer2(true)
   }
 
-  function handlerTopToBottomFooter() {
+  function handleTopToBottomFooter() {
     setDirection('ttb')
     setDrawer2(true)
   }
 
-  function handlerBottomToTopFooter() {
+  function handleBottomToTopFooter() {
     setDirection('btt')
     setDrawer2(true)
   }
 
-  function handlerClose() {
+  function handleClose() {
     setDrawer(false)
   }
 
-  function handlerClose2() {
+  function handleClose2() {
     setDrawer2(false)
   }
 
@@ -65,30 +65,30 @@ function DrawerBasic() {
   return (
     <>
       <div>
-        <Button type="primary" style={{ marginRight: '16px' }} onClick={handlerLeftToRight}>
+        <Button type="primary" style={{ marginRight: '16px' }} onClick={handleLeftToRight}>
           open left to right
         </Button>
-        <Button type="primary" style={{ marginRight: '16px' }} onClick={handlerRightToLeft}>
+        <Button type="primary" style={{ marginRight: '16px' }} onClick={handleRightToLeft}>
           open right to left
         </Button>
-        <Button type="primary" style={{ marginRight: '16px' }} onClick={handlerTopToBottom}>
+        <Button type="primary" style={{ marginRight: '16px' }} onClick={handleTopToBottom}>
           open top to bottom
         </Button>
-        <Button type="primary" style={{ marginRight: '16px' }} onClick={handlerBottomToTop}>
+        <Button type="primary" style={{ marginRight: '16px' }} onClick={handleBottomToTop}>
           open bottom to top
         </Button>
       </div>
       <div style={{ marginTop: '20px' }}>
-        <Button type="primary" style={{ marginRight: '16px' }} onClick={handlerLeftToRightFooter}>
+        <Button type="primary" style={{ marginRight: '16px' }} onClick={handleLeftToRightFooter}>
           open left to right footer
         </Button>
-        <Button type="primary" style={{ marginRight: '16px' }} onClick={handlerRightToLeftFooter}>
+        <Button type="primary" style={{ marginRight: '16px' }} onClick={handleRightToLeftFooter}>
           open right to left footer
         </Button>
-        <Button type="primary" style={{ marginRight: '16px' }} onClick={handlerTopToBottomFooter}>
+        <Button type="primary" style={{ marginRight: '16px' }} onClick={handleTopToBottomFooter}>
           open top to bottom footer
         </Button>
-        <Button type="primary" style={{ marginRight: '16px' }} onClick={handlerBottomToTopFooter}>
+        <Button type="primary" style={{ marginRight: '16px' }} onClick={handleBottomToTopFooter}>
           open bottom to top footer
         </Button>
       </div>
@@ -97,14 +97,14 @@ function DrawerBasic() {
         open={drawer}
         title="I am the title"
         direction={direction as any}
-        onClose={handlerClose}
+        onClose={handleClose}
       >
         <span>Hi, there!</span>
       </Drawer>
       <Drawer
         open={drawer2}
         direction={direction as any}
-        onClose={handlerClose2}
+        onClose={handleClose2}
         header={<h4>set title by slot</h4>}
         footer={
           <div style={{ flex: 'auto' }}>

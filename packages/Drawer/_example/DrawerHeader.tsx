@@ -4,7 +4,7 @@ import { Button, CircleCloseFilled, Drawer } from 'pelement-react'
 function DrawerHeader() {
   const [visible, setVisible] = useState(false)
 
-  function handlerClose() {
+  function handleClose() {
     setVisible(false)
   }
 
@@ -20,7 +20,7 @@ function DrawerHeader() {
         header={
           <>
             <h4>This is a custom header!</h4>
-            <Button type="danger" onClick={handlerClose}>
+            <Button type="danger" onClick={handleClose}>
               <CircleCloseFilled />
               Close
             </Button>

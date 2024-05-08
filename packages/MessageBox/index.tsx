@@ -25,7 +25,7 @@ const MessageBoxContainer: React.ForwardRefRenderFunction<HTMLDivElement, Messag
   } = props
 
   // 处理关闭事件
-  function handlerClose(event: MouseEvent<HTMLButtonElement>) {
+  function handleClose(event: MouseEvent<HTMLButtonElement>) {
     if (onClose) {
       onClose(event)
     }
@@ -35,7 +35,7 @@ const MessageBoxContainer: React.ForwardRefRenderFunction<HTMLDivElement, Messag
   }
 
   // 处理取消事件
-  function handlerCancel(event: MouseEvent<HTMLButtonElement>) {
+  function handleCancel(event: MouseEvent<HTMLButtonElement>) {
     if (onCancel) {
       onCancel(event)
     }
@@ -45,7 +45,7 @@ const MessageBoxContainer: React.ForwardRefRenderFunction<HTMLDivElement, Messag
   }
 
   // 处理确认事件
-  function handlerConfirm(event: MouseEvent<HTMLButtonElement>) {
+  function handleConfirm(event: MouseEvent<HTMLButtonElement>) {
     if (onConfirm) {
       onConfirm(event)
     }
@@ -104,7 +104,7 @@ const MessageBoxContainer: React.ForwardRefRenderFunction<HTMLDivElement, Messag
               <span>{title}</span>
             </div>
             {/* 关闭按钮 */}
-            <button type="button" className="el-message-box__headerbtn" onClick={handlerClose}>
+            <button type="button" className="el-message-box__headerbtn" onClick={handleClose}>
               <Close className="el-message-box__close" />
             </button>
           </div>
@@ -122,12 +122,12 @@ const MessageBoxContainer: React.ForwardRefRenderFunction<HTMLDivElement, Messag
           <div className="el-message-box__btns">
             {/* 取消按钮 */}
             {trigger === 'confirm' &&
-              <button type="button" className="el-button" onClick={handlerCancel}>
+              <button type="button" className="el-button" onClick={handleCancel}>
                 <span className="">{cancelButtonText}</span>
               </button>
             }
             {/* 确认按钮 */}
-            <button type="button" className="el-button el-button--primary" onClick={handlerConfirm}>
+            <button type="button" className="el-button el-button--primary" onClick={handleConfirm}>
               <span className="">{confirmButtonText}</span>
             </button>
           </div>

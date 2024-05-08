@@ -11,7 +11,7 @@ export interface MessageProps
   plain: boolean
   center: boolean
   showClose: boolean
-  handlerClose: (messageId: number) => void
+  handleClose: (messageId: number) => void
 }
 
 export type MessageItem = { id: number, text: string | React.ReactNode, offset: number, type: 'success' | 'warning' | 'info' | 'error', plain: boolean, center: boolean, showClose: boolean }

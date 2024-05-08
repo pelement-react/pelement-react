@@ -21,6 +21,7 @@ function ComponentPage() {
             <NavLink to="typography">Typography 排版</NavLink>
             <p className="sidebar-group__title">Form 表单组件</p>
             <NavLink to="switch">Switch 开关</NavLink>
+            <NavLink to="input">Input 输入框</NavLink>
             <NavLink to="rate">Rate 评分</NavLink>
             <p className="sidebar-group__title">Data 数据展示</p>
             <NavLink to="avatar">Avatar 头像</NavLink>

@@ -5,11 +5,11 @@ function DialogContent() {
   const [dialogTableVisible, setDialogTableVisible] = useState(false)
   const [dialogFormVisible, setDialogFormVisible] = useState(false)
 
-  function handlerTable() {
+  function handleTable() {
     setDialogTableVisible(true)
   }
 
-  function handlerForm() {
+  function handleForm() {
     setDialogFormVisible(true)
   }
 
@@ -28,7 +28,7 @@ function DialogContent() {
 
   return (
     <>
-      <Button text onClick={handlerTable}>
+      <Button text onClick={handleTable}>
         open a Table nested Dialog
       </Button>
 
@@ -40,7 +40,7 @@ function DialogContent() {
         Table组件
       </Dialog>
 
-      <Button text onClick={handlerForm}>
+      <Button text onClick={handleForm}>
         open a Form nested Dialog
       </Button>
 

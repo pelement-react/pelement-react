@@ -14,7 +14,7 @@ const Message: React.ForwardRefRenderFunction<HTMLDivElement, MessageProps> = (
     plain = false,
     center = false,
     showClose = false,
-    handlerClose
+    handleClose
   } = props
 
   let timer
@@ -38,8 +38,8 @@ const Message: React.ForwardRefRenderFunction<HTMLDivElement, MessageProps> = (
 
   // 关闭message
   function close() {
-    if (handlerClose) {
-      handlerClose(id)
+    if (handleClose) {
+      handleClose(id)
     }
   }
 

@@ -4,31 +4,31 @@ type Types = 'mouseenter' | 'mouseleave'
 
 export function useOnMouseEvent<T extends HTMLElement>(
   node: RefObject<T | undefined>,
-  handler: undefined | ((e: MouseEvent, type: Types) => void)
+  handle: undefined | ((e: MouseEvent, type: Types) => void)
 ) {
-  const handlerRef = useRef<undefined | ((e: MouseEvent, type: Types) => void)>(handler)
+  const handleRef = useRef<undefined | ((e: MouseEvent, type: Types) => void)>(handle)
   useEffect(() => {
-    handlerRef.current = handler
-  }, [handler])
+    handleRef.current = handle
+  }, [handle])
 
   useEffect(() => {
-    const handlerMouseEnter = (e: MouseEvent) => {
-      if (handlerRef.current) {
-        handlerRef.current(e, 'mouseenter')
+    const handleMouseEnter = (e: MouseEvent) => {
+      if (handleRef.current) {
+        handleRef.current(e, 'mouseenter')
       }
     }
-    const handlerMouseLeave = (e: MouseEvent) => {
-      if (handlerRef.current) {
-        handlerRef.current(e, 'mouseleave')
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (handleRef.current) {
+        handleRef.current(e, 'mouseleave')
       }
     }
 
-    node.current?.addEventListener('mouseenter', handlerMouseEnter)
-    node.current?.addEventListener('mouseleave', handlerMouseLeave)
+    node.current?.addEventListener('mouseenter', handleMouseEnter)
+    node.current?.addEventListener('mouseleave', handleMouseLeave)
 
     return () => {
-      node.current?.removeEventListener('mouseenter', handlerMouseEnter)
-      node.current?.removeEventListener('mouseleave', handlerMouseLeave)
+      node.current?.removeEventListener('mouseenter', handleMouseEnter)
+      node.current?.removeEventListener('mouseleave', handleMouseLeave)
     }
   }, [node])
 }

@@ -11,6 +11,7 @@ function ComponentPage() {
             <p className="sidebar-group__title">Basic 基础组件</p>
             <NavLink to="button">Button 按钮</NavLink>
             <NavLink to="border">Border 边框</NavLink>
+            <NavLink to="color">Color 色彩</NavLink>
             <NavLink to="container">Container 布局容器</NavLink>
             <NavLink to="icon">Icon 图标</NavLink>
             <NavLink to="layout">Layout 布局</NavLink>

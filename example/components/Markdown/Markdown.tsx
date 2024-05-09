@@ -2,6 +2,7 @@ import { lazy } from 'react'
 const SuspenseContent = lazy(() => import('../SuspenseContent/SuspenseContent'))
 const ButtonMdx = lazy(() => import('../../../packages/Button/index.zh-CN.mdx'))
 const BorderMdx = lazy(() => import('../../pages/component/border/border.zh-CN.mdx'))
+const ColorMdx = lazy(() => import('../../pages/component/color/color.zh-CN.mdx'))
 const ContainerMdx = lazy(() => import('../../../packages/Container/index.zh-CN.mdx'))
 const IconMdx = lazy(() => import('../../../packages/Icon/index.zh-CN.mdx'))
 const LayoutMdx = lazy(() => import('../../../packages/Layout/index.zh-CN.mdx'))
@@ -39,6 +40,9 @@ function DemoMdx({ name }) {
       break
     case 'border':
       demo = <SuspenseContent><BorderMdx /></SuspenseContent>
+      break
+    case 'color':
+      demo = <SuspenseContent><ColorMdx /></SuspenseContent>
       break
     case 'container':
       demo = <SuspenseContent><ContainerMdx /></SuspenseContent>

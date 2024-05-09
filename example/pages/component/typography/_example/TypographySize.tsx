@@ -28,6 +28,11 @@ function TypographySize() {
     },
   ]
 
+  function getValue(value) {
+    const elRef = window?.document?.documentElement
+    return window.getComputedStyle(elRef).getPropertyValue(value)
+  }
+
   return (
     <>
       <table className="demo-typo-size">
@@ -44,7 +49,7 @@ function TypographySize() {
             >
               <td>{item.level}</td>
               <td>
-                {`--el-font-size-${item.type}`}
+                {getValue(`--el-font-size-${item.type}`)}
               </td>
               <td>Build with Element</td>
             </tr>

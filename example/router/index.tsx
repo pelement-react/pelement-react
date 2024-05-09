@@ -37,6 +37,7 @@ const DefineRoute = () => {
           { path: 'overview', element: <SuspenseContent><Overview /></SuspenseContent> },
           { path: 'button', element: <Markdown name="button" /> },
           { path: 'border', element: <Markdown name="border" /> },
+          { path: 'color', element: <Markdown name="color" /> },
           { path: 'container', element: <Markdown name="container" /> },
           { path: 'icon', element: <Markdown name="icon" /> },
           { path: 'layout', element: <Markdown name="layout" /> },

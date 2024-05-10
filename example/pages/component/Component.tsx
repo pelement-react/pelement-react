@@ -38,6 +38,7 @@ function ComponentPage() {
             <NavLink to="drawer">Drawer 抽屉</NavLink>
             <NavLink to="message">Message 消息提示</NavLink>
             <NavLink to="message-box">MessageBox 消息弹框</NavLink>
+            <NavLink to="notification">Notification 通知</NavLink>
             <NavLink to="popconfirm">Popconfirm 气泡确认框</NavLink>
             <NavLink to="popover">Popover 气泡卡片</NavLink>
             <NavLink to="tooltip">Tooltip 文字提示</NavLink>

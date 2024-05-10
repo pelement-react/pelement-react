@@ -61,6 +61,7 @@ const DefineRoute = () => {
           { path: 'drawer', element: <Markdown name="drawer" /> },
           { path: 'message', element: <Markdown name="message" /> },
           { path: 'message-box', element: <Markdown name="message-box" /> },
+          { path: 'notification', element: <Markdown name="notification" /> },
           { path: 'popconfirm', element: <Markdown name="popconfirm" /> },
           { path: 'popover', element: <Markdown name="popover" /> },
           { path: 'tooltip', element: <Markdown name="tooltip" /> },

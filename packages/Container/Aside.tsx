@@ -16,7 +16,7 @@ const Aside: React.ForwardRefRenderFunction<HTMLDivElement, ContainerProps> = (
   const divStyle: React.CSSProperties = {
     ...style,
     ['--el-aside-width' as string]: width,
-  };
+  }
 
   return (
     <aside

@@ -7,16 +7,16 @@ import './style'
 let el
 let root: Root
 // 标识消息的ID
-let incrementId = 0
+let currentId = 0
 // 添加消息
-let add: (message: any) => void
+let add: (message: MessageType) => void
 
 function MessageContainer() {
   const [messages, setMessages] = useState<MessageItem[]>([])
 
   // 添加消息
   add = (messageType: MessageType) => {
-    const id = incrementId++
+    const id = currentId++
     const newMessage = {
       id: id,
       text: messageType.message,
@@ -28,7 +28,7 @@ function MessageContainer() {
     }
     setMessages((pre: MessageItem[]) => {
       const list = [...pre, newMessage]
-      return setUpOffset(list)
+      return setOffset(list)
     })
   }
 
@@ -36,12 +36,12 @@ function MessageContainer() {
   function remove(messageId: number) {
     setMessages((pre: MessageItem[]) => {
       const list = pre.filter((each) => each.id !== messageId)
-      return setUpOffset(list)
+      return setOffset(list)
     })
   }
 
   // 获取message的offset
-  function setUpOffset(list: MessageItem[]) {
+  function setOffset(list: MessageItem[]) {
     // 获取当前message的高度
     let verticalOffset = 0
     list.forEach((messageItem) => {
@@ -49,7 +49,7 @@ function MessageContainer() {
       verticalOffset += 16
       messageItem.offset = verticalOffset
       // 获取当前message的offsetHeight
-      verticalOffset += (document.getElementById(`message_${messageItem.id}`)?.offsetHeight || 0)
+      verticalOffset += document.getElementById(`message_${messageItem.id}`)?.offsetHeight || 0
     })
 
     return list

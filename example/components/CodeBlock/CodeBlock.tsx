@@ -17,7 +17,7 @@ function CodeBlock({ language = 'javascript', name, children }) {
   const [code, setCode] = useState('')
 
   // 获取所有example的源码文件
-  const demoFiles = import.meta.glob(`../../../packages/*/_example/*.tsx?raw`, { eager: true })
+  const demoFiles = import.meta.glob(`../../../packages/*/_example/*.tsx`, { as: 'raw', eager: true })
 
   // 样式
   let fullStyle = { display: expand ? '' : 'none' }
@@ -27,7 +27,7 @@ function CodeBlock({ language = 'javascript', name, children }) {
       Object.keys(demoFiles).forEach((key) => {
         // 根据name获取当前code的源码文件
         if (key.indexOf(name) !== -1) {
-          setCode((demoFiles[key] as any))
+          setCode(demoFiles[key])
         }
       })
       setTimeout(() => {

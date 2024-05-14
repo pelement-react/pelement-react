@@ -21,6 +21,7 @@ const ProgressMdx = lazy(() => import('../../../packages/Progress/index.zh-CN.md
 const ResultMdx = lazy(() => import('../../../packages/Result/index.zh-CN.mdx'))
 const TableMdx = lazy(() => import('../../../packages/Table/index.zh-CN.mdx'))
 const TagMdx = lazy(() => import('../../../packages/Tag/index.zh-CN.mdx'))
+const BacktopMdx = lazy(() => import('../../../packages/Backtop/index.zh-CN.mdx'))
 const AlertMdx = lazy(() => import('../../../packages/Alert/index.zh-CN.mdx'))
 const DialogMdx = lazy(() => import('../../../packages/Dialog/index.zh-CN.mdx'))
 const DrawerMdx = lazy(() => import('../../../packages/Drawer/index.zh-CN.mdx'))
@@ -98,6 +99,9 @@ function DemoMdx({ name }) {
       break
     case 'tag':
       demo = <SuspenseContent><TagMdx /></SuspenseContent>
+      break
+    case 'backtop':
+      demo = <SuspenseContent><BacktopMdx /></SuspenseContent>
       break
     case 'alert':
       demo = <SuspenseContent><AlertMdx /></SuspenseContent>

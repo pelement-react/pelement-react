@@ -57,6 +57,7 @@ const DefineRoute = () => {
           { path: 'table', element: <Markdown name="table" /> },
           { path: 'tag', element: <Markdown name="tag" /> },
           { path: 'backtop', element: <Markdown name="backtop" /> },
+          { path: 'breadcrumb', element: <Markdown name="breadcrumb" /> },
           { path: 'alert', element: <Markdown name="alert" /> },
           { path: 'dialog', element: <Markdown name="dialog" /> },
           { path: 'drawer', element: <Markdown name="drawer" /> },

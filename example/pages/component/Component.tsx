@@ -34,6 +34,7 @@ function ComponentPage() {
             <NavLink to="tag">Tag 标签</NavLink>
             <p className="sidebar-group__title">Navigation 导航</p>
             <NavLink to="backtop">Backtop 回到顶部</NavLink>
+            <NavLink to="breadcrumb">Breadcrumb 面包屑</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>
             <NavLink to="alert">Alert 提示</NavLink>
             <NavLink to="dialog">Dialog 对话框</NavLink>

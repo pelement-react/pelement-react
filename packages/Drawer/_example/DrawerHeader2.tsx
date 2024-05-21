@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { Button, Drawer } from 'pelement-react'
 
-function DrawerWithHeader() {
+function DrawerHeader2() {
   const [drawer, setDrawer] = useState(false)
 
   return (
     <>
       <Button type="primary" onClick={() => setDrawer(true)}>
-        open
+        open drawer
       </Button>
 
       <Drawer open={drawer} title="I am the title" withHeader={false}>
@@ -17,4 +17,4 @@ function DrawerWithHeader() {
   )
 }
 
-export default DrawerWithHeader
+export default DrawerHeader2

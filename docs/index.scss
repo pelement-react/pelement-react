@@ -60,6 +60,19 @@ body {
   gap: 0.25rem;
 }
 
+.gap-4 {
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -70,4 +83,8 @@ body {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
 }

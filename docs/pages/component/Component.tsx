@@ -48,6 +48,7 @@ function ComponentPage() {
             <NavLink to="tooltip">Tooltip 文字提示</NavLink>
             <p className="sidebar-group__title">Others 其他</p>
             <NavLink to="divider">Divider 分割线</NavLink>
+            <NavLink to="watermark">Watermark 水印</NavLink>
           </section>
         </div>
       </aside>

@@ -69,6 +69,7 @@ const DefineRoute = () => {
           { path: 'popover', element: <Markdown name="popover" /> },
           { path: 'tooltip', element: <Markdown name="tooltip" /> },
           { path: 'divider', element: <Markdown name="divider" /> },
+          { path: 'watermark', element: <Markdown name="watermark" /> },
         ]
       },
       { path: 'blog', element: <Navigate to="build-error" /> },

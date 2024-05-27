@@ -4,7 +4,7 @@ pelement react
 
 <div align="center">
 
-[![npm package](https://img.shields.io/npm/v/pelement-react.svg?style=flat-square)](https://www.npmjs.com/package/pelement-react) [![npm downloads](http://img.shields.io/npm/dm/pelement-react.svg)](https://npmcharts.com/compare/pelement-react?minimal=true)
+[![npm package](https://img.shields.io/npm/v/pelement-react.svg)](https://www.npmjs.com/package/pelement-react) [![npm downloads](http://img.shields.io/npm/dm/pelement-react.svg)](https://npmcharts.com/compare/pelement-react?minimal=true)
 
 pelement-react - A React UI library
 

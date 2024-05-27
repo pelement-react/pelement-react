@@ -34,6 +34,7 @@ const PopconfirmMdx = lazy(() => import('../../../packages/Popconfirm/index.zh-C
 const PopoverMdx = lazy(() => import('../../../packages/Popover/index.zh-CN.mdx'))
 const TooltipMdx = lazy(() => import('../../../packages/Tooltip/index.zh-CN.mdx'))
 const DividerMsx = lazy(() => import('../../../packages/Divider/index.zh-CN.mdx'))
+const WatermarkMdx = lazy(() => import('../../../packages/Watermark/index.zh-CN.mdx'))
 import './Markdown.scss'
 
 function DemoMdx({ name }) {
@@ -140,7 +141,10 @@ function DemoMdx({ name }) {
       break
     case 'divider':
       demo = <SuspenseContent><DividerMsx /></SuspenseContent>
-      break;
+      break
+    case 'watermark':
+      demo = <SuspenseContent><WatermarkMdx /></SuspenseContent>
+      break
   }
   return demo
 }

@@ -1,4 +1,4 @@
-import { Edit, Search, Check, Message, Star, Delete, View, StarFilled, Loading, Hide, InfoFilled, WarningFilled, CircleCloseFilled, CircleCheckFilled, ArrowRight, CircleCheck, Close, Share } from 'pelement-react'
+import { Edit, Search, Check, Message, Star, Delete, View, StarFilled, LoadingIcon, Hide, InfoFilled, WarningFilled, CircleCloseFilled, CircleCheckFilled, ArrowRight, CircleCheck, Close, Share } from 'pelement-react'
 
 function ButtonBasic() {
   return (
@@ -11,7 +11,7 @@ function ButtonBasic() {
       <Delete style={{ fontSize: '20px' }} />
       <View style={{ fontSize: '20px' }} />
       <StarFilled style={{ fontSize: '20px' }} />
-      <Loading style={{ fontSize: '20px' }} />
+      <LoadingIcon style={{ fontSize: '20px' }} />
       <Hide style={{ fontSize: '20px' }} />
       <InfoFilled style={{ fontSize: '20px' }} />
       <WarningFilled style={{ fontSize: '20px' }} />

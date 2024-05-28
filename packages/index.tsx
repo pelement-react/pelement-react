@@ -27,7 +27,7 @@ export {
     View,
     StarFilled,
     Close,
-    Loading,
+    LoadingIcon,
     Hide,
     InfoFilled,
     WarningFilled,
@@ -76,3 +76,4 @@ export { default as Backtop } from './Backtop'
 export { default as Breadcrumb } from './Breadcrumb'
 export { default as Segmented } from './Segmented'
 export { default as Watermark } from './Watermark'
+export { default as Loading } from './Loading'

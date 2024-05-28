@@ -27,6 +27,7 @@ const BreadcrumbMdx = lazy(() => import('../../../packages/Breadcrumb/index.zh-C
 const AlertMdx = lazy(() => import('../../../packages/Alert/index.zh-CN.mdx'))
 const DialogMdx = lazy(() => import('../../../packages/Dialog/index.zh-CN.mdx'))
 const DrawerMdx = lazy(() => import('../../../packages/Drawer/index.zh-CN.mdx'))
+const LoadingMdx = lazy(() => import('../../../packages/Loading/index.zh-CN.mdx'))
 const MessageMdx = lazy(() => import('../../../packages/Message/index.zh-CN.mdx'))
 const MessageBoxMdx = lazy(() => import('../../../packages/MessageBox/index.zh-CN.mdx'))
 const NotificationMdx = lazy(() => import('../../../packages/Notification/index.zh-CN.mdx'))
@@ -120,6 +121,9 @@ function DemoMdx({ name }) {
       break
     case 'drawer':
       demo = <SuspenseContent><DrawerMdx /></SuspenseContent>
+      break
+    case 'loading':
+      demo = <SuspenseContent><LoadingMdx /></SuspenseContent>
       break
     case 'message':
       demo = <SuspenseContent><MessageMdx /></SuspenseContent>

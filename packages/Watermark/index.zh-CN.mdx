@@ -3,6 +3,7 @@
 import CodeBlock from '../../docs/components/CodeBlock/CodeBlock'
 import WatermarkBasic from './_example/WatermarkBasic'
 import WatermarkContent from './_example/WatermarkContent'
+import WatermarkImage from './_example/WatermarkImage'
 
 在页面上添加文本或图片等水印信息
 
@@ -20,4 +21,12 @@ import WatermarkContent from './_example/WatermarkContent'
 
 <CodeBlock name="WatermarkContent">
   <WatermarkContent />
+</CodeBlock>
+
+## 图片水印
+
+通过 'image' 指定图像地址。 为了确保图像清晰展示而不是被拉伸，请设置宽度和高度，建议使用至少两倍的宽度和高度的图片来保证显示效果。
+
+<CodeBlock name="WatermarkImage">
+  <WatermarkImage />
 </CodeBlock>

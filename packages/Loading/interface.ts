@@ -11,3 +11,8 @@ export interface LoadingProps
   // 显示在加载图标下方的加载文案
   text?: string
 }
+
+export type LoadingType = {
+  // 显示在加载图标下方的加载文案
+  text?: string
+}

@@ -103,30 +103,51 @@ const Watermark: React.ForwardRefRenderFunction<HTMLDivElement, WatermarkProps> 
       const [markWidth, markHeight,] = getMarkSize(ctx)
       const ratio = getPixelRatio()
       const getClips = useClips()
-      const [textClips, clipWidth] = getClips(
-        content || '',
-        rotate,
-        ratio,
-        markWidth,
-        markHeight,
-        {
-          color: color,
-          fontSize: fontSize,
-          fontStyle: fontStyle,
-          fontWeight: fontWeight,
-          fontFamily: fontFamily,
-          textAlign: textAlign,
-          textBaseline: textBaseline,
-        },
-        gapX,
-        gapY
-      )
 
-      setWatermarkStyle({
-        ...getMarkStyle(),
-        backgroundImage: `url('${textClips}')`,
-        backgroundSize: `${Math.floor(clipWidth)}px`,
-      })
+      // 画canvas
+      const drawCanvas = (
+        drawContent?: NonNullable<WatermarkProps['content']> | HTMLImageElement
+      ) => {
+        const [textClips, clipWidth] = getClips(
+          drawContent || '',
+          rotate,
+          ratio,
+          markWidth,
+          markHeight,
+          {
+            color: color,
+            fontSize: fontSize,
+            fontStyle: fontStyle,
+            fontWeight: fontWeight,
+            fontFamily: fontFamily,
+            textAlign: textAlign,
+            textBaseline: textBaseline,
+          },
+          gapX,
+          gapY
+        )
+
+        setWatermarkStyle({
+          ...getMarkStyle(),
+          backgroundImage: `url('${textClips}')`,
+          backgroundSize: `${Math.floor(clipWidth)}px`,
+        })
+      }
+
+      if (image) {
+        const img = new Image()
+        img.onload = () => {
+          drawCanvas(img)
+        }
+        img.onerror = () => {
+          drawCanvas(content)
+        }
+        img.crossOrigin = 'anonymous'
+        img.referrerPolicy = 'no-referrer'
+        img.src = image
+      } else {
+        drawCanvas(content)
+      }
     }
   }, [])
 

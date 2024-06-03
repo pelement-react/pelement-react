@@ -14,6 +14,7 @@ const TypographyMdx = lazy(() => import('../../pages/component/typography/typogr
 const SwitchMdx = lazy(() => import('../../../packages/Switch/index.zh-CN.mdx'))
 const InputMdx = lazy(() => import('../../../packages/Input/index.zh-CN.mdx'))
 const RateMdx = lazy(() => import('../../../packages/Rate/index.zh-CN.mdx'))
+const SelectMdx = lazy(() => import('../../../packages/Select/index.zh-CN.mdx'))
 const AvatarMdx = lazy(() => import('../../../packages/Avatar/index.zh-CN.mdx'))
 const BadgeMdx = lazy(() => import('../../../packages/Badge/index.zh-CN.mdx'))
 const CollapseMdx = lazy(() => import('../../../packages/Collapse/index.zh-CN.mdx'))
@@ -82,6 +83,9 @@ function DemoMdx({ name }) {
       break
     case 'rate':
       demo = <SuspenseContent><RateMdx /></SuspenseContent>
+      break
+    case 'select':
+      demo = <SuspenseContent><SelectMdx /></SuspenseContent>
       break
     case 'avatar':
       demo = <SuspenseContent><AvatarMdx /></SuspenseContent>

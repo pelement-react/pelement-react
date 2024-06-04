@@ -33,6 +33,7 @@ function ComponentPage() {
             <NavLink to="result">Result 结果</NavLink>
             <NavLink to="table">Table 表格</NavLink>
             <NavLink to="tag">Tag 标签</NavLink>
+            <NavLink to="Timeline">Timeline 时间线</NavLink>
             <NavLink to="segmented">Segmented 分段控制器</NavLink>
             <p className="sidebar-group__title">Navigation 导航</p>
             <NavLink to="backtop">Backtop 回到顶部</NavLink>

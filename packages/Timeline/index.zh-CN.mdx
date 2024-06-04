@@ -1,0 +1,64 @@
+# Timeline 时间线
+
+import CodeBlock from '../../docs/components/CodeBlock/CodeBlock'
+import TimelineBasic from './_example/TimelineBasic'
+import TimelineNode from './_example/TimelineNode'
+import TimelinePlacement from './_example/TimelinePlacement'
+import TimelineCenter from './_example/TimelineCenter'
+
+可视化地呈现时间流信息。
+
+## 基础用法
+
+Timeline 可拆分成多个按照时间戳排列的活动， 时间戳是其区分于其他控件的重要特征， 使用时注意与 Steps 步骤条等区分。
+
+<CodeBlock name="TimelineBasic">
+  <TimelineBasic />
+</CodeBlock>
+
+## ⾃定义节点样式
+
+可根据实际场景⾃定义节点尺⼨、颜⾊，或直接使⽤图标。
+
+<CodeBlock name="TimelineNode">
+  <TimelineNode />
+</CodeBlock>
+
+## ⾃定义时间戳
+
+当内容在垂直⽅向上过⾼时，可将时间戳置于内容之上。
+
+<CodeBlock name="TimelinePlacement">
+  <TimelinePlacement />
+</CodeBlock>
+
+## 垂直居中
+
+垂直居中样式的 Timeline-Item
+
+<CodeBlock name="TimelineCenter">
+  <TimelineCenter />
+</CodeBlock>
+
+## Timeline API
+
+### Timeline Attributes
+
+| 属性名 | 说明     | 类型    | 默认值 |
+| ------ | -------- | ------- | ------ |
+| items  | 选项配置 | Items[] | —      |
+
+### Items
+
+| 属性名        | 说明           | 类型                                                                      | 默认值 |
+| ------------- | -------------- | ------------------------------------------------------------------------- | ------ |
+| timestamp     | 时间戳         | string                                                                    | ''     |
+| hideTimestamp | 是否隐藏时间戳 | boolean                                                                   | false  |
+| center        | 是否垂直居中   | boolean                                                                   | false  |
+| placement     | 时间戳位置     | 'top' &#124; 'bottom'                                                     | bottom |
+| type          | 节点类型       | 'primary' &#124; 'success' &#124; 'warning' &#124; 'danger' &#124; 'info' | ''     |
+| color         | 节点颜色       | 'hsl' &#124; 'hsv' &#124; 'hex' &#124; 'rgb'                              | ''     |
+| size          | 节点尺寸       | 'normal' &#124; 'large'                                                   | normal |
+| icon          | 自定义图标     | ReactNode                                                                 | —      |
+| hollow        | 是否空心点     | boolean                                                                   | false  |
+| content       | 设置内容       | string &#124; ReactNode                                                   | —      |

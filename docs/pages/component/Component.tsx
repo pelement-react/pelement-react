@@ -29,6 +29,7 @@ function ComponentPage() {
             <NavLink to="avatar">Avatar 头像</NavLink>
             <NavLink to="badge">Badge 徽章</NavLink>
             <NavLink to="collapse">Collapse 折叠面板</NavLink>
+            <NavLink to="descriptions">Descriptions 描述列表</NavLink>
             <NavLink to="progress">Progress 进度条</NavLink>
             <NavLink to="result">Result 结果</NavLink>
             <NavLink to="table">Table 表格</NavLink>

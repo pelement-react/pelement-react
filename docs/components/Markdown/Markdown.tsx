@@ -18,6 +18,7 @@ const SelectMdx = lazy(() => import('../../../packages/Select/index.zh-CN.mdx'))
 const AvatarMdx = lazy(() => import('../../../packages/Avatar/index.zh-CN.mdx'))
 const BadgeMdx = lazy(() => import('../../../packages/Badge/index.zh-CN.mdx'))
 const CollapseMdx = lazy(() => import('../../../packages/Collapse/index.zh-CN.mdx'))
+const DescriptionsMdx = lazy(() => import('../../../packages/Descriptions/index.zh-CN.mdx'))
 const ProgressMdx = lazy(() => import('../../../packages/Progress/index.zh-CN.mdx'))
 const ResultMdx = lazy(() => import('../../../packages/Result/index.zh-CN.mdx'))
 const TableMdx = lazy(() => import('../../../packages/Table/index.zh-CN.mdx'))
@@ -96,6 +97,9 @@ function DemoMdx({ name }) {
       break
     case 'collapse':
       demo = <SuspenseContent><CollapseMdx /></SuspenseContent>
+      break
+    case 'descriptions':
+      demo = <SuspenseContent><DescriptionsMdx /></SuspenseContent>
       break
     case 'progress':
       demo = <SuspenseContent><ProgressMdx /></SuspenseContent>

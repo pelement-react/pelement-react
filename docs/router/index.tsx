@@ -5,7 +5,7 @@ import HomePage from '../pages/home/Home'
 import SuspenseContent from '../components/SuspenseContent/SuspenseContent'
 const GuidePage = lazy(() => import('../pages/guide/Guide'))
 const InstallationMdx = lazy(() => import('../pages/guide/installation.zh-CN.mdx'))
-const ChangelogMdx = lazy(() => import('../pages/guide/changelog.zh-CN.mdx'))
+const ChangelogMdx = lazy(() => import('../pages/guide/Changelog/index.zh-CN.mdx'))
 const RecommendationMdx = lazy(() => import('../pages/guide/recommendation.zh-CN.mdx'))
 const ComponentPage = lazy(() => import('../pages/component/Component'))
 const Overview = lazy(() => import('../pages/component/Overview/Overview'))

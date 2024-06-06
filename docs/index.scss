@@ -29,6 +29,10 @@ body {
   line-height: 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -37,8 +41,16 @@ body {
   margin-left: 0.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-3 {
@@ -67,6 +79,11 @@ body {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .items-start {

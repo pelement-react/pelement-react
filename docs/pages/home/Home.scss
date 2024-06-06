@@ -1,17 +1,68 @@
-.home-content {
-  text-align: center;
+.home-page {
+  padding-top: 90px;
+
+  .banner {
+    text-align: center;
+  }
+
+  .jumbotron {
+    width: 800px;
+    margin: 20px auto;
+    position: relative;
+
+    .parallax-container {
+      width: 800px;
+    }
+  }
 }
 
-.logo {
-  width: 100px;
+.screen-svg {
+  --screen-c-0: #e4efff;
+  --screen-c-1: #c7deff;
+  --screen-c-2: white;
+  --screen-c-3: #eff5ff;
+  --screen-c-4: var(--screen-c-3);
+  --screen-c-5: #bdd8ff;
+  --screen-c-6: #eff5ff;
 }
 
-.description {
-  padding: 100px 0;
+.people-svg {
+  --people-c-0: #ece6e6;
+  --people-c-1: #ddd7d7;
+  --people-c-2: #fbbda4;
+  --people-c-3: #190e02;
+  --people-c-4: #70a2eb;
+  --people-c-5: #3f3c7e;
+  --people-c-6: #504d84;
+  --people-c-7: #504d84;
+  --people-c-8: #70a2eb;
+  --people-c-9: #f1f7ff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.left-layer-svg {
+  --ll-c-0: #5c97ee;
+}
+
+.left-bottom-layer {
+  --lbl-c-0: white;
+  --lbl-c-1: #c7dbf8;
+  --lbl-c-2: #98bdf2;
+  --lbl-c-3: #e4efff;
+}
+
+.right-layer {
+  --rl-c-0: white;
+  --rl-c-1: #e4efff;
+  filter: drop-shadow(0px 0px 6px rgba(10, 34, 59, .04)) drop-shadow(0px 6px 20px rgba(10, 34, 59, .08));
 }
 
 .join-us {
-  padding: 20px 0 40px;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .footer-main {

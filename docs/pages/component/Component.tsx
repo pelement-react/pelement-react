@@ -32,6 +32,7 @@ function ComponentPage() {
             <NavLink to="descriptions">Descriptions 描述列表</NavLink>
             <NavLink to="progress">Progress 进度条</NavLink>
             <NavLink to="result">Result 结果</NavLink>
+            <NavLink to="skeleton">Skeleton 骨架屏</NavLink>
             <NavLink to="table">Table 表格</NavLink>
             <NavLink to="tag">Tag 标签</NavLink>
             <NavLink to="Timeline">Timeline 时间线</NavLink>

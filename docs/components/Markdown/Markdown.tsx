@@ -11,9 +11,10 @@ const TextMdx = lazy(() => import('../../../packages/Text/index.zh-CN.mdx'))
 const ScrollbarMdx = lazy(() => import('../../../packages/Scrollbar/index.zh-CN.mdx'))
 const SpaceMdx = lazy(() => import('../../../packages/Space/index.zh-CN.mdx'))
 const TypographyMdx = lazy(() => import('../../pages/component/typography/typography.zh-CN.mdx'))
-const SwitchMdx = lazy(() => import('../../../packages/Switch/index.zh-CN.mdx'))
+const ColorPickerMdx = lazy(() => import('../../../packages/ColorPicker/index.zh-CN.mdx'))
 const InputMdx = lazy(() => import('../../../packages/Input/index.zh-CN.mdx'))
 const RateMdx = lazy(() => import('../../../packages/Rate/index.zh-CN.mdx'))
+const SwitchMdx = lazy(() => import('../../../packages/Switch/index.zh-CN.mdx'))
 const SelectMdx = lazy(() => import('../../../packages/Select/index.zh-CN.mdx'))
 const AvatarMdx = lazy(() => import('../../../packages/Avatar/index.zh-CN.mdx'))
 const BadgeMdx = lazy(() => import('../../../packages/Badge/index.zh-CN.mdx'))
@@ -78,8 +79,8 @@ function DemoMdx({ name }) {
     case 'typography':
       demo = <SuspenseContent><TypographyMdx /></SuspenseContent>
       break
-    case 'switch':
-      demo = <SuspenseContent><SwitchMdx /></SuspenseContent>
+    case 'color-picker':
+      demo = <SuspenseContent><ColorPickerMdx /></SuspenseContent>
       break
     case 'input':
       demo = <SuspenseContent><InputMdx /></SuspenseContent>
@@ -89,6 +90,9 @@ function DemoMdx({ name }) {
       break
     case 'select':
       demo = <SuspenseContent><SelectMdx /></SuspenseContent>
+      break
+    case 'switch':
+      demo = <SuspenseContent><SwitchMdx /></SuspenseContent>
       break
     case 'avatar':
       demo = <SuspenseContent><AvatarMdx /></SuspenseContent>

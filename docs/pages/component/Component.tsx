@@ -21,10 +21,11 @@ function ComponentPage() {
             <NavLink to="space">Space 间距</NavLink>
             <NavLink to="typography">Typography 排版</NavLink>
             <p className="sidebar-group__title">Form 表单组件</p>
-            <NavLink to="switch">Switch 开关</NavLink>
+            <NavLink to="color-picker">ColorPicker 颜色选择器</NavLink>
             <NavLink to="input">Input 输入框</NavLink>
             <NavLink to="rate">Rate 评分</NavLink>
             <NavLink to="select">Select 选择器</NavLink>
+            <NavLink to="switch">Switch 开关</NavLink>
             <p className="sidebar-group__title">Data 数据展示</p>
             <NavLink to="avatar">Avatar 头像</NavLink>
             <NavLink to="badge">Badge 徽章</NavLink>
@@ -35,7 +36,7 @@ function ComponentPage() {
             <NavLink to="skeleton">Skeleton 骨架屏</NavLink>
             <NavLink to="table">Table 表格</NavLink>
             <NavLink to="tag">Tag 标签</NavLink>
-            <NavLink to="Timeline">Timeline 时间线</NavLink>
+            <NavLink to="timeline">Timeline 时间线</NavLink>
             <NavLink to="segmented">Segmented 分段控制器</NavLink>
             <p className="sidebar-group__title">Navigation 导航</p>
             <NavLink to="backtop">Backtop 回到顶部</NavLink>

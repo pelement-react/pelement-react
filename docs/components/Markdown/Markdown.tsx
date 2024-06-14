@@ -11,6 +11,7 @@ const TextMdx = lazy(() => import('../../../packages/Text/index.zh-CN.mdx'))
 const ScrollbarMdx = lazy(() => import('../../../packages/Scrollbar/index.zh-CN.mdx'))
 const SpaceMdx = lazy(() => import('../../../packages/Space/index.zh-CN.mdx'))
 const TypographyMdx = lazy(() => import('../../pages/component/typography/typography.zh-CN.mdx'))
+const CheckboxMdx = lazy(() => import('../../../packages/Checkbox/index.zh-CN.mdx'))
 const ColorPickerMdx = lazy(() => import('../../../packages/ColorPicker/index.zh-CN.mdx'))
 const InputMdx = lazy(() => import('../../../packages/Input/index.zh-CN.mdx'))
 const RateMdx = lazy(() => import('../../../packages/Rate/index.zh-CN.mdx'))
@@ -78,6 +79,9 @@ function DemoMdx({ name }) {
       break
     case 'typography':
       demo = <SuspenseContent><TypographyMdx /></SuspenseContent>
+      break
+    case 'checkbox':
+      demo = <SuspenseContent><CheckboxMdx /></SuspenseContent>
       break
     case 'color-picker':
       demo = <SuspenseContent><ColorPickerMdx /></SuspenseContent>

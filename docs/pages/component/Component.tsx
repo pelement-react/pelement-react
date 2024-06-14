@@ -21,6 +21,7 @@ function ComponentPage() {
             <NavLink to="space">Space 间距</NavLink>
             <NavLink to="typography">Typography 排版</NavLink>
             <p className="sidebar-group__title">Form 表单组件</p>
+            <NavLink to="checkbox">Checkbox 多选框</NavLink>
             <NavLink to="color-picker">ColorPicker 颜色选择器</NavLink>
             <NavLink to="input">Input 输入框</NavLink>
             <NavLink to="rate">Rate 评分</NavLink>

@@ -46,6 +46,7 @@ const DefineRoute = () => {
           { path: 'scrollbar', element: <Markdown name="scrollbar" /> },
           { path: 'space', element: <Markdown name="space" /> },
           { path: 'typography', element: <Markdown name="typography" /> },
+          { path: 'checkbox', element: <Markdown name="checkbox" /> },
           { path: 'color-picker', element: <Markdown name="color-picker" /> },
           { path: 'input', element: <Markdown name="input" /> },
           { path: 'rate', element: <Markdown name="rate" /> },

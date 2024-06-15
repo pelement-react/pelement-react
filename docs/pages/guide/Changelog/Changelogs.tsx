@@ -14,10 +14,17 @@ import Version_0_0_1_alpha_12 from './0.0.1-alpha.12.zh-CN.mdx'
 import Version_0_0_1_alpha_13 from './0.0.1-alpha.13.zh-CN.mdx'
 import Version_0_0_1_alpha_14 from './0.0.1-alpha.14.zh-CN.mdx'
 import Version_0_0_1_alpha_15 from './0.0.1-alpha.15.zh-CN.mdx'
+import Version_0_0_1_alpha_16 from './0.0.1-alpha.16.zh-CN.mdx'
 import './Changelogs.scss'
 
 function Changelogs() {
   const versionList = [
+    {
+      by: 'llkui',
+      date: '2024/6/15 15:11:05',
+      link: 'https://github.com/pelement-react/pelement-react/releases/tag/0.0.1-alpha.16',
+      content: <Version_0_0_1_alpha_16 />
+    },
     {
       by: 'llkui',
       date: '2024/6/6 22:33:44',

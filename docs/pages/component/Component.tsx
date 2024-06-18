@@ -40,6 +40,7 @@ function ComponentPage() {
             <NavLink to="timeline">Timeline 时间线</NavLink>
             <NavLink to="segmented">Segmented 分段控制器</NavLink>
             <p className="sidebar-group__title">Navigation 导航</p>
+            <NavLink to="affix">Affix 固钉</NavLink>
             <NavLink to="backtop">Backtop 回到顶部</NavLink>
             <NavLink to="breadcrumb">Breadcrumb 面包屑</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>

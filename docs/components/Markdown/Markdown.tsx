@@ -28,6 +28,7 @@ const TableMdx = lazy(() => import('../../../packages/Table/index.zh-CN.mdx'))
 const TagMdx = lazy(() => import('../../../packages/Tag/index.zh-CN.mdx'))
 const TimelineMdx = lazy(() => import('../../../packages/Timeline/index.zh-CN.mdx'))
 const SegmentedMdx = lazy(() => import('../../../packages/Segmented/index.zh-CN.mdx'))
+const AffixMdx = lazy(() => import('../../../packages/Affix/index.zh-CN.mdx'))
 const BacktopMdx = lazy(() => import('../../../packages/Backtop/index.zh-CN.mdx'))
 const BreadcrumbMdx = lazy(() => import('../../../packages/Breadcrumb/index.zh-CN.mdx'))
 const AlertMdx = lazy(() => import('../../../packages/Alert/index.zh-CN.mdx'))
@@ -130,6 +131,9 @@ function DemoMdx({ name }) {
       break
     case 'segmented':
       demo = <SuspenseContent><SegmentedMdx /></SuspenseContent>
+      break
+    case 'affix':
+      demo = <SuspenseContent><AffixMdx /></SuspenseContent>
       break
     case 'backtop':
       demo = <SuspenseContent><BacktopMdx /></SuspenseContent>

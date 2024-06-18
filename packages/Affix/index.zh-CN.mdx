@@ -1,0 +1,49 @@
+# Affix 固钉
+
+import CodeBlock from '../../docs/components/CodeBlock/CodeBlock'
+import AffixBasic from './_example/AffixBasic'
+import AffixTarget from './_example/AffixTarget'
+import AffixPosition from './_example/AffixPosition'
+
+将页面元素固定在特定可视区域。
+
+## 基础用法
+
+固钉默认固定在页面顶部。
+
+通过设置 offset 属性来改变吸顶距离，默认值为 0。
+
+<CodeBlock name="AffixBasic">
+  <AffixBasic />
+</CodeBlock>
+
+## 指定容器
+
+通过设置 target 属性，让固钉始终保持在容器内， 超过范围则隐藏。
+
+请注意容器避免出现滚动条。
+
+<CodeBlock name="AffixTarget">
+  <AffixTarget />
+</CodeBlock>
+
+## 固定位置
+
+Affix 组件提供 2 个固定的位置参数 top 和 bottom。
+
+通过设置 position 属性来改变固定位置，默认值为 top 。
+
+<CodeBlock name="AffixPosition">
+  <AffixPosition />
+</CodeBlock>
+
+## API
+
+### 属性
+
+| 属性名   | 说明                   | 类型                  | 默认值 |
+| -------- | ---------------------- | --------------------- | ------ |
+| offset   | 偏移距离               | number                | 0      |
+| position | 固钉位置               | 'top' &#124; 'bottom' | top    |
+| target   | 指定容器（CSS 选择器） | string                | —      |
+| zIndex   | z-index                | number                | 100    |

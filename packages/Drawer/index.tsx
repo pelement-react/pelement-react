@@ -31,7 +31,7 @@ const Drawer: React.ForwardRefRenderFunction<HTMLDivElement, DrawerProps> = (
     display: open ? '' : 'none'
   }
 
-  useOnClickOutside(domRef, () => {
+  useOnClickOutside([domRef], () => {
     if (open && onClose) {
       onClose()
     }

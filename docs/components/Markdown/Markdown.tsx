@@ -15,8 +15,9 @@ const CheckboxMdx = lazy(() => import('../../../packages/Checkbox/index.zh-CN.md
 const ColorPickerMdx = lazy(() => import('../../../packages/ColorPicker/index.zh-CN.mdx'))
 const InputMdx = lazy(() => import('../../../packages/Input/index.zh-CN.mdx'))
 const RateMdx = lazy(() => import('../../../packages/Rate/index.zh-CN.mdx'))
-const SwitchMdx = lazy(() => import('../../../packages/Switch/index.zh-CN.mdx'))
 const SelectMdx = lazy(() => import('../../../packages/Select/index.zh-CN.mdx'))
+const SwitchMdx = lazy(() => import('../../../packages/Switch/index.zh-CN.mdx'))
+const TimeSelectMdx = lazy(() => import('../../../packages/TimeSelect/index.zh-CN.mdx'))
 const AvatarMdx = lazy(() => import('../../../packages/Avatar/index.zh-CN.mdx'))
 const BadgeMdx = lazy(() => import('../../../packages/Badge/index.zh-CN.mdx'))
 const CollapseMdx = lazy(() => import('../../../packages/Collapse/index.zh-CN.mdx'))
@@ -98,6 +99,9 @@ function DemoMdx({ name }) {
       break
     case 'switch':
       demo = <SuspenseContent><SwitchMdx /></SuspenseContent>
+      break
+    case 'time-select':
+      demo = <SuspenseContent><TimeSelectMdx /></SuspenseContent>
       break
     case 'avatar':
       demo = <SuspenseContent><AvatarMdx /></SuspenseContent>

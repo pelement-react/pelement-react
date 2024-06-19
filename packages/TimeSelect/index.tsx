@@ -1,35 +1,27 @@
-import { forwardRef, useEffect, useRef, useState } from 'react'
+import { forwardRef, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import clsx from 'clsx'
 import { arrow, autoUpdate, offset, useClick, useFloating, useInteractions } from '@floating-ui/react'
-import { SelectOption, SelectProps } from './interfact'
-import SelectContainerComponent from './SelectContainer'
+import { TimeSelectProps } from './interface'
 import './style'
+import TimeSelectContainerComponent from './TimeSelectContainer'
 import { useOnClickOutside } from '../_util/hooks/useOnClickOutside'
 
-const Select: React.ForwardRefRenderFunction<HTMLDivElement, SelectProps> = (
+const TimeSelect: React.ForwardRefRenderFunction<HTMLDivElement, TimeSelectProps> = (
   props,
 ) => {
   const {
     style,
     className,
-    options,
-    value,
-    size = 'default',
-    onChange,
+    start = '09:00',
+    step = '00:30',
+    end = '18:00',
   } = props
 
   const [isHovering, setIsHovering] = useState(false)
   const [isFocused, setIsFocused] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  const [selectedValue, setSelectedValue] = useState<SelectOption | null>(null)
   const arrowRef = useRef(null)
-
-  useEffect(() => {
-    if (value) {
-      setSelectedValue(value)
-    }
-  }, [value])
 
   const { refs, floatingStyles, context, middlewareData } = useFloating({
     placement: 'bottom',
@@ -53,21 +45,12 @@ const Select: React.ForwardRefRenderFunction<HTMLDivElement, SelectProps> = (
   useOnClickOutside(
     [
       (refs.reference as React.RefObject<HTMLDivElement>),
-      refs.floating,
+      refs.floating
     ],
     () => {
       setIsOpen(false)
     }
   )
-
-  // 选择
-  function handleClick(value: SelectOption) {
-    setIsOpen(false)
-    setSelectedValue(value)
-    if (onChange) {
-      onChange(value)
-    }
-  }
 
   return (
     <>
@@ -77,10 +60,6 @@ const Select: React.ForwardRefRenderFunction<HTMLDivElement, SelectProps> = (
         className={
           clsx(
             'el-select',
-            {
-              'el-select--large': size === 'large',
-              'el-select--small': size === 'small',
-            },
             className
           )
         }
@@ -89,7 +68,7 @@ const Select: React.ForwardRefRenderFunction<HTMLDivElement, SelectProps> = (
         <div
           className={
             clsx(
-              'el-select__wrapper el-tooltip__trigger el-tooltip__trigger',
+              'el-select__wrapper is-filterable el-tooltip__trigger el-tooltip__trigger',
               {
                 'is-hovering': isHovering,
                 'is-focused': isFocused
@@ -100,14 +79,24 @@ const Select: React.ForwardRefRenderFunction<HTMLDivElement, SelectProps> = (
           onMouseOver={() => { setIsHovering(true) }}
           onMouseOut={() => { setIsHovering(false) }}
           onFocus={() => { setIsFocused(true) }}
-          onBlur={() => setIsFocused(false)}
+          onBlur={() => { setIsFocused(false) }}
         >
+          <div className="el-select__prefix">
+            <i className="el-icon el-input__prefix-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                <path fill="currentColor" d="M512 896a384 384 0 1 0 0-768 384 384 0 0 0 0 768m0 64a448 448 0 1 1 0-896 448 448 0 0 1 0 896"></path>
+                <path fill="currentColor" d="M480 256a32 32 0 0 1 32 32v256a32 32 0 0 1-64 0V288a32 32 0 0 1 32-32"></path>
+                <path fill="currentColor" d="M480 512h256q32 0 32 32t-32 32H480q-32 0-32-32t32-32"></path>
+              </svg>
+            </i>
+          </div>
           <div className="el-select__selection">
-            <div className="el-select__selected-item el-select__input-wrapper is-hidden">
-              <input type="text" className="el-select__input is-large" autoComplete="off" role="combobox" aria-activedescendant="el-id-3094-91" aria-controls="el-id-3094-90" aria-expanded="false" aria-autocomplete="none" aria-haspopup="listbox" id="el-id-3094-234" style={{ width: '11px' }} />
+            <div className="el-select__selected-item el-select__input-wrapper">
+              <input type="text" className="el-select__input" autoComplete="off" role="combobox" spellCheck="false" aria-activedescendant="el-id-9874-30" aria-controls="el-id-9874-29" aria-expanded="false" aria-autocomplete="none" aria-haspopup="listbox" style={{ width: '11px' }} />
+              <span aria-hidden="true" className="el-select__input-calculator"></span>
             </div>
-            <div className="el-select__selected-item el-select__placeholder">
-              <span>{selectedValue?.label}</span>
+            <div className="el-select__selected-item el-select__placeholder is-transparent">
+              <span>Select time</span>
             </div>
           </div>
           <div className="el-select__suffix">
@@ -122,13 +111,13 @@ const Select: React.ForwardRefRenderFunction<HTMLDivElement, SelectProps> = (
       {
         isOpen &&
         createPortal(
-          <SelectContainerComponent
+          <TimeSelectContainerComponent
             ref={refs.setFloating}
             style={floatingStyles}
-            options={options}
-            value={value}
-            onClick={handleClick}
             getFloatingProps={getFloatingProps}
+            start={start}
+            step={step}
+            end={end}
           >
             <span
               ref={arrowRef}
@@ -138,8 +127,9 @@ const Select: React.ForwardRefRenderFunction<HTMLDivElement, SelectProps> = (
                 left: middlewareData.arrow?.x,
                 top: middlewareData.arrow?.y,
               }}
-            ></span>
-          </SelectContainerComponent>,
+            >
+            </span>
+          </TimeSelectContainerComponent>,
           document.body
         )
       }
@@ -147,8 +137,8 @@ const Select: React.ForwardRefRenderFunction<HTMLDivElement, SelectProps> = (
   )
 }
 
-const SelectComponent = forwardRef<HTMLDivElement, SelectProps>(Select)
+const TimeSelectComponent = forwardRef<HTMLDivElement, TimeSelectProps>(TimeSelect)
 
-SelectComponent.displayName = 'select'
+TimeSelectComponent.displayName = 'TimeSelectComponent'
 
-export default SelectComponent
+export default TimeSelectComponent

@@ -31,6 +31,7 @@ function ComponentPage() {
             <p className="sidebar-group__title">Data 数据展示</p>
             <NavLink to="avatar">Avatar 头像</NavLink>
             <NavLink to="badge">Badge 徽章</NavLink>
+            <NavLink to="card">Card 卡片</NavLink>
             <NavLink to="collapse">Collapse 折叠面板</NavLink>
             <NavLink to="descriptions">Descriptions 描述列表</NavLink>
             <NavLink to="progress">Progress 进度条</NavLink>

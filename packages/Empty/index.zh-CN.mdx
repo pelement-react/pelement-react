@@ -1,0 +1,68 @@
+# Empty 空状态
+
+import CodeBlock from '../../docs/components/CodeBlock/CodeBlock'
+import EmptyBasic from './_example/EmptyBasic'
+import EmptyImage from './_example/EmptyImage'
+import EmptyImageSize from './_example/EmptyImageSize'
+import EmptyContent from './_example/EmptyContent'
+
+空状态时的占位提示。
+
+## 基础用法
+
+<CodeBlock name="EmptyBasic">
+  <EmptyBasic />
+</CodeBlock>
+
+## 自定义图片
+
+通过设置 image 属性传入图片 URL。
+
+<CodeBlock name="EmptyImage">
+  <EmptyImage />
+</CodeBlock>
+
+## 图片尺寸
+
+通过使用 imageSize 属性来控制图片大小。
+
+<CodeBlock name="EmptyImageSize">
+  <EmptyImageSize />
+</CodeBlock>
+
+## 底部内容
+
+使用默认插槽可在底部插入内容。
+
+<CodeBlock name="EmptyContent">
+  <EmptyContent />
+</CodeBlock>
+
+## 自定义样式
+
+您可以为empty组件设置自定义样式。 使用 css/scss 语言来更改全局或局部颜色。 
+
+### 默认变量
+
+| 变量                    | 颜色                    |
+| ----------------------- | ----------------------- |
+| --el-empty-fill-color-0 | var\(--el-color-white\) |
+| --el-empty-fill-color-1 | #fcfcfd                 |
+| --el-empty-fill-color-2 | #f8f9fb                 |
+| --el-empty-fill-color-3 | #f7f8fc                 |
+| --el-empty-fill-color-4 | #eeeff3                 |
+| --el-empty-fill-color-5 | #edeef2                 |
+| --el-empty-fill-color-6 | #e9ebef                 |
+| --el-empty-fill-color-7 | #e5e7e9                 |
+| --el-empty-fill-color-8 | #e0e3e9                 |
+| --el-empty-fill-color-9 | #d5d7de                 |
+
+## API
+
+### Attributes
+
+| 属性名      | 说明                         | 类型                    | 默认值 |
+| ----------- | ---------------------------- | ----------------------- | ------ |
+| image       | empty 组件的图像地址         | string &#124; ReactNode | —      |
+| imageSize   | empty 组件的图像尺寸（宽度） | number                  | —      |
+| description | empty 组件的描述信息         | string &#124; ReactNode | —      |

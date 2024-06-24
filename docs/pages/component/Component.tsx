@@ -34,6 +34,7 @@ function ComponentPage() {
             <NavLink to="card">Card 卡片</NavLink>
             <NavLink to="collapse">Collapse 折叠面板</NavLink>
             <NavLink to="descriptions">Descriptions 描述列表</NavLink>
+            <NavLink to="empty">Empty 空状态</NavLink>
             <NavLink to="progress">Progress 进度条</NavLink>
             <NavLink to="result">Result 结果</NavLink>
             <NavLink to="skeleton">Skeleton 骨架屏</NavLink>

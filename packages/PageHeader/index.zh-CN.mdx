@@ -1,0 +1,84 @@
+# Page Header 页头
+
+import CodeBlock from '../../docs/components/CodeBlock/CodeBlock'
+import PageHeaderAll from './_example/PageHeaderAll'
+import PageHeaderBasic from './_example/PageHeaderBasic'
+import PageHeaderIcon from './_example/PageHeaderIcon'
+import PageHeaderNoIcon from './_example/PageHeaderNoIcon'
+import PageHeaderBreadcrumb from './_example/PageHeaderBreadcrumb'
+import PageHeaderExtra from './_example/PageHeaderExtra'
+import PageHeaderContent from './_example/PageHeaderContent'
+
+如果页面的路径比较简单，推荐使用页头组件而非面包屑组件。
+
+## 完整示例
+
+<CodeBlock name="PageHeaderAll">
+  <PageHeaderAll />
+</CodeBlock>
+
+## 基础用法
+
+简单场景下的标准页头。
+
+<CodeBlock name="PageHeaderBasic">
+  <PageHeaderBasic />
+</CodeBlock>
+
+## 自定义图标
+
+默认图标可能无法满足您的需求，您可以通过设置icon属性来自定义图标，示例如下。
+
+<CodeBlock name="PageHeaderIcon">
+  <PageHeaderIcon />
+</CodeBlock>
+
+## 无图标
+
+有时，页面全是元素，您可能不想展示页面上方的图标，您可以设置icon属性值为null来去除它。
+
+<CodeBlock name="PageHeaderNoIcon">
+  <PageHeaderNoIcon />
+</CodeBlock>
+
+## 面包屑导航
+
+使用页头组件，您可以通过添加插槽 breadcrumb 来设置面包屑路由导航。
+
+<CodeBlock name="PageHeaderBreadcrumb">
+  <PageHeaderBreadcrumb />
+</CodeBlock>
+
+## 额外操作部分
+
+头部可能会变得很复杂，您可以在头部添加更多的区块，以允许丰富的交互。
+
+<CodeBlock name="PageHeaderExtra">
+  <PageHeaderExtra />
+</CodeBlock>
+
+## 主要内容
+
+有时我们想让页头显示一些协同响应内容，我们可以使用 children。
+
+<CodeBlock name="PageHeaderContent">
+  <PageHeaderContent />
+</CodeBlock>
+
+## API
+
+### Attributes
+
+| 属性名     | 说明                              | 类型                    | 默认值 |
+| ---------- | --------------------------------- | ----------------------- | ------ |
+| icon       | Page Header 的图标 Icon 组件      | ReactNode               | Back   |
+| title      | Page Header 的主标题，默认是 Back | string &#124; ReactNode | Back   |
+| content    | Page Header 的内容                | string &#124; ReactNode | —      |
+| extra      | Page Header 的扩展设置            | string &#124; ReactNode | —      |
+| breadcrumb | Page Header 的面包屑导航内容      | string &#124; ReactNode | —      |
+
+### 事件
+
+| 事件名 | 说明             | 类型       |
+| ------ | ---------------- | ---------- |
+| onBack | 点击左侧区域触发 | () => void |

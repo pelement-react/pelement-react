@@ -46,6 +46,7 @@ function ComponentPage() {
             <NavLink to="affix">Affix 固钉</NavLink>
             <NavLink to="backtop">Backtop 回到顶部</NavLink>
             <NavLink to="breadcrumb">Breadcrumb 面包屑</NavLink>
+            <NavLink to="page-header">Page Header 页头</NavLink>
             <p className="sidebar-group__title">Feedback 反馈组件</p>
             <NavLink to="alert">Alert 提示</NavLink>
             <NavLink to="dialog">Dialog 对话框</NavLink>

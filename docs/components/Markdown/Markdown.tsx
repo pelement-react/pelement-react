@@ -34,6 +34,7 @@ const SegmentedMdx = lazy(() => import('../../../packages/Segmented/index.zh-CN.
 const AffixMdx = lazy(() => import('../../../packages/Affix/index.zh-CN.mdx'))
 const BacktopMdx = lazy(() => import('../../../packages/Backtop/index.zh-CN.mdx'))
 const BreadcrumbMdx = lazy(() => import('../../../packages/Breadcrumb/index.zh-CN.mdx'))
+const PageHeaderMdx = lazy(() => import('../../../packages/PageHeader/index.zh-CN.mdx'))
 const AlertMdx = lazy(() => import('../../../packages/Alert/index.zh-CN.mdx'))
 const DialogMdx = lazy(() => import('../../../packages/Dialog/index.zh-CN.mdx'))
 const DrawerMdx = lazy(() => import('../../../packages/Drawer/index.zh-CN.mdx'))
@@ -152,6 +153,9 @@ function DemoMdx({ name }) {
       break
     case 'breadcrumb':
       demo = <SuspenseContent><BreadcrumbMdx /></SuspenseContent>
+      break
+    case 'page-header':
+      demo = <SuspenseContent><PageHeaderMdx /></SuspenseContent>
       break
     case 'alert':
       demo = <SuspenseContent><AlertMdx /></SuspenseContent>

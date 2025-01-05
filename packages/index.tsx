@@ -16,6 +16,7 @@ export type { ScrollbarProps } from './Scrollbar/interface'
 export type { BadgeProps } from './Badge/interface'
 export type { RateProps } from './Rate/interface'
 export type { MessageBoxProps } from './MessageBox/interface'
+export type { ImageProps } from './Image/interface'
 
 export {
     Edit,
@@ -38,6 +39,14 @@ export {
     CircleCheck,
     QuestionFilled,
     Share,
+    Picture,
+    ArrowLeft,
+    ZoomOut,
+    ZoomIn,
+    FullScreen,
+    ScaleToOriginal,
+    RefreshLeft,
+    RefreshRight,
 } from './Icon'
 export { default as Button } from './Button'
 export { default as Container } from './Container/Container'
@@ -91,3 +100,4 @@ export { default as TimeSelect } from './TimeSelect'
 export { default as Card } from './Card'
 export { default as Empty } from './Empty'
 export { default as PageHeader } from './PageHeader'
+export { default as Image } from './Image'

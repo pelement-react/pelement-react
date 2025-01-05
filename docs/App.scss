@@ -89,7 +89,7 @@
   top: 55px;
   bottom: 0;
   left: 0;
-  padding: 48px 32px;
+  padding: 48px;
   width: 190px;
   overflow: auto;
 
@@ -112,8 +112,9 @@
 
     &.active {
       font-weight: 600;
-      color: var(--el-color-primary-dark-2);
+      color: var(--brand-color);
       background-color: var(--link-active-bg-color);
+      transition: color .25s;
     }
   }
 }

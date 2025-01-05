@@ -1,9 +1,9 @@
 import { forwardRef } from 'react'
 import clsx from 'clsx'
 import { IconProps } from '../interface'
-import ArrowRightSvg from '@element-plus/icons-svg/arrow-right.svg?react'
+import ZoomOutSvg from '@element-plus/icons-svg/zoom-out.svg?react'
 
-const ArrowRight: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
+const ZoomOut: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
   props,
   ref,
 ) => {
@@ -19,19 +19,19 @@ const ArrowRight: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
       style={style}
       className={
         clsx(
-          'el-icon',
           className,
+          'el-icon'
         )
       }
       onClick={onClick}
     >
-      <ArrowRightSvg />
+      <ZoomOutSvg />
     </i>
   )
 }
 
-const ArrowRightComponent = forwardRef<HTMLDivElement, IconProps>(ArrowRight)
+const ZoomOutComponent = forwardRef<HTMLDivElement, IconProps>(ZoomOut)
 
-ArrowRightComponent.displayName = 'ArrowRight'
+ZoomOutComponent.displayName = 'ZoomOut'
 
-export default ArrowRightComponent
+export default ZoomOutComponent

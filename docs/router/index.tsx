@@ -59,6 +59,7 @@ const DefineRoute = () => {
           { path: 'collapse', element: <Markdown name="collapse" /> },
           { path: 'descriptions', element: <Markdown name="descriptions" /> },
           { path: 'empty', element: <Markdown name="empty" /> },
+          { path: 'image', element: <Markdown name="image" /> },
           { path: 'progress', element: <Markdown name="progress" /> },
           { path: 'result', element: <Markdown name="result" /> },
           { path: 'skeleton', element: <Markdown name="skeleton" /> },

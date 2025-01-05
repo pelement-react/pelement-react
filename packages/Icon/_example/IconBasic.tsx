@@ -1,4 +1,4 @@
-import { Edit, Search, Check, Message, Star, Delete, View, StarFilled, LoadingIcon, Hide, InfoFilled, WarningFilled, CircleCloseFilled, CircleCheckFilled, ArrowRight, CircleCheck, Close, Share } from 'pelement-react'
+import { Edit, Search, Check, Message, Star, Delete, View, StarFilled, LoadingIcon, Hide, InfoFilled, WarningFilled, CircleCloseFilled, CircleCheckFilled, ArrowRight, CircleCheck, Close, Share, Picture, ArrowLeft, ZoomOut, ZoomIn, FullScreen, ScaleToOriginal, RefreshLeft, RefreshRight } from 'pelement-react'
 
 function ButtonBasic() {
   return (
@@ -21,6 +21,14 @@ function ButtonBasic() {
       <CircleCheck style={{ fontSize: '20px' }} />
       <Close style={{ fontSize: '20px' }} />
       <Share style={{ fontSize: '20px' }} />
+      <Picture style={{ fontSize: '20px' }} />
+      <ArrowLeft style={{ fontSize: '20px' }} />
+      <ZoomOut style={{ fontSize: '20px' }} />
+      <ZoomIn style={{ fontSize: '20px' }} />
+      <FullScreen style={{ fontSize: '20px' }} />
+      <ScaleToOriginal style={{ fontSize: '20px' }} />
+      <RefreshLeft style={{ fontSize: '20px' }} />
+      <RefreshRight style={{ fontSize: '20px' }} />
     </>
   )
 }

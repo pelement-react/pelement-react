@@ -48,7 +48,6 @@ function NotificationContainer() {
     let bottomRight = 0
     let bottomLeft = 0
     list.forEach((notificationItem: NotificationType) => {
-      console.log(notificationItem.position)
       if (notificationItem.position) {
         if (notificationItem.position === 'top-right') {
           // 当前notification的top = 前一个notification的offsetHeight + 16
@@ -78,7 +77,6 @@ function NotificationContainer() {
       }
     })
 
-    console.log(list)
     return list
   }
 

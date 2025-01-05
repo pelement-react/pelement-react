@@ -112,8 +112,9 @@
 
     &.active {
       font-weight: 600;
-      color: var(--el-color-primary-dark-2);
+      color: var(--brand-color);
       background-color: var(--link-active-bg-color);
+      transition: color .25s;
     }
   }
 }

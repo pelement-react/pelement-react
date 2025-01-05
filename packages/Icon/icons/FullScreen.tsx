@@ -1,9 +1,9 @@
 import { forwardRef } from 'react'
 import clsx from 'clsx'
 import { IconProps } from '../interface'
-import ArrowRightSvg from '@element-plus/icons-svg/arrow-right.svg?react'
+import FullScreenSvg from '@element-plus/icons-svg/full-screen.svg?react'
 
-const ArrowRight: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
+const FullScreen: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
   props,
   ref,
 ) => {
@@ -25,13 +25,13 @@ const ArrowRight: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
       }
       onClick={onClick}
     >
-      <ArrowRightSvg />
+      <FullScreenSvg />
     </i>
   )
 }
 
-const ArrowRightComponent = forwardRef<HTMLDivElement, IconProps>(ArrowRight)
+const FullScreenComponent = forwardRef<HTMLDivElement, IconProps>(FullScreen)
 
-ArrowRightComponent.displayName = 'ArrowRight'
+FullScreenComponent.displayName = 'FullScreen'
 
-export default ArrowRightComponent
+export default FullScreenComponent

@@ -208,8 +208,7 @@ function ComponentPage() {
         },
         {
           title: 'Image 图片',
-          link: 'image',
-          status: 'wait'
+          link: 'image'
         },
         {
           title: 'Infinite Scroll 无限滚动',

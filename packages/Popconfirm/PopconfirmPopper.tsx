@@ -50,7 +50,6 @@ const PopconfirmPopper: React.ForwardRefRenderFunction<HTMLDivElement, Popconfir
   // 点击取消
   function handleCancel(event: React.MouseEvent<{}, MouseEvent>) {
     if (onCancel) {
-      console.log(event)
       onCancel(event)
     }
   }

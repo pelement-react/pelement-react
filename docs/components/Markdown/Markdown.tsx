@@ -24,6 +24,7 @@ const CardMdx = lazy(() => import('../../../packages/Card/index.zh-CN.mdx'))
 const CollapseMdx = lazy(() => import('../../../packages/Collapse/index.zh-CN.mdx'))
 const DescriptionsMdx = lazy(() => import('../../../packages/Descriptions/index.zh-CN.mdx'))
 const EmptyMdx = lazy(() => import('../../../packages/Empty/index.zh-CN.mdx'))
+const ImageMdx = lazy(() => import('../../../packages/Image/index.zh-CN.mdx'))
 const ProgressMdx = lazy(() => import('../../../packages/Progress/index.zh-CN.mdx'))
 const ResultMdx = lazy(() => import('../../../packages/Result/index.zh-CN.mdx'))
 const SkeletonMdx = lazy(() => import('../../../packages/Skeleton/index.zh-CN.mdx'))
@@ -123,6 +124,9 @@ function DemoMdx({ name }) {
       break
     case 'empty':
       demo = <SuspenseContent><EmptyMdx /></SuspenseContent>
+      break
+    case 'image':
+      demo = <SuspenseContent><ImageMdx /></SuspenseContent>
       break
     case 'progress':
       demo = <SuspenseContent><ProgressMdx /></SuspenseContent>

@@ -1,9 +1,9 @@
 import { forwardRef } from 'react'
 import clsx from 'clsx'
 import { IconProps } from '../interface'
-import ArrowRightSvg from '@element-plus/icons-svg/arrow-right.svg?react'
+import ArrowLeftSvg from '@element-plus/icons-svg/arrow-left.svg?react'
 
-const ArrowRight: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
+const ArrowLeft: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
   props,
   ref,
 ) => {
@@ -25,13 +25,13 @@ const ArrowRight: React.ForwardRefRenderFunction<HTMLDivElement, IconProps> = (
       }
       onClick={onClick}
     >
-      <ArrowRightSvg />
+      <ArrowLeftSvg />
     </i>
   )
 }
 
-const ArrowRightComponent = forwardRef<HTMLDivElement, IconProps>(ArrowRight)
+const ArrowLeftComponent = forwardRef<HTMLDivElement, IconProps>(ArrowLeft)
 
-ArrowRightComponent.displayName = 'ArrowRight'
+ArrowLeftComponent.displayName = 'ArrowLeft'
 
-export default ArrowRightComponent
+export default ArrowLeftComponent

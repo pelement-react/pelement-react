@@ -381,17 +381,21 @@ function ComponentPage() {
     }
   ]
 
+  // 组件的总量
+  let totalNum = 0
   // 待开发的组件数量
   let waitNum = 0
   sidebars.forEach((sidebar: any) => {
     sidebar.children.forEach((item: any) => {
+      totalNum++
       if (item.status === 'wait') {
         waitNum++
       }
     })
   })
 
-  console.warn(`待开发的组件数量：${waitNum}`);
+  console.info(`组件总量：${totalNum}`)
+  console.warn(`待开发的组件数量：${waitNum}`)
 
   return (
     <>

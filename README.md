@@ -43,10 +43,10 @@ const App = () => {
       <Button type="warning">Warning</Button>
       <Button type="danger">Danger</Button>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
 ```
 
 

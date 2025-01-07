@@ -1,12 +1,15 @@
 import './Home.scss'
 import { Divider } from 'pelement-react'
+import pelementReact from '../../assets/pelement-react.svg'
 
 function HomePage() {
   return (
     <>
       <div className="home-page">
         <div className="banner">
-          <div className="banner-desc"><h1>PElement React</h1>
+          <div className="banner-desc">
+            <img className="banner-logo" src={pelementReact} alt="pelement-react" />
+            <h1>PElement React</h1>
             <p>基于 Element Plus 和 react，面向设计师和开发者的组件库</p>
           </div>
         </div>

@@ -12,7 +12,7 @@ import 'highlight.js/styles/stackoverflow-light.css'
 function CodeBlock({ language = 'javascript', name, children }) {
   const preRef = useRef(null)
   // 展开收起
-  const [expand, setExpand] = useState(false);
+  const [expand, setExpand] = useState(false)
   // example源码
   const [code, setCode] = useState('')
 

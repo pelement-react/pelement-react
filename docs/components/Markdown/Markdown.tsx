@@ -31,6 +31,7 @@ const SkeletonMdx = lazy(() => import('../../../packages/Skeleton/index.zh-CN.md
 const TableMdx = lazy(() => import('../../../packages/Table/index.zh-CN.mdx'))
 const TagMdx = lazy(() => import('../../../packages/Tag/index.zh-CN.mdx'))
 const TimelineMdx = lazy(() => import('../../../packages/Timeline/index.zh-CN.mdx'))
+const StatisticMdx = lazy(() => import('../../../packages/Statistic/index.zh-CN.mdx'))
 const SegmentedMdx = lazy(() => import('../../../packages/Segmented/index.zh-CN.mdx'))
 const AffixMdx = lazy(() => import('../../../packages/Affix/index.zh-CN.mdx'))
 const BacktopMdx = lazy(() => import('../../../packages/Backtop/index.zh-CN.mdx'))
@@ -145,6 +146,9 @@ function DemoMdx({ name }) {
       break
     case 'timeline':
       demo = <SuspenseContent><TimelineMdx /></SuspenseContent>
+      break
+    case 'statistic':
+      demo = <SuspenseContent><StatisticMdx /></SuspenseContent>
       break
     case 'segmented':
       demo = <SuspenseContent><SegmentedMdx /></SuspenseContent>

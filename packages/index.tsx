@@ -47,6 +47,12 @@ export {
     ScaleToOriginal,
     RefreshLeft,
     RefreshRight,
+    Male,
+    ChatLineRound,
+    Calendar,
+    Warning,
+    CaretTop,
+    CaretBottom,
 } from './Icon'
 export { default as Button } from './Button'
 export { default as Container } from './Container/Container'
@@ -101,3 +107,5 @@ export { default as Card } from './Card'
 export { default as Empty } from './Empty'
 export { default as PageHeader } from './PageHeader'
 export { default as Image } from './Image'
+export { default as Statistic } from './Statistic'
+export { default as Countdown } from './Countdown'

@@ -266,8 +266,7 @@ function ComponentPage() {
         },
         {
           title: 'Statistic 统计组件',
-          link: 'statistic',
-          status: 'wait'
+          link: 'statistic'
         },
         {
           title: 'Segmented 分段控制器',

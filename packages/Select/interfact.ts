@@ -17,7 +17,9 @@ export interface SelectContainerProps
   options: SelectOption[]
   value?: SelectOption
   onClick: (value: SelectOption) => void
-  // floating的属性
+  /**
+   * floating的属性
+   */
   getFloatingProps: (userProps?: React.HTMLProps<HTMLElement> | undefined) => Record<string, unknown>
 }
 

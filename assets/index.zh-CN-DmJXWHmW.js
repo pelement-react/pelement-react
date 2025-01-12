@@ -1,0 +1,19 @@
+import{j as n,aC as r,B as d,I as i}from"./index-BoH_1I5s.js";import{C as c}from"./CodeBlock-CP-Bxw1g.js";import{C as o}from"./Contributor-B9AchLV8.js";function l(){return n.jsx(n.Fragment,{children:n.jsx(r,{title:"Are you sure to delete this?",children:n.jsx(d,{children:"Delete"})})})}function h(){return n.jsx(n.Fragment,{children:n.jsx(r,{width:220,confirmButtonText:"OK",cancelButtonText:"No, Thanks",icon:n.jsx(i,{}),iconColor:"#626AEF",title:"Are you sure to delete this?",children:n.jsx(d,{children:"Delete"})})})}function x(){function t(){console.log("confirm!")}function e(){console.log("cancel!")}return n.jsx(n.Fragment,{children:n.jsx(r,{confirmButtonText:"Yes",cancelButtonText:"No",icon:n.jsx(i,{}),iconColor:"#626AEF",title:"Are you sure to delete this?",onConfirm:t,onCancel:e,children:n.jsx(d,{children:"Delete"})})})}function s(t){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"Popconfirm 气泡确认框"}),`
+`,`
+`,n.jsx(e.p,{children:"点击某个元素弹出一个简单的气泡确认框"}),`
+`,n.jsx(e.h2,{children:"基础用法"}),`
+`,n.jsx(e.p,{children:"在 Popconfirm 中，只有 title 属性可用，content 属性会被忽略。"}),`
+`,n.jsx(c,{name:"PopconfirmBasic",children:n.jsx(l,{})}),`
+`,n.jsx(e.h2,{children:"自定义弹出框的内容"}),`
+`,n.jsx(e.p,{children:"可以在 Popconfirm 中自定义内容。"}),`
+`,n.jsx(c,{name:"PopconfirmIcon",children:n.jsx(h,{})}),`
+`,n.jsx(e.h2,{children:"多种让 Popconfirm 出现的方法"}),`
+`,n.jsx(e.p,{children:"点击按钮触发事件"}),`
+`,n.jsx(c,{name:"PopconfirmEvent",children:n.jsx(x,{})}),`
+`,n.jsx(e.h2,{children:"API"}),`
+`,n.jsx(e.h3,{children:"Attributes"}),`
+`,n.jsxs(e.table,{children:[n.jsx(e.thead,{children:n.jsxs(e.tr,{children:[n.jsx(e.th,{children:"属性名"}),n.jsx(e.th,{children:"说明"}),n.jsx(e.th,{children:"类型"}),n.jsx(e.th,{children:"默认值"})]})}),n.jsxs(e.tbody,{children:[n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"title"}),n.jsx(e.td,{children:"标题"}),n.jsx(e.td,{children:n.jsx(e.code,{children:"string"})}),n.jsx(e.td,{children:"—"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"confirmButtonText"}),n.jsx(e.td,{children:"确认按钮文字"}),n.jsx(e.td,{children:n.jsx(e.code,{children:"string"})}),n.jsx(e.td,{children:"—"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"cancelButtonText"}),n.jsx(e.td,{children:"取消按钮文字"}),n.jsx(e.td,{children:n.jsx(e.code,{children:"string"})}),n.jsx(e.td,{children:"—"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"icon"}),n.jsx(e.td,{children:"自定义图标"}),n.jsx(e.td,{children:"ReactNode"}),n.jsx(e.td,{children:"QuestionFilled"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"iconColor"}),n.jsx(e.td,{children:"Icon 颜色"}),n.jsx(e.td,{children:n.jsx(e.code,{children:"string"})}),n.jsx(e.td,{children:"#f90"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"hideIcon"}),n.jsx(e.td,{children:"是否隐藏 Icon"}),n.jsx(e.td,{children:n.jsx(e.code,{children:"boolean"})}),n.jsx(e.td,{children:"false"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"width"}),n.jsx(e.td,{children:"弹层宽度，最小宽度 150px"}),n.jsxs(e.td,{children:[n.jsx(e.code,{children:"string"})," / ",n.jsx(e.code,{children:"number"})]}),n.jsx(e.td,{children:"150"})]})]})]}),`
+`,n.jsx(e.h3,{children:"Events"}),`
+`,n.jsxs(e.table,{children:[n.jsx(e.thead,{children:n.jsxs(e.tr,{children:[n.jsx(e.th,{children:"事件名"}),n.jsx(e.th,{children:"说明"}),n.jsx(e.th,{children:"类型"})]})}),n.jsxs(e.tbody,{children:[n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"onConfirm"}),n.jsx(e.td,{children:"点击确认按钮时触发"}),n.jsxs(e.td,{children:["(e: React.MouseEvent<",", MouseEvent>) => void"]})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"onCancel"}),n.jsx(e.td,{children:"点击取消按钮时触发"}),n.jsxs(e.td,{children:["(e: React.MouseEvent<",", MouseEvent>) => void"]})]})]})]}),`
+`,n.jsx(e.h2,{children:"贡献者"}),`
+`,n.jsx(o,{path:"packages/Popconfirm/index.zh-CN.mdx"})]})}function u(t={}){const{wrapper:e}=t.components||{};return e?n.jsx(e,{...t,children:n.jsx(s,{...t})}):s(t)}export{u as default};

@@ -7,17 +7,29 @@ export interface NotificationProps
   id?: number
   top?: number
   bottom?: number
-  // 标题
+  /**
+   * 标题
+   */
   title?: string | React.ReactNode
-  // 通知栏正文内容
+  /**
+   * 通知栏正文内容
+   */
   message?: string | React.ReactNode
-  // 通知的类型
+  /**
+   * 通知的类型
+   */
   type?: 'success' | 'warning' | 'info' | 'error' | ''
-  // 显示时间, 单位为毫秒。 值为 0 则不会自动关闭
+  /**
+   * 显示时间, 单位为毫秒。 值为 0 则不会自动关闭
+   */
   duration?: number
-  // 自定义弹出位置
+  /**
+   * 自定义弹出位置
+   */
   position?: 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left'
-  // 是否显示关闭按钮
+  /**
+   * 是否显示关闭按钮
+   */
   showClose?: boolean
   handleClose: (id: number) => void
 }

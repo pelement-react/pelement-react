@@ -5,11 +5,17 @@ export interface CheckboxProps
   style?: CSSProperties
   className?: string | string[]
   value?: boolean | string
-  // 选中状态的值，只有在绑定对象类型为 array 时有效。 如果没有 value， label则作为value使用
+  /**
+   * 选中状态的值，只有在绑定对象类型为 array 时有效。 如果没有 value， label则作为value使用
+   */
   label?: string
-  // Checkbox 的尺寸
+  /**
+   * Checkbox 的尺寸
+   */
   size?: 'large' | 'default' | 'small'
-  // 是否禁用
+  /**
+   * 是否禁用
+   */
   disabled?: boolean
   onChange?: (value: boolean) => void
 }

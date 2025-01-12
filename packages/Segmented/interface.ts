@@ -4,13 +4,21 @@ export interface SegmentedProps
   extends Omit<HTMLAttributes<HTMLDivElement>, 'className' | 'ref'> {
   style?: CSSProperties
   className?: string | string[]
-  // 选项的数据
+  /**
+   * 选项的数据
+   */
   options: string[] | SegmentedType[] | React.ReactNode[]
-  // 组件大小
+  /**
+   * 组件大小
+   */
   size?: 'large' | 'default' | 'small'
-  // 是否禁用
+  /**
+   * 是否禁用
+   */
   disabled?: boolean
-  // 撑满父元素宽度
+  /**
+   * 撑满父元素宽度
+   */
   block?: boolean
 }
 

@@ -4,17 +4,29 @@ export interface DescriptionsProps
   extends Omit<HTMLAttributes<HTMLDivElement>, 'className' | 'ref' | 'title'> {
   style?: CSSProperties
   className?: string | string[]
-  // 是否带有边框
+  /**
+   * 是否带有边框
+   */
   border?: boolean
-  // 一行 Descriptions Item 的数量
+  /**
+   * 一行 Descriptions Item 的数量
+   */
   column?: number
-  // 排列的方向
+  /**
+   * 排列的方向
+   */
   direction?: 'vertical' | 'horizontal'
-  // 列表的尺寸
+  /**
+   * 列表的尺寸
+   */
   size?: '' | 'large' | 'default' | 'small'
-  // 标题文本，显示在左上方
+  /**
+   * 标题文本，显示在左上方
+   */
   title?: string | ReactNode
-  // 操作区文本，显示在右上方
+  /**
+   * 操作区文本，显示在右上方
+   */
   extra?: string | ReactNode
   items: Items[]
 }
